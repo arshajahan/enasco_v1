@@ -22,9 +22,8 @@ ul li:hover{
 }
 
 .collapsible {
-  background-color: #ff6600;
   color: white;
-  font-weight: 800;
+  font-weight: 600;
   cursor: pointer;
   padding: 1.2rem 1.5rem;
   width: 100%;
@@ -57,11 +56,11 @@ ul li:hover{
 
 .show_content {
   max-height: 100rem; /* Set it to a large value to allow for content expansion */
-  transition: max-height 3s ease-in; /* Adjust the duration to your preference */
+  transition: max-height .9s ease-in; /* Adjust the duration to your preference */
 }
 
 .hide_content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 2s ease-out; /* Adjust the duration to your preference */
+  transition: max-height .9s ease-out; /* Adjust the duration to your preference */
 }

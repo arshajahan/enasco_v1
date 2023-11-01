@@ -13,7 +13,7 @@ function Banner() {
     }
 
   return (
-    <div className='bg-[#e3e3e3]'>
+    <div className='bg-[#e3e3e3] -mt-20'>
     <div 
         className=" bg-cover bg-center h-[550px] lg:h-[665px] "
         style={{
@@ -82,7 +82,7 @@ function Banner() {
                 
        
     </WrapperCard>
-    <div className='faqs lg:hidden'>    
+    <div className='faqs lg:hidden bg-[#ff6600]'>    
     {services.map((item, i) => (
         <div className='faq' key={item.id}>
             <button className={`collapsible hover:underline ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
