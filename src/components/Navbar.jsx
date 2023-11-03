@@ -10,7 +10,7 @@ function Navbar() {
         setNavClicked(!isNavClicked);
     }
 
-    const [collapsed, setCollapsed] = useState(0);
+    const [collapsed, setCollapsed] = useState(null);
     const toggle = (i) => {
       if (collapsed === i) {
         return setCollapsed(null)
@@ -18,9 +18,9 @@ function Navbar() {
       setCollapsed(i);
     }
   return (
-    <div className=' sticky z-50 top-0 bg-black bg-opacity-50'>
+    <div className=' sticky z-50 top-0 bg-black bg-opacity-60'>
     { !isNavClicked && 
-        <WrapperCard className='  h-fit text-[#ff6600] '>
+        <WrapperCard className='  h-fit text-[#ff6c40] '>
         <div className=' flex justify-between gap-10 h-20'>
              <div className=' relative flex gap-4 lg:basis-1/3 '>
                  <div className='  self-center  z-10 '>
@@ -49,7 +49,7 @@ function Navbar() {
     {
         isNavClicked && 
         <div className=' absolute top-0 right-0 z-10 bg-black h-screen w-full'>
-            <div className=' mx-4 flex justify-between mt-6'>
+            <div className=' mx-4 flex justify-between mt-7'>
                 <div className=' pl-2 '>
                     <img src={logo} onClick={ () => navToggle()} className=' w-32'/>
                 </div>

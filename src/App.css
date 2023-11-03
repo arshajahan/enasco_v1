@@ -7,9 +7,6 @@
   cursor: pointer;
 }
 
-.equal-width {
-  flex-basis: 200px;
-}
 
 ul li:hover{
   text-decoration: underline;
@@ -25,7 +22,7 @@ ul li:hover{
   color: white;
   font-weight: 600;
   cursor: pointer;
-  padding: 1.2rem 1.5rem;
+  padding: 1rem 1rem;
   width: 100%;
   border: none;
   text-align: left;
