@@ -23,7 +23,7 @@ function Banner() {
     >  
     </div>
     <WrapperCard className='relative '>
-        <div className='absolute lg:bottom-[21rem] xl:bottom-[20rem] bottom-0'>
+        <div className='absolute lg:bottom-[22rem] lg2:bottom-[20rem] bottom-0'>
             <div className='flex flex-col justify-between lg:flex-row py-4'>
                 <p className='lg:basis-[700px] uppercase font-extrabold text-3xl md:text-[2.5rem] lg:text-6xl text-white'>Connect your business world.</p>   
                 <span className=' justify-center mt-2 lg:basis-[230px] cursor-pointer text-white bg-red-600 lg:text-left lg:text-red-600 hover:bg-red-600 w-full hover:text-white uppercase text-lg p-2 lg:p-4 self-end font-extrabold lg:bg-white ml-2 flex items-center'>
@@ -36,11 +36,11 @@ function Banner() {
      
             <div className='hidden lg:block opacity-90 -mt-24 '>
                 <div className='lg:gap-3 bannerLink px-10 flex pt-5 capitalize text-white font-extrabold xl:text-lg bg-[#ff6600] h-24'>
-                    <span className=" lg:basis-1/5">Marine &<br/>Offshore Services</span>
-                    <span className=" lg:basis-1/5">Asset Integrity<br/>Management</span>
-                    <span className=" lg:basis-1/5">Ship<br/>Management </span>
+                    <span className=" lg:basis-1/5">Marine Support Services</span>
+                    <span className=" lg:basis-1/5">Inspection</span>
                     <span className=" lg:basis-1/5">Workshop</span>
-                    <span className=" lg:basis-1/5">Testing &<br/>Inspection</span>
+                    <span className=" lg:basis-1/5">Training</span>
+                    <span className=" lg:basis-1/5">ICT</span>
                 </div>
             </div>
             

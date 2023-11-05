@@ -52,7 +52,7 @@ function Navbar() {
                 </div>
             </WrapperCard>
             
-            <div className=' lg:hidden absolute top-0 right-0 z-10 bg-black h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
+            <div className=' overflow-scroll lg:hidden absolute top-0 right-0 z-10 bg-black h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
                 {isNavClicked &&
                     <>
                         <div className='mx-4 flex justify-between mt-7'>
@@ -75,7 +75,7 @@ function Navbar() {
                             </div>
                         </div>
                     ))}
-                    <ul className='pl-2 absolute bottom-0 mb-8 grid gap-4 uppercase  navlink text-white lg:hidden'>
+                    <ul className='pl-2 absolute bottom-0 mb-16 grid gap-4 uppercase  navlink text-white lg:hidden'>
                         <li className='navlink'>Search</li>
                         <li className='navlink'>About Us</li>
                         <li className='navlink'>Sustainability</li>
