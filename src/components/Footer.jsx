@@ -11,7 +11,7 @@ function Footer() {
     return (
       <>
           <Line/>
-          <div className=' bg-[#005a96]'>
+          <div className=' bg-[#005a96]' id='footer'>
           <WrapperCard className=' pt-8 text-textfooter text-white '>
               <div className=' flex flex-wrap md:flex-nowrap gap-6 '>
                   <div className=' basis-2/4 md:basis-1/4'>

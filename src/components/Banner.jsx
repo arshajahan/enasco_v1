@@ -14,7 +14,7 @@ function Banner() {
     }
 
   return (
-    <div className='bg-[#e3e3e3] -mt-20'>
+    <div className='bg-[#e3e3e3] -mt-20' id='banner'>
     <div 
         className=" bg-cover bg-center h-screen"
         style={{
@@ -36,11 +36,9 @@ function Banner() {
      
             <div className='hidden lg:block opacity-90 -mt-24 '>
                 <div className='lg:gap-3 bannerLink px-10 flex pt-5 capitalize text-white font-extrabold xl:text-lg bg-[#ff6600] h-24'>
-                    <span className=" lg:basis-1/5">Marine Support Services</span>
-                    <span className=" lg:basis-1/5">Inspection</span>
-                    <span className=" lg:basis-1/5">Workshop</span>
-                    <span className=" lg:basis-1/5">Training</span>
-                    <span className=" lg:basis-1/5">ICT</span>
+                {services.map((service) => (
+                    <span className=" lg:basis-1/5 text-left">{service.question}</span>
+                ))}
                 </div>
             </div>
             
@@ -59,11 +57,11 @@ function Banner() {
                 
        
     </WrapperCard>
-    <div className='faqs pl-2 lg:hidden bg-[#ff6c40]'>    
+    <div className='faqs lg:hidden bg-[#ff6c40]'>    
     {services.map((item, i) => (
-        <div className='faq' key={item.id}>
+        <div className='faq pl-2' key={item.id}>
             <button className={`collapsible hover:underline ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
-            <div className={`content ${collapsed === i ? "show_content" : "hide_content"}`}>
+            <div className={` -ml-2 lg:-ml-0 content ${collapsed === i ? "show_content" : "hide_content"}`}>
                 <ul className=' grid gap-4 text-lg text-blue-700'>
                     {item.answer.map((answer, j) => (
                         <li key={j}>{answer}</li>

@@ -31,10 +31,17 @@ function Navbar() {
                 <div className='flex justify-between gap-10 h-20'>
                     <div className='relative flex gap-4 lg:basis-1/3'>
                         <div className='self-center z-10'>
-                            <img src={logo} className='w-32 lg:w-40' alt="Logo" />
+                            <img href='#banner' src={logo} className= 'navlink w-32 lg:w-40' alt="Enasco"
+                                onClick={() => {
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'smooth'
+                                    });
+                                }}   
+                            />
                         </div>
                         <ul className='gap-4 h-fit mx-auto my-auto font-extrabold hidden lg:flex'>
-                            <li className='navlink'>News</li>
+                            <a href='#latest' className='navlink'>News</a>
                             <li className='navlink'>Expertise</li>
                         </ul>
                     </div>
@@ -43,7 +50,7 @@ function Navbar() {
                             <li className='navlink'>About Us</li>
                             <li className='navlink'>Sustainability</li>
                             <li className='navlink'>Contact</li>
-                            <li className='navlink'><FiSearch/></li>
+                            <a href='#footer' className='navlink'><FiSearch/></a>
                         </ul>
                         <div className='navlink text-lg text-right lg:hidden' onClick={() => navToggle()}>
                             NAVIGATION
@@ -57,7 +64,7 @@ function Navbar() {
                     <>
                         <div className='mx-4 flex justify-between mt-7'>
                     <div className=''>
-                        <img src={logo} onClick={() => navToggle()} className='w-32' alt="Logo" />
+                        <img src={logo} onClick={() => navToggle()} className='navlink w-32' alt="Logo" />
                     </div>
                     <span className='self-end navlink text-white' onClick={() => navToggle()}>CLOSE</span>
                 </div>
