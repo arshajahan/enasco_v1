@@ -10,9 +10,9 @@ function InDetail() {
              <div className='flex flex-col-reverse lg:flex-row gap-12 items-center bg-[#e3e3e3]'>
                 <div className=' basis-2/6 '>
                     <div className=' '>
-                    <h1 className=' text-[#005a96] text-3xl lg:text-5xl font-extrabold mb-8 lg:w-32'>AHEAD IN MARITIME EXCELLENCE</h1>
-                        We are ENASCO. The leading international towage and maritime company. Driven by our passion ‘Ahead in Maritime Excellence’, we empower our clients and stakeholders with the complete portfolio. From designing, building, chartering and operating vessels to training people and providing innovative consultancy services on a worldwide scale.
-                        <br/><br/><br/>With roots going back as far as 1911, ENASCO is a family-owned company and trusted voice and partner of leading companies within the Maritime Industry. We take an innovation-led, sustainable approach to help our clients invent their future.
+                    <h1 className=' text-[#005a96] text-3xl lg:text-5xl font-extrabold mb-8 lg:w-32'>CONNECT YOUR BUSINESS WORLD.</h1>
+                    Welcome to Enasco, your trusted partner in Non-Destructive Testing (NDT) and Marine Services. We are a pioneering force in the industry, committed to excellence, safety, and environmental responsibility. Our unwavering dedication to quality and innovation sets us apart as a reliable choice for your NDT and marine service needs.
+                        <br/><br/><br/>At Enasco, our mission is to provide cutting-edge NDT solutions and comprehensive marine services to ensure the safety, reliability, and efficiency of our clients' assets. We are driven by a passion for safeguarding the environment and enabling sustainable, long-term success for businesses in the marine sector.
                     </div>
                 </div>
                 <div className=' relative basis-4/6 '>

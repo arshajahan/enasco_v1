@@ -56,12 +56,12 @@ function Navbar() {
                 {isNavClicked &&
                     <>
                         <div className='mx-4 flex justify-between mt-7'>
-                    <div className='pl-2'>
+                    <div className=''>
                         <img src={logo} onClick={() => navToggle()} className='w-32' alt="Logo" />
                     </div>
                     <span className='self-end navlink text-white' onClick={() => navToggle()}>CLOSE</span>
                 </div>
-                <div className=' mt-10 faqs lg:hidden'>
+                <div className=' mt-7 faqs lg:hidden'>
                     {services.map((item, i) => (
                         <div className='faq' key={item.id}>
                             <button className={`collapsible hover:underline ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
@@ -75,7 +75,7 @@ function Navbar() {
                             </div>
                         </div>
                     ))}
-                    <ul className='pl-2 absolute bottom-0 mb-16 grid gap-4 uppercase  navlink text-white lg:hidden'>
+                    <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase  navlink text-white lg:hidden'>
                         <li className='navlink'>Search</li>
                         <li className='navlink'>About Us</li>
                         <li className='navlink'>Sustainability</li>

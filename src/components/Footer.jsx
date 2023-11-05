@@ -1,6 +1,7 @@
 import React from 'react';
 import Line from './UI/Line';
 import WrapperCard from './UI/WrapperCard';
+import { services } from '../assets/constants';
 
 function Footer() {
     return (
@@ -53,51 +54,24 @@ function Footer() {
                   <div className=' basis-full md:basis-2/4'>
                       <h2 className=' font-extrabold text-lg'>ACTIVITIES</h2>
                       <hr/><hr/><hr/><hr/><br/>
-                      <h2 className=' text-red-600 font-bold'>TOWAGE</h2>
-                      <div className=' mt-3 grid w-fit gap-3'>
-                          <span>Harbour Towage</span>
-                          <span>Offshore & Terminal Towage</span>
-                          <span>Chartering & Salvage</span>
-                          <span>Inland Shipping</span>
-                      </div>
-                      <br/>
-
-                      <h2 className=' text-red-600 font-bold'>SUBSEA</h2>
-                      <div className=' mt-3 grid w-fit gap-3'>
-                          <span>SPM Operations & Maintenance</span>
-                          <span>Asset Integrity Management</span>
-                      </div>
-                      <br/>
-
-                      <h2 className=' text-red-600 font-bold'>INTELLIGENCE</h2>
-                      <div className=' mt-3 grid w-fit gap-3'>
-                          <span>OptiPort</span>
-                          <span>Analytics & Reporting</span>
-                          <span>Drone Line Transfer</span>
-                      </div>
-                      <br/>
-
-                      <h2 className=' text-red-600 font-bold'>TRAINING-CONSULTANCE</h2>
-                      <div className=' mt-3 grid w-fit gap-3'>
-                          <span>Training</span>
-                          <span>Consultancy</span>
-                          <span>Towmaster Services</span>
-                      </div>
-                      <br/>
-
-                      <h2 className=' text-red-600 font-bold'>MARITIME-EXCELLENCE</h2>
-                      <div className=' mt-3 grid w-fit gap-3'>
-                          <span>Ship Management</span>
-                          <span>Innovations</span>
-                          <span>Projects & New Building</span>
-                          <span>Fast Crew Transportation</span>
-                      </div>
+                      {services.map((service) => (
+                        <div key={service.id}>
+                        <h2 className='uppercase text-[#ff6c40] font-bold'>{service.question}</h2>
+                        <div className='mt-3 grid w-fit gap-3'>
+                            {service.answer.map((answer, index) => (
+                            <span key={index}>{answer}</span>
+                    ))}
+                </div>
+          <br />
+        </div>
+      ))}
                   </div>
 
               </div>
               <br/>
               <hr/><br/>
               <span className=''>Copyright © 2023 Enas.co Pvt. Ltd. All rights reserved.</span>
+             
           </WrapperCard>
           </div> 
       </>

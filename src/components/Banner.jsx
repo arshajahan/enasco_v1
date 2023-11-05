@@ -59,7 +59,7 @@ function Banner() {
                 
        
     </WrapperCard>
-    <div className='faqs lg:hidden bg-[#ff6c40]'>    
+    <div className='faqs pl-2 lg:hidden bg-[#ff6c40]'>    
     {services.map((item, i) => (
         <div className='faq' key={item.id}>
             <button className={`collapsible hover:underline ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
