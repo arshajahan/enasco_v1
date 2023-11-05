@@ -52,8 +52,10 @@ function Navbar() {
                 </div>
             </WrapperCard>
             
-            <div className='lg:hidden absolute top-0 right-0 z-10 bg-black h-screen' style={{ width: isNavClicked ? '97%' : '0', transition: 'width 0.3s' }}>
-                <div className='mx-4 flex justify-between mt-7'>
+            <div className=' lg:hidden absolute top-0 right-0 z-10 bg-black h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
+                {isNavClicked &&
+                    <>
+                        <div className='mx-4 flex justify-between mt-7'>
                     <div className='pl-2'>
                         <img src={logo} onClick={() => navToggle()} className='w-32' alt="Logo" />
                     </div>
@@ -73,13 +75,15 @@ function Navbar() {
                             </div>
                         </div>
                     ))}
-                    <ul className='pl-2 grid gap-4 uppercase mb-10 navlink text-white lg:hidden' style={{ position: 'absolute', bottom: 0 }}>
+                    <ul className='pl-2 absolute bottom-0 mb-8 grid gap-4 uppercase  navlink text-white lg:hidden'>
                         <li className='navlink'>Search</li>
                         <li className='navlink'>About Us</li>
                         <li className='navlink'>Sustainability</li>
                         <li className='navlink'>Contact</li>
                     </ul>
                 </div>
+                    </>
+                }
             </div>
         </div>
     );
