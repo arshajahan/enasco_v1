@@ -1,6 +1,10 @@
 import React from 'react';
 import Line from './UI/Line';
 import WrapperCard from './UI/WrapperCard';
+import { BsLinkedin } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
+import { BsYoutube } from 'react-icons/bs';
 import { services } from '../assets/constants';
 
 function Footer() {
@@ -44,10 +48,10 @@ function Footer() {
                       <span>PO Box 22002<br/>3003 DA Rotterdam<br/>State of Kuwait</span>
                       <br/><br/>
                       <div className=' w-fit flex gap-4'>
-                          <span>In</span>
-                          <span>FB</span>
-                          <span>IG</span>
-                          <span>YT</span>
+                        <a href='#'><BsLinkedin size={20} /></a>
+                        <a href='#'><BsFacebook size={20} /></a>
+                        <a href='#'><BsInstagram size={20} /></a>
+                        <a href='#'><BsYoutube size={20} /></a>
                       </div>
                   </div>
 
