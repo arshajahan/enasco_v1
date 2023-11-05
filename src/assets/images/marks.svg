@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
-  <!-- Your existing SVG content here -->
-  
-  <!-- Make the small circle clickable by wrapping it in an anchor tag -->
-  <a xmlns:href="https://enas.co">
-    <circle cx="122" cy="91" r="1" fill=" blue" />
-  </a>
-</svg>

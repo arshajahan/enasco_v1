@@ -50,48 +50,50 @@ export const socialicons = [
 export const services = [
     {
       id: 1,
-      question: "petroleum services",
+      question: "Marine & Offshore Services",
       answer: [
-        "Harbour Towage",
-        "Offshore & Terminal Towage",
-        "Chartering & Salvage",
-        "Inland Shipping",
+        "Operations & Maintenance ",
+        "Single Point Mooring ",
+        "Hose Inventory",
+        "Tanker Operations ",
       ],
     },
     {
       id: 2,
-      question: "human resource",
+      question: "Asset Integrity Management",
       answer: [
-        "SPM Operations & Maintenance",
-        "Asset Integrity Management",
+        "(Hose) Integrity",
+        "Data Acquisition",
+        "Mooring Integrity & hose analysis"
       ],
     },
     {
       id: 3,
-      question: "equipment",
+      question: "Ship Management",
       answer: [
-        "OptiPort",
-        "Analytics & Reporting",
-        "Drone Line Transfer",
+        "Operation Management",
+        "Technical Management",
+        "Risk Management",
+        "Vessel Accounting",
       ],
     },
     {
       id: 4,
-      question: "general trading",
+      question: "Workshop",
       answer: [
-        "Training",
-        "Consultancy",
-        "Towmaster Services",
+        "Welding & Fabrication",
+        "Pressure Testing",
       ],
     },
     {
       id: 5,
-      question: "ICT",
+      question: "Testing & Inspection",
       answer: [
-        "Ship Management",
-        "Innovations",
-        "Projects & New Building",
-        "Fast Crew Transportation",
+        "OCTG Inspection",
+        "Non-Destructive Test",
+        "Drops Services",
+        "Drilling Derrick & Mast",
+        "Calibration Services"
       ],
     },
   ];

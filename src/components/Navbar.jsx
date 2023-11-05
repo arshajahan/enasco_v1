@@ -24,7 +24,7 @@ function Navbar() {
         <div className=' flex justify-between gap-10 h-20'>
              <div className=' relative flex gap-4 lg:basis-1/3 '>
                  <div className='  self-center  z-10 '>
-                     <img src={logo} className=' w-32 lg:w-48' />
+                     <img src={logo} className=' w-32 lg:w-40' />
                  </div>
                  <ul className=' gap-4 h-fit mx-auto my-auto font-extrabold hidden lg:flex'>
                      <li className='navlink'>News</li>
