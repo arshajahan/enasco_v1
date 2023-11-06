@@ -1,9 +1,20 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import bannerImage from '../assets/images/banner2.png'
 import WrapperCard from './UI/WrapperCard'
 import { services } from '../assets/constants'
 import { FiPlay } from 'react-icons/fi'
 function Banner() {
+
+    useEffect(() => {
+        // Scroll to the section based on the hash
+        const hash = window.location.hash;
+        if (hash) {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      }, []);
 
     const [collapsed, setCollapsed] = useState(null);
     const toggle = (i) => {
@@ -36,15 +47,15 @@ function Banner() {
      
             <div className='hidden lg:block opacity-90 -mt-24 '>
                 <div className='lg:gap-3 bannerLink px-10 flex pt-5 capitalize text-white font-extrabold xl:text-lg bg-[#ff6600] h-24'>
-                {services.map((service) => (
-                    <span className=" lg:basis-1/5 text-left">{service.question}</span>
+                {services.map((service, key) => (
+                    <span key={key} className=" lg:basis-1/5 text-left">{service.question}</span>
                 ))}
                 </div>
             </div>
             
             <div className=' lg:gap-3 hidden bg-white lg:flex px-10 h-auto text-[#005a96] '>
-                {services.map((service) => (
-                    <div key={service.id} className='lg:basis-1/5'>
+                {services.map((service, key) => (
+                    <div key={key} className='lg:basis-1/5'>
                     <ul className='grid gap-4 py-4'>
                         {service.answer.map((answer, index) => (
                         <li key={index}>{answer}</li>

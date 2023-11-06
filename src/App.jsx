@@ -1,23 +1,44 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Latest from './components/Latest'
 import InDetail from './components/InDetail'
 import Footer from './components/Footer'
+import About from './components/pages/About'
+import {
+  BrowserRouter as Router, Routes, Route
+} from "react-router-dom";
+import News from './components/pages/News'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Navbar/>
-      <Banner/>
-      <Latest/>
-      <InDetail/>
-      <Footer/>
+      <Router>
+        <Navbar/>
+          <Routes>
+            <Route exact path='/enasco_v1' 
+              element={
+                <>
+                  <Banner/>
+                  <Latest/>
+                  <InDetail/>
+                </>
+            } />
+            <Route path='/' 
+              element={
+                <>
+                  <Banner/>
+                  <Latest/>
+                  <InDetail/>
+                </>
+            } />
+            <Route exact path='enasco_v1/about' element={<About/>} />
+            <Route exact path='enasco_v1/news' element={<News/>} />
+          </Routes>
+          <Footer/>
+      </Router>
     </>
   )
 }

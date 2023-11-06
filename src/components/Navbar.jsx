@@ -3,9 +3,15 @@ import logo from './../assets/images/logo.png';
 import { FiSearch } from 'react-icons/fi';
 import WrapperCard from './UI/WrapperCard';
 import { services } from '../assets/constants';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function Navbar() {
     const [isNavClicked, setNavClicked] = useState(false);
+
+    const location = useLocation();
+    const isAboutPage = location.pathname === '/enasco_v1/about';
 
     const navToggle = () => {
         setNavClicked(!isNavClicked);
@@ -26,12 +32,12 @@ function Navbar() {
     };
 
     return (
-        <div className='sticky z-50 top-0 bg-black bg-opacity-60'>
+        <div className={`${isAboutPage ? '' : 'sticky top-0'} z-50 bg-black bg-opacity-70`}>
             <WrapperCard className='h-fit text-[#ff6c40]'>
                 <div className='flex justify-between gap-10 h-20'>
                     <div className='relative flex gap-4 lg:basis-1/3'>
-                        <div className='self-center z-10'>
-                            <img href='#banner' src={logo} className= 'navlink w-32 lg:w-40' alt="Enasco"
+                        <Link className='self-center z-10' to='/enasco_v1'>
+                            <img src={logo} className= 'navlink w-32 lg:w-40' alt="Enasco"
                                 onClick={() => {
                                     window.scrollTo({
                                         top: 0,
@@ -39,18 +45,25 @@ function Navbar() {
                                     });
                                 }}   
                             />
-                        </div>
+                        </Link>
                         <ul className='gap-4 h-fit mx-auto my-auto font-extrabold hidden lg:flex'>
-                            <a href='#latest' className='navlink'>News</a>
+                            <HashLink to='enasco_v1/#latest' className='navlink'>News</HashLink>
                             <li className='navlink'>Expertise</li>
                         </ul>
                     </div>
                     <div className='basis-1/3 my-auto'>
                         <ul className='items-center justify-evenly hidden lg:flex'>
-                            <li className='navlink'>About Us</li>
+                            <Link to='/enasco_v1/about' className='navlink' 
+                                onClick={() => {
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'smooth'
+                                    });
+                                }}   
+                            >About Us</Link>
                             <li className='navlink'>Sustainability</li>
                             <li className='navlink'>Contact</li>
-                            <a href='#footer' className='navlink'><FiSearch/></a>
+                            <a href='#footer' className='navlink'><FiSearch size={20} /></a>
                         </ul>
                         <div className='navlink text-lg text-right lg:hidden' onClick={() => navToggle()}>
                             NAVIGATION
@@ -83,8 +96,24 @@ function Navbar() {
                         </div>
                     ))}
                     <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase  navlink text-white lg:hidden'>
-                        <li className='navlink'>Search</li>
-                        <li className='navlink'>About Us</li>
+                        <HashLink to='/enasco_v1/#footer' 
+                                onClick={() => {
+                                    navToggle();
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'smooth'
+                                    });
+                                }}  
+                                className='navlink'>Search</HashLink>
+                        <Link to='/enasco_v1/about' 
+                                onClick={() => {
+                                    navToggle();
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: 'smooth'
+                                    });
+                                }}    
+                            className='navlink'>About Us</Link>
                         <li className='navlink'>Sustainability</li>
                         <li className='navlink'>Contact</li>
                     </ul>
