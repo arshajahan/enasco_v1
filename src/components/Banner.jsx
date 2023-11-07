@@ -46,7 +46,7 @@ function Banner() {
 
      
             <div className='hidden lg:block opacity-90 -mt-24 '>
-                <div className='lg:gap-3 bannerLink px-10 flex pt-5 capitalize text-white font-extrabold xl:text-lg bg-[#ff6600] h-24'>
+                <div className='lg:gap-3 bannerLink px-10  flex pt-5 capitalize text-white font-extrabold xl:text-lg bg-[#ff6600] h-24'>
                 {services.map((service, key) => (
                     <span key={key} className=" lg:basis-1/5 text-left">{service.question}</span>
                 ))}

@@ -32,8 +32,8 @@ function Navbar() {
     };
 
     return (
-        <div className={`${isAboutPage ? '' : 'sticky top-0'} z-50 bg-black bg-opacity-70`}>
-            <WrapperCard className='h-fit text-[#ff6c40]'>
+        <div className={`sticky top-0 z-50 bg-white shadow-lg`}>
+            <WrapperCard className='  h-fit text-[#ff6c40]'>
                 <div className='flex justify-between gap-10 h-20'>
                     <div className='relative flex gap-4 lg:basis-1/3'>
                         <Link className='self-center z-10' to='/enasco_v1'>
@@ -62,7 +62,15 @@ function Navbar() {
                                 }}   
                             >About Us</Link>
                             <li className='navlink'>Sustainability</li>
-                            <li className='navlink'>Contact</li>
+                            <Link
+                            to='/enasco_v1/contact' 
+                            onClick={() => {
+                                window.scrollTo({
+                                    top: 0,
+                                    behavior: 'smooth'
+                                });
+                            }}  
+                            className='navlink'>Contact</Link>
                             <a href='#footer' className='navlink'><FiSearch size={20} /></a>
                         </ul>
                         <div className='navlink text-lg text-right lg:hidden' onClick={() => navToggle()}>
@@ -115,7 +123,16 @@ function Navbar() {
                                 }}    
                             className='navlink'>About Us</Link>
                         <li className='navlink'>Sustainability</li>
-                        <li className='navlink'>Contact</li>
+                        <Link
+                            to='/enasco_v1/contact' 
+                            onClick={() => {
+                                navToggle();
+                                window.scrollTo({
+                                    top: 0,
+                                    behavior: 'smooth'
+                                });
+                            }}  
+                            className='navlink'>Contact</Link>
                     </ul>
                 </div>
                     </>

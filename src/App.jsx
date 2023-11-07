@@ -10,6 +10,7 @@ import {
   BrowserRouter as Router, Routes, Route
 } from "react-router-dom";
 import News from './components/pages/News'
+import Contact from './components/pages/Contact'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
             } />
             <Route exact path='enasco_v1/about' element={<About/>} />
             <Route exact path='enasco_v1/news' element={<News/>} />
+            <Route exact path='enasco_v1/contact' element={<Contact/>} />
           </Routes>
           <Footer/>
       </Router>

@@ -50,7 +50,7 @@ export const socialicons = [
 export const services = [
     {
       id: 1,
-      question: "Marine Support Services",
+      question: "Marine Services",
       answer: [
         "Operations & Maintenance ",
         "Single Point Mooring ",
@@ -60,7 +60,7 @@ export const services = [
     },
     {
       id: 2,
-      question: "Inspection",
+      question: "Subsea Services",
       answer: [
         "(Hose) Integrity",
         "Data Acquisition",
@@ -69,7 +69,7 @@ export const services = [
     },
     {
       id: 3,
-      question: "Workshop",
+      question: "Inspection & NDT",
       answer: [
         "Operation Management",
         "Technical Management",
@@ -79,7 +79,7 @@ export const services = [
     },
     {
       id: 4,
-      question: "Training",
+      question: "Workshop Facility",
       answer: [
         "Welding & Fabrication",
         "Pressure Testing",
@@ -87,7 +87,8 @@ export const services = [
     },
     {
       id: 5,
-      question: "ICT",
+      question: `Training & 
+      Consultancy`,
       answer: [
         "OCTG Inspection",
         "Non-Destructive Test",
