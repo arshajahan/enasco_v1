@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Line from './UI/Line';
 import WrapperCard from './UI/WrapperCard';
 import { BsLinkedin } from 'react-icons/bs';
@@ -6,12 +6,38 @@ import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { BsYoutube } from 'react-icons/bs';
 import { services } from '../assets/constants';
+import { motion, useInView, useAnimation } from 'framer-motion'
 
 function Footer() {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { triggerOnce: false });
+
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+      if(isInView) {
+          mainControls.start("visible");
+      }
+      else{
+          mainControls.start("hidden")
+      }
+  }, [isInView, mainControls]);
+
     return (
       <>
-          <Line/>
-          <div className=' bg-[#005a96]' id='footer'>
+          <motion.div
+            ref = {ref}
+            variants = {{
+                hidden: { opacity : 0, y: 75 },
+                visible : { opacity: 1, y: 0 }
+            }}
+        
+            initial = 'hidden'
+            animate = {mainControls}
+            transition = {{ duration: 0.8, delay: 0.3 }}
+            
+            className=' bg-gray-700' id='footer'>
           <WrapperCard className=' pt-8 text-textfooter text-white '>
               <div className=' flex flex-wrap md:flex-nowrap gap-6 '>
                   <div className=' basis-2/4 md:basis-1/4'>
@@ -77,7 +103,7 @@ function Footer() {
               <span className=''>Copyright © 2023 Enas.co Pvt. Ltd. All rights reserved.</span>
              <br/><br/>
           </WrapperCard>
-          </div> 
+          </motion.div> 
       </>
     )
   }

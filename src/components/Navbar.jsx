@@ -80,22 +80,22 @@ function Navbar() {
                 </div>
             </WrapperCard>
             
-            <div className=' overflow-scroll lg:hidden absolute top-0 right-0 z-10 bg-black h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
+            <div className=' overflow-scroll lg:hidden absolute top-0 right-0 z-10 bg-white h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
                 {isNavClicked &&
                     <>
                         <div className='mx-4 flex justify-between mt-7'>
                     <div className=''>
                         <img src={logo} onClick={() => navToggle()} className='navlink w-32' alt="Logo" />
                     </div>
-                    <span className='self-end navlink text-white' onClick={() => navToggle()}>CLOSE</span>
+                    <span className='self-end navlink text-gray-700' onClick={() => navToggle()}>CLOSE</span>
                 </div>
                 <div className=' mt-7 faqs lg:hidden'>
                     {services.map((item, i) => (
                         <div className='faq' key={item.id}>
-                            <button className={`collapsible hover:underline ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
+                            <button className={` hover:bg-[#ff6c40]  text-gray-700 collapsible  ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
                             <hr/>
-                            <div className={`content ${collapsed === i ? "show_content" : "hide_content"}`}>
-                                <ul className='grid gap-4 text-lg text-blue-700'>
+                            <div className={`content ${collapsed === i ? "show_content" : "hide_content"} shadow-md`}>
+                                <ul className='grid gap-4 text-lg text-gray-700'>
                                     {item.answer.map((answer, j) => (
                                         <li key={j}>{answer}</li>
                                     ))}
@@ -103,7 +103,7 @@ function Navbar() {
                             </div>
                         </div>
                     ))}
-                    <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase  navlink text-white lg:hidden'>
+                    <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase  navlink text-gray-700 lg:hidden'>
                         <HashLink to='/enasco_v1/#footer' 
                                 onClick={() => {
                                     navToggle();

@@ -19,7 +19,7 @@ ul li:hover{
 }
 
 .collapsible {
-  color: white;
+  color: rgb(55 65 81);
   font-weight: 600;
   cursor: pointer;
   padding: 1rem 1rem;
@@ -37,7 +37,7 @@ ul li:hover{
 
 .collapsible:after {
   content: "\02C5";
-  color: white;
+  color: rgb(55 65 81);
   float: right;
 }
 
@@ -61,3 +61,4 @@ ul li:hover{
   overflow: hidden;
   transition: max-height .9s ease-out; /* Adjust the duration to your preference */
 }
+

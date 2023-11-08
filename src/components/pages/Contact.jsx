@@ -13,7 +13,7 @@ function Contact() {
             <Link to='/enasco_v1'>Home<span> &#8594;</span></Link>
 
             <div className='mt-10 '>
-                <h1 className='text-[#005a96] text-4xl md:text-5xl font-extrabold'>CONTACT</h1>
+                <h1 className='text-gray-700 text-4xl md:text-5xl font-extrabold'>CONTACT</h1>
                 <p className=' mt-8 '>
                     
                     ENASCO International - Headquaters
