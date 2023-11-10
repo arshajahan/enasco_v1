@@ -34,10 +34,10 @@ function Navbar() {
     return (
         <div className={`sticky top-0 z-50 bg-white shadow-lg`}>
             <WrapperCard className='  h-fit text-[#ff6c40]'>
-                <div className='flex justify-between gap-10 h-20'>
+                <div className='flex justify-between gap-10 h-12 md:h-20'>
                     <div className='relative flex gap-4 lg:basis-1/3'>
                         <Link className='self-center z-10' to='/enasco_v1'>
-                            <img src={logo} className= 'navlink w-32 lg:w-40' alt="Enasco"
+                            <img src={logo} className= 'navlink w-28 lg:w-40' alt="Enasco"
                                 onClick={() => {
                                     window.scrollTo({
                                         top: 0,
@@ -51,9 +51,9 @@ function Navbar() {
                             <li className='navlink'>Expertise</li>
                         </ul>
                     </div>
-                    <div className='basis-1/3 my-auto'>
+                    <div className='text-[#2d3540] basis-1/3 my-auto'>
                         <ul className='items-center justify-evenly hidden lg:flex'>
-                            <Link to='/enasco_v1/about' className='navlink' 
+                            <Link to='/enasco_v1/about' className='navlink hover:text-[#ff6c40]' 
                                 onClick={() => {
                                     window.scrollTo({
                                         top: 0,
@@ -61,7 +61,7 @@ function Navbar() {
                                     });
                                 }}   
                             >About Us</Link>
-                            <li className='navlink'>Sustainability</li>
+                            <li className=' hover:text-[#ff6c40] navlink'>Sustainability</li>
                             <Link
                             to='/enasco_v1/contact' 
                             onClick={() => {
@@ -70,8 +70,8 @@ function Navbar() {
                                     behavior: 'smooth'
                                 });
                             }}  
-                            className='navlink'>Contact</Link>
-                            <a href='#footer' className='navlink'><FiSearch size={20} /></a>
+                            className='navlink hover:text-[#ff6c40]'>Contact</Link>
+                            <a href='#footer' className='hover:text-[#ff6c40] navlink'><FiSearch size={20} /></a>
                         </ul>
                         <div className='navlink text-lg text-right lg:hidden' onClick={() => navToggle()}>
                             NAVIGATION
@@ -83,19 +83,19 @@ function Navbar() {
             <div className=' overflow-scroll lg:hidden absolute top-0 right-0 z-10 bg-white h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
                 {isNavClicked &&
                     <>
-                        <div className='mx-4 flex justify-between mt-7'>
+                <div className=' mx-4 flex justify-between mt-4'>
                     <div className=''>
-                        <img src={logo} onClick={() => navToggle()} className='navlink w-32' alt="Logo" />
+                        <img src={logo} onClick={() => navToggle()} className='navlink w-28' alt="Logo" />
                     </div>
-                    <span className='self-end navlink text-gray-700' onClick={() => navToggle()}>CLOSE</span>
+                    <span className='self-end navlink text-[#2d3540]' onClick={() => navToggle()}>CLOSE</span>
                 </div>
                 <div className=' mt-7 faqs lg:hidden'>
                     {services.map((item, i) => (
                         <div className='faq' key={item.id}>
-                            <button className={` hover:bg-[#ff6c40]  text-gray-700 collapsible  ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
+                            <button className={` hover:bg-[#ff6c40]  text-[#2d3540] collapsible  ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
                             <hr/>
                             <div className={`content ${collapsed === i ? "show_content" : "hide_content"} shadow-md`}>
-                                <ul className='grid gap-4 text-lg text-gray-700'>
+                                <ul className='grid gap-4 text-lg text-[#2d3540]'>
                                     {item.answer.map((answer, j) => (
                                         <li key={j}>{answer}</li>
                                     ))}
@@ -103,7 +103,7 @@ function Navbar() {
                             </div>
                         </div>
                     ))}
-                    <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase  navlink text-gray-700 lg:hidden'>
+                    <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase  navlink text-[#2d3540] lg:hidden'>
                         <HashLink to='/enasco_v1/#footer' 
                                 onClick={() => {
                                     navToggle();

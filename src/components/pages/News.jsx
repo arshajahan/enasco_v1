@@ -15,15 +15,15 @@ const passedData = location.state;
         <WrapperCard className=' py-8'>
         <Link to='/enasco_v1' className='navlink'>Home<span> &#8594;</span></Link>
         <div className='relative mt-12 bg-slate-100'>
-            <Link to='/enasco_v1' className='navlink py-2 px-4 text-white font-bold bg-[#005a96] absolute left-0 top-0'>Back</Link>
+            <Link to='/enasco_v1' className='navlink py-2 px-4 text-white font-bold bg-[#2d3540] absolute left-0 top-0'>Back</Link>
             <img src={passedData.image} className=' w-full h-auto mx-auto'/>
         </div>
-        <div className=' bg-white p-6 md:p-12 grid gap-6'>
+        <div className=' bg-white text-[#2d3540]  p-6 md:p-12 grid gap-6'>
             <h2 className=' text-xl md:text-3xl font-bold'>
                 {passedData.title}
             </h2>
             <span className=' font-semibold italic'>{passedData.date}</span>
-            <p className=' text-justify text-gray-800'>
+            <p className=' text-justify '>
                 In 2021, after a rigorous and competitive process, Trans Mountain, on behalf of shippers for the Trans Mountain Expansion Project (TMEP), awarded KOTUG Canada Inc. a long-term contract to provide enhanced escort towage services for tankers that load crude oil at Trans Mountain’s Westridge Marine Terminal.
                 <br/><br/>   
                 Trans Mountain operates Canada’s only oil pipeline servicing the West Coast of Canada providing tidewater access to foreign markets for Canada’s petroleum resources.
