@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import logo from './../assets/images/logo.png';
 import WrapperCard from './UI/WrapperCard';
 import { services } from '../assets/constants';
-import { useLocation } from 'react-router-dom';
+import bannerImage from '../assets/images/boat.jpg'
 
 function Navbar() {
   const [isExpertiseClicked, setExpertiseClicked] = useState(false);
@@ -31,13 +31,12 @@ function Navbar() {
   };
 
   return (
-    <div className={`sticky top-0 z-50 bg-white shadow-lg`}>
+    <div className={`sticky top-0 z-50 bg-white shadow-lg overflow-x-clip`}>
       <div className={`${isExpertiseClicked ? 'block' : 'hidden'} absolute top-20 h-screen w-full bg-[#ff6c40]`}>
-        <WrapperCard className='relative h-screen flex text-white bg-[#ff6c40]'>
+        <WrapperCard className='relative h-screen text-white bg-[#ff6c40]'>
           <div className='flex gap-0'>
-            <span onClick={() => closeExpertise()} className='cursor-pointer text-2xl font-bold absolute text-[#2d3540] right-16 top-16'>X</span>
-
-            <div className='py-32 basis-auto grid items-center'>
+            <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-[#2d3540] right-16 top-16'>X</span>
+            <div className='py-32 md:basis-1/2 lg:basis-1/3 grid items-center '>
               <span className='pl-6 mb-6'>LEARN MORE ABOUT</span>
               {services.map((service, key) => (
                 <div
@@ -49,7 +48,7 @@ function Navbar() {
               ))}
             </div>
 
-            <div className='md:grid items-center basis-auto text-2xl bg-[#2d3540] text-white'>
+            <div className='z-10 md:basis-5/6 lg:basis-2/4 flex-shrink h-screen md:grid items-center text-2xl bg-gray-700 text-white'>
               {selectedQuestion !== null && (
                 <div className='w-full'>
                   <ul className='grid gap-6 '>
@@ -63,6 +62,10 @@ function Navbar() {
                   </ul>
                 </div>
               )}
+            </div>
+
+            <div className=' absolute -right-[20rem]  bottom-0 h-full'>
+                <img className='h-full ' src={bannerImage} />
             </div>
           </div>
         </WrapperCard>
