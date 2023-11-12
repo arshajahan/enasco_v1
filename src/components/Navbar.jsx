@@ -8,12 +8,12 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
+import boat from '../assets/images/boat.jpg'
 
 function Navbar() {
+    const [isExpertiseClicked, setExpertiseClicked] = useState(false);
     const [isNavClicked, setNavClicked] = useState(false);
-
-    const location = useLocation();
-    const isAboutPage = location.pathname === '/enasco_v1/about';
+    const [selectedQuestion, setSelectedQuestion] = useState(null);
 
     const navToggle = () => {
         setNavClicked(!isNavClicked);
@@ -33,45 +33,102 @@ function Navbar() {
         setCollapsed(i);
     };
 
+    const closeExpertise = () => {
+        setExpertiseClicked(!isExpertiseClicked);
+    }
+
+    const menuClicked = () => {
+        if(isNavClicked)
+            navToggle();
+        if(isExpertiseClicked === true)  
+            closeExpertise();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <div className={`sticky top-0 z-50 bg-white shadow-lg`}>
+            <div className={` ${isExpertiseClicked ? 'block' : 'hidden'} absolute top-20 h-screen w-full  bg-[#ff6c40]`}>
+                <WrapperCard className='relative h-screen flex text-white bg-[#ff6c40]'>
+                    <div className='flex gap-0'>
+                        <span onClick={ () => closeExpertise() }  className=' cursor-pointer text-2xl font-bold absolute text-[#2d3540] right-16 top-16'>X</span>
+                        {/* Left column with questions */}
+                            <div className=' py-32 basis-auto  grid items-center'>
+                                <span className='pl-6 mb-6'>LEARN MORE ABOUT</span>
+                                {services.map((service, key) => (
+                                <div
+                                    key={key}
+                                    className='mb-4 '
+                                    onClick={() => setSelectedQuestion(key)}
+                                    style={{
+                                    backgroundColor: selectedQuestion === key ? '#2d3540' : '#ff6c40',
+                                    color: selectedQuestion === key ? '#ff6c40' : 'white',
+                                    }}
+                                >
+                                <div className={` ${selectedQuestion === key ? ' bg-[#2d3540] text-white ' : 'cursor-pointer' }  flex uppercase font-extrabold h-auto   bg-[#ff6c40] py-3`}>
+                                    <span className='md:text-base lg:text-[1.3rem] md:basis-52 lg:basis-56 pl-6 '>{service.question} <span className=' '>&#129170;</span></span>
+                                </div>
+                            </div>
+                             ))}
+      </div>
+
+      {/* Right column with answers */}
+      <div className=' md:grid items-center basis-auto text-2xl bg-[#2d3540] text-white'>
+        {selectedQuestion !== null && (
+          <div className='w-full'>
+            <ul className='grid gap-6 '>
+              {services[selectedQuestion].answer.map((answer, index) => (
+                <li
+                    onClick={ () => menuClicked()}
+                    className={`${isExpertiseClicked ? 'px-12' : ''} lg:hover:text-[#ff6c40]`} key={index}>
+                  {answer}
+                </li>
+              ))}
+              {/* <span>{selectedQuestion}</span> */}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      </div>
+   
+                </WrapperCard>
+            </div>  
             <WrapperCard className='  h-fit text-[#ff6c40]'>
                 <div className='flex justify-between gap-10 h-12 md:h-20'>
                     <div className='relative flex gap-4 lg:basis-1/3'>
-                        <Link className='self-center z-10' to='/enasco_v1'>
+                        <Link className='self-center z-10' to='/enasco_v1/'>
                             <img src={logo} className= 'navlink w-28 lg:w-40' alt="Enasco"
-                                onClick={() => {
-                                    window.scrollTo({
-                                        top: 0,
-                                        behavior: 'smooth'
-                                    });
-                                }}   
+                                onClick={()=> menuClicked()} 
                             />
                         </Link>
-                        <ul className='gap-4 h-fit mx-auto my-auto font-extrabold hidden lg:flex'>
-                            <HashLink to='enasco_v1/#latest' className='navlink'>News</HashLink>
-                            <li className='navlink'>Expertise</li>
+                        <ul className='gap-4 h-full mx-auto font-extrabold hidden lg:flex'>
+                            <HashLink to='enasco_v1/#latest'
+                                onClick={ () => menuClicked() }
+                                className='h-full navlink flex items-center'>News</HashLink>
+                            <li
+                                className={`h-full ${isExpertiseClicked ? 'px-2 bg-[#ff6c40] text-white' : ''} navlink flex items-center`}
+                                onClick={ () => closeExpertise() }
+                            >
+                                Expertise
+                            </li>
                         </ul>
+
                     </div>
                     <div className='text-[#2d3540] basis-1/3 my-auto'>
                         <ul className='items-center justify-evenly hidden lg:flex'>
                             <Link to='/enasco_v1/about' className='navlink hover:text-[#ff6c40]' 
-                                onClick={() => {
-                                    window.scrollTo({
-                                        top: 0,
-                                        behavior: 'smooth'
-                                    });
-                                }}   
+                                onClick={ () => menuClicked()}  
                             >About Us</Link>
-                            <li className=' hover:text-[#ff6c40] navlink'>Sustainability</li>
+                            <li className=' hover:text-[#ff6c40] navlink'
+                                onClick={ () => menuClicked()}
+                            >
+                                Sustainability</li>
                             <Link
                             to='/enasco_v1/contact' 
-                            onClick={() => {
-                                window.scrollTo({
-                                    top: 0,
-                                    behavior: 'smooth'
-                                });
-                            }}  
+                            onClick={ () => menuClicked()}  
                             className='navlink hover:text-[#ff6c40]'>Contact</Link>
                             <a href='#footer' className='hover:text-[#ff6c40] navlink'><FiSearch size={20} /></a>
                         </ul>
@@ -99,7 +156,7 @@ function Navbar() {
                             <button className={` hover:bg-[#ff6c40]  text-[#2d3540] collapsible  ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
                             <hr/>
                             <div className={`content ${collapsed === i ? "show_content" : "hide_content"} shadow-md`}>
-                                <ul className='grid gap-4 text-lg text-[#2d3540]'>
+                                <ul className='grid gap-4 py-4 text-lg text-[#2d3540]'>
                                     {item.answer.map((answer, j) => (
                                         <li key={j}>{answer}</li>
                                     ))}
@@ -109,33 +166,17 @@ function Navbar() {
                     ))}
                     <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase  navlink text-[#2d3540] lg:hidden'>
                         <HashLink to='/enasco_v1/#footer' 
-                                onClick={() => {
-                                    navToggle();
-                                    window.scrollTo({
-                                        top: 0,
-                                        behavior: 'smooth'
-                                    });
-                                }}  
+                                onClick={() => menuClicked()}  
                                 className='navlink'>Search</HashLink>
                         <Link to='/enasco_v1/about' 
-                                onClick={() => {
-                                    navToggle();
-                                    window.scrollTo({
-                                        top: 0,
-                                        behavior: 'smooth'
-                                    });
-                                }}    
+                                onClick={() => menuClicked()}    
                             className='navlink'>About Us</Link>
-                        <li className='navlink'>Sustainability</li>
+                        <li className='navlink'
+                            onClick={ () => menuClicked()}
+                        >Sustainability</li>
                         <Link
                             to='/enasco_v1/contact' 
-                            onClick={() => {
-                                navToggle();
-                                window.scrollTo({
-                                    top: 0,
-                                    behavior: 'smooth'
-                                });
-                            }}  
+                            onClick={ () => menuClicked() } 
                             className='navlink'>Contact</Link>
                     </ul>
                 </div>
