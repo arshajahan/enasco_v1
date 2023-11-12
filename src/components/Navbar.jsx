@@ -43,7 +43,7 @@ function Navbar() {
                 <div
                   key={key}
                   onClick={() => setSelectedQuestion(key)}
-                  className={` ${selectedQuestion === key ? ' bg-gray-800 text-white ' : 'cursor-pointer'} flex uppercase font-extrabold h-auto   bg-[#ff6c40] py-3`}>
+                  className={` ${selectedQuestion === key ? ' bg-gray-700 text-white ' : 'cursor-pointer'} flex uppercase font-extrabold h-auto   bg-[#ff6c40] py-3`}>
                   <span className='md:text-base lg:text-[1.3rem] md:basis-52 lg:basis-56 pl-6 '>{service.question} <span className=' '>&#129170;</span></span>
                 </div>
               ))}
