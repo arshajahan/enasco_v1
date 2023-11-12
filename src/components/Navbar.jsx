@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <div className={`sticky top-0 z-50 bg-white shadow-lg overflow-x-clip`}>
-      <div className={`${isExpertiseClicked ? 'block' : 'hidden'} absolute top-20 h-screen w-full bg-[#ff6c40]`}>
+      <div className={`transition-transform transform duration-500 ${isExpertiseClicked ? 'translate-y-0' : 'translate-y-full'} absolute top-20 h-screen w-full bg-[#ff6c40]`}>
         <WrapperCard className='relative h-screen text-white bg-[#ff6c40]'>
           <div className='flex gap-0'>
             <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-[#2d3540] right-12 top-24'>X</span>
@@ -48,7 +48,7 @@ function Navbar() {
               ))}
             </div>
 
-            <div className={`${ selectedQuestion !== null ? 'lg:basis-1/2' : ''} z-10  flex-shrink h-screen md:grid items-center text-2xl bg-gray-700 text-white`}>
+            <div className={`${selectedQuestion !== null ? 'lg:basis-1/2' : ''} z-10  flex-shrink h-screen md:grid items-center text-2xl bg-gray-700 text-white`}>
               {selectedQuestion !== null && (
                 <div className='w-full'>
                   <ul className='grid gap-6 '>
@@ -64,8 +64,8 @@ function Navbar() {
               )}
             </div>
 
-            <div className={`${ selectedQuestion !== null ? 'absolute -right-[20rem]  bottom-0 h-full' : 'hidden'} `}>
-                <img className='h-full ' src={bannerImage} />
+            <div className={`${selectedQuestion !== null ? 'absolute -right-[20rem]  bottom-0 h-full' : 'hidden'} `}>
+              <img className='h-full ' src={bannerImage} alt="Banner" />
             </div>
           </div>
         </WrapperCard>
