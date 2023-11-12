@@ -58,14 +58,13 @@ function Navbar() {
                             <div className=' py-32 basis-auto  grid items-center'>
                                 <span className='pl-6 mb-6'>LEARN MORE ABOUT</span>
                                 {services.map((service, key) => (
-                                <div
-                                    key={key}
-                                    className='mb-4 '
-                                    onClick={() => setSelectedQuestion(key)}
-                                >
-                                <div className={` ${selectedQuestion === key ? ' bg-[#2d3540] text-white ' : 'cursor-pointer' }  flex uppercase font-extrabold h-auto   bg-[#ff6c40] py-3`}>
+                               
+                                <div 
+                                key={key}
+                                onClick={() => setSelectedQuestion(key)}
+                                className={` ${selectedQuestion === key ? ' bg-[#2d3540] text-white ' : 'cursor-pointer' } flex uppercase font-extrabold h-auto   bg-[#ff6c40] py-3`}>
                                     <span className='md:text-base lg:text-[1.3rem] md:basis-52 lg:basis-56 pl-6 '>{service.question} <span className=' '>&#129170;</span></span>
-                                </div>
+                                
                             </div>
                              ))}
       </div>
