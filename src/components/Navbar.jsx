@@ -35,8 +35,8 @@ function Navbar() {
       <div className={`${isExpertiseClicked ? 'block' : 'hidden'} absolute top-20 h-screen w-full bg-[#ff6c40]`}>
         <WrapperCard className='relative h-screen text-white bg-[#ff6c40]'>
           <div className='flex gap-0'>
-            <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-[#2d3540] right-16 top-16'>X</span>
-            <div className='py-32 md:basis-1/2 lg:basis-1/3 grid items-center '>
+            <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-[#2d3540] right-12 top-24'>X</span>
+            <div className='bg-[#ff6c40] py-32 lg:basis-1/3 z-30 grid items-center '>
               <span className='pl-6 mb-6'>LEARN MORE ABOUT</span>
               {services.map((service, key) => (
                 <div
@@ -48,7 +48,7 @@ function Navbar() {
               ))}
             </div>
 
-            <div className='z-10 md:basis-5/6 lg:basis-2/4 flex-shrink h-screen md:grid items-center text-2xl bg-gray-700 text-white'>
+            <div className={`${ selectedQuestion !== null ? 'lg:basis-1/2' : ''} z-10  flex-shrink h-screen md:grid items-center text-2xl bg-gray-700 text-white`}>
               {selectedQuestion !== null && (
                 <div className='w-full'>
                   <ul className='grid gap-6 '>
@@ -64,7 +64,7 @@ function Navbar() {
               )}
             </div>
 
-            <div className=' absolute -right-[20rem]  bottom-0 h-full'>
+            <div className={`${ selectedQuestion !== null ? 'absolute -right-[20rem]  bottom-0 h-full' : 'hidden'} `}>
                 <img className='h-full ' src={bannerImage} />
             </div>
           </div>
