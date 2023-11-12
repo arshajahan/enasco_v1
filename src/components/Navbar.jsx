@@ -50,7 +50,7 @@ function Navbar() {
 
     return (
         <div className={`sticky top-0 z-50 bg-white shadow-lg`}>
-            <div className={` ${isExpertiseClicked ? 'block' : 'hidden'} absolute top-20 h-screen w-full  bg-[#ff6c40]`}>
+            <div className={` ${isExpertiseClicked ? 'block' : 'hidden'}  absolute top-20 h-screen w-full  bg-[#ff6c40]`}>
                 <WrapperCard className='relative h-screen flex text-white bg-[#ff6c40]'>
                     <div className='flex gap-0'>
                         <span onClick={ () => closeExpertise() }  className=' cursor-pointer text-2xl font-bold absolute text-[#2d3540] right-16 top-16'>X</span>
@@ -62,10 +62,6 @@ function Navbar() {
                                     key={key}
                                     className='mb-4 '
                                     onClick={() => setSelectedQuestion(key)}
-                                    style={{
-                                    backgroundColor: selectedQuestion === key ? '#2d3540' : '#ff6c40',
-                                    color: selectedQuestion === key ? '#ff6c40' : 'white',
-                                    }}
                                 >
                                 <div className={` ${selectedQuestion === key ? ' bg-[#2d3540] text-white ' : 'cursor-pointer' }  flex uppercase font-extrabold h-auto   bg-[#ff6c40] py-3`}>
                                     <span className='md:text-base lg:text-[1.3rem] md:basis-52 lg:basis-56 pl-6 '>{service.question} <span className=' '>&#129170;</span></span>
