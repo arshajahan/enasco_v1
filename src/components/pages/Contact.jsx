@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import contact from '../../assets/images/contact.jpg'
+import contact from '../../assets/images/contact2.jpg'
 import WrapperCard from '../UI/WrapperCard'
 import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from 'react-icons/bs'
 

@@ -6,6 +6,8 @@ import { services } from '../assets/constants';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai';
 
 function Navbar() {
     const [isNavClicked, setNavClicked] = useState(false);
@@ -73,8 +75,8 @@ function Navbar() {
                             className='navlink hover:text-[#ff6c40]'>Contact</Link>
                             <a href='#footer' className='hover:text-[#ff6c40] navlink'><FiSearch size={20} /></a>
                         </ul>
-                        <div className='navlink text-lg text-right lg:hidden' onClick={() => navToggle()}>
-                            NAVIGATION
+                        <div className='navlink lg:hidden w-fit float-right' onClick={() => navToggle()}>
+                            <GiHamburgerMenu size={24} color='#ff6c40'/>
                         </div>
                     </div>
                 </div>
@@ -87,7 +89,9 @@ function Navbar() {
                     <div className=''>
                         <img src={logo} onClick={() => navToggle()} className='navlink w-28' alt="Logo" />
                     </div>
-                    <span className='self-end navlink text-[#2d3540]' onClick={() => navToggle()}>CLOSE</span>
+                    <span className=' navlink text-[#2d3540]' onClick={() => navToggle()}>
+                        <AiOutlineClose size={26} color='#ff6c40'/>
+                    </span>
                 </div>
                 <div className=' mt-7 faqs lg:hidden'>
                     {services.map((item, i) => (

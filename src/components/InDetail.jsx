@@ -34,7 +34,7 @@ function InDetail() {
             
         className=' bg-[#e3e3e3] pb-16'>
         <WrapperCard className=' pt-24'>
-             <div className='flex flex-col-reverse lg:flex-row gap-12 items-center bg-[#e3e3e3]'>
+             <div className='flex justify-between flex-col-reverse lg:flex-row gap-12 items-center bg-[#e3e3e3]'>
                 <div className=' basis-2/6 '>
                     <div className=' '>
                     <h1 className=' text-[#2d3540] text-3xl lg:text-5xl font-extrabold mb-8 lg:w-32'>CONNECT YOUR BUSINESS WORLD.</h1>
@@ -42,7 +42,7 @@ function InDetail() {
                         <br/><br/><br/>At Enasco, our mission is to provide cutting-edge NDT solutions and comprehensive marine services to ensure the safety, reliability, and efficiency of our clients' assets. We are driven by a passion for safeguarding the environment and enabling sustainable, long-term success for businesses in the marine sector.
                     </div>
                 </div>
-                <div className=' basis-4/6 '>
+                <div className=' basis-3/6 self-end '>
                     <img className=' md:h-[27rem] w-auto ' alt="world map" src={map}/>
                 </div>
             </div>

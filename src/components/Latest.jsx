@@ -34,8 +34,8 @@ function Latest() {
             transition = {{ duration: 0.8, delay: 0.3 }}
              
             className='bg-[#e3e3e3]' id='latest'>
-            <WrapperCard className=''>
-                <div className='mt-16 text-gray-700 h-fit'>
+            <WrapperCard className=' mt-16 lg:mt-32'>
+                <div className=' text-gray-700 h-fit'>
                     <h1 className=' text-3xl lg:text-5xl font-extrabold pb-4'>LATEST NEWS</h1>
                     <div className='flex flex-wrap gap-7 2xl:gap'>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow bg-white'>
