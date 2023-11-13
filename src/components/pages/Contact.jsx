@@ -7,7 +7,7 @@ import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from 'react-icons/bs'
 function Contact() {
   return (
     <div className=' pt-8 bg-gray-200'>
-    <WrapperCard className=' justify-between grid gap-8 lg:flex  '>
+    <WrapperCard className=' justify-between grid gap-8 lg:gap-56 lg:flex  '>
         
         <div className='lg:basis-2/4 mx-auto lg:mx-0 text-slate-600 '>
             <Link to='/enasco_v1'>Home<span> &#8594;</span></Link>
@@ -54,7 +54,7 @@ function Contact() {
            
         </div>
 
-        <div section='rightside' className=' mb-4 lg:mb-0 w-full lg:mx-0 mx-auto -mt-10  lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full'>
+        <div section='rightside' className=' mb-4 lg:mb-0 w-full lg:mx-0 mx-auto -mt-10  lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full 2xl:h-screen'>
             <div className=''>
                     <img src={contact} className=' lg:h-[300px] w-full'/>
                     <div className=' bg-red-700 text-white p-10 text-left'>
@@ -80,7 +80,7 @@ function Contact() {
     </WrapperCard>
 
     
-</div>
+    </div>
   )
 }
 

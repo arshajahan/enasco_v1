@@ -5,6 +5,9 @@ import { GiHospitalCross } from 'react-icons/gi';
 import { AiOutlineFileDone } from 'react-icons/ai';
 import { FaMediumM, FaWhatsapp, FaLinkedinIn, FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { MdPhone, MdEmail, MdPhoneCallback} from 'react-icons/md';
+import contact from './images/contact.jpg'
+import contact2 from './images/contact2.jpg'
+import banner from './images/banner.jpg'
 
 export const socialicons = [
     {
@@ -57,6 +60,23 @@ export const services = [
         "Hose Inventory",
         "Tanker Operations ",
       ],
+      image: contact,
+      content: (
+        <>
+        ENASCO provides sustainable towage and related services to the maritime industry across the globe. Our services, spread over the full range of the towage supply chain, help clients improve their operations, optimize their safety, and support sustainable development.
+        <br /><br/>
+        ENASCO has considerable experience operating in challenging environmental conditions. We also charter vessels to clients worldwide on short and long-term contracts, with or without crews.
+        <br /><br/>
+        The services of the ENASCO Towage division include:
+        <br/><br/>
+        Harbour Towage<br/>
+        Offshore & Terminal Towage<br/>
+        Chartering & Salvage <br/>
+        Inland Towage<br/>
+
+
+        </>
+      )
     },
     {
       id: 2,
@@ -66,6 +86,20 @@ export const services = [
         "Data Acquisition",
         "Mooring Integrity & hose analysis"
       ],
+      image: contact2,
+      content: (
+        <>
+            
+                ENASCO provides sustainable towage and related services to the maritime industry across the globe. Our services, spread over the full range of the towage supply chain, help clients improve their operations, optimize their safety, and support sustainable development.
+            <br/><br/>
+            
+                ENASCO has considerable experience operating in challenging environmental conditions. We also charter vessels to clients worldwide on short and long-term contracts, with or without crews.
+            <br/><br/>
+            
+                The services of the ENASCO Towage division include:
+            <br/><br/>
+        </>
+      )
     },
     {
       id: 3,
@@ -76,6 +110,23 @@ export const services = [
         "Risk Management",
         "Vessel Accounting",
       ],
+      image: banner,
+      content: (
+        <>
+            
+                With its pioneering spirit, ENASCO has always been an early adopter of emerging technologies. Today, technologies such as Artificial Intelligence (AI) and Drone Technology are at the center of our ENASCO Intelligence division. With these technologies, we develop applications that optimize the efficiency and sustainability of maritime operations worldwide.
+            <br/><br/>
+            
+                ENASCO OptiPort supports asset optimization over the entire nautical value chain. From tug scheduling to port activity reporting, crew planning, port optimization, and inland towage. Leading to significant cost savings and sustainable operations.
+            <br/><br/>
+            
+                ENASCO Analytics & Reporting gives insights into your fleet's performance, but also into the performance of competing operators to benchmark your fleet.
+            <br/><br/>
+            
+                ENASCO Drone Line Transfer is a patented drone technology for future use in its tug operations.
+            <br/><br/>
+        </>
+      )
     },
     {
       id: 4,
@@ -84,6 +135,20 @@ export const services = [
         "Welding & Fabrication",
         "Pressure Testing",
       ],
+      image: contact, 
+      content: (
+        <>
+            
+                Continuously changing and improving the way you are working to ensure you stay the best in class and stand out from the competition. That is what ENASCO considers to be Maritime Excellence and how we act to exceed our clients’ expectations. Every day we are looking for ways to improve existing operations, making them more efficient and more sustainable.
+            <br/><br/>
+            <h2><b>The services of our Maritime Excellence division include:</b></h2><br/>
+            <ul>
+                <span>Managing (and improving) your entire ship management activities</span><br/>
+                <span>Providing new building support</span><br/>
+                <span>Project management for green field operations</span><br/>
+            </ul>
+        </>
+      )
     },
     {
       id: 5,
@@ -96,6 +161,30 @@ export const services = [
         "Drilling Derrick & Mast",
         "Calibration Services"
       ],
+      image: contact2,
+      content: (
+        <>
+            
+                ENASCO Training & Consultancy provides combined professional tug training, world-leading towage expertise, and process improvement advice to ensure the safety and efficiency of maritime processes. Our focus is on making our industry safer, more reliable, and more profitable for all.
+            <br/><br/>
+            
+                ENASCO has a proven track record of delivering training for leading companies in our industry. Our programs take place in-house, at location, or online.
+            <br/><br/>
+            
+                Our services not only benefit companies that own or operate tugs but also shipping companies, port authorities, marine contractors, terminal operators, insurance companies, and engineering agencies.
+            <br/><br/>
+            <h2>RAISING STANDARDS THROUGH SHARED AWARENESS</h2>
+            
+                We believe that improved safety, efficiency, and profitability are achieved when everybody properly understands the big picture.
+            <br/><br/>
+            
+                When we train tug masters in vessel operations, we leave them with a firm appreciation of how their actions impact others around them. We also use our in-depth knowledge of tug operation to provide clients with the best possible advice on tug design, harbor or jetty layout, and nautical processes. Throughout all we do, we aim to raise standards by educating everybody to work better together.
+            <br/><br/>
+            
+                Whether we are helping to optimize port infrastructure, increasing Tug Masters’ skill levels, or enabling masters of other vessel types to cooperate better with tugs, our all-round vision means everybody performs better.
+            <br/><br/>
+        </>
+      )
     },
   ];
   

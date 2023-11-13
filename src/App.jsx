@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 import News from './components/pages/News'
 import Contact from './components/pages/Contact'
+import Sustainability from './components/pages/Sustainability'
+import SubServices from './components/pages/SubServices'
 
 function App() {
 
@@ -36,8 +38,10 @@ function App() {
                 </>
             } />
             <Route exact path='enasco_v1/about' element={<About/>} />
+            <Route exact path='enasco_v1/sustainability' element={<Sustainability/>} />
             <Route exact path='enasco_v1/news' element={<News/>} />
             <Route exact path='enasco_v1/contact' element={<Contact/>} />
+            <Route exact path='enasco_v1/:id' element={<SubServices/>} />
           </Routes>
           <Footer/>
       </Router>

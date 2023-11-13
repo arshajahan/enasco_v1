@@ -73,12 +73,12 @@ function Banner() {
           onMouseEnter={() => setHoveredQuestion(key)}
           onMouseLeave={() => setHoveredQuestion(null)}
         >
-          <div className='bannerLink px-10 flex capitalize text-white font-extrabold h-20 -mt-20 xl:text-lg bg-[#ff6c40] py-3'
+          <Link to={`/enasco_v1/${service.id-1}`}  className='bannerLink px-10 flex capitalize text-white font-extrabold h-20 -mt-20 xl:text-lg bg-[#ff6c40] py-3'
           style={{
             backgroundColor: hoveredQuestion === key ? '#2d3540' : '#ff6c40'
           }}>
             <span className='lg:basis-10 '>{service.question}</span>
-          </div>
+          </Link>
 
           {hoveredQuestion === key && (
             <motion.div

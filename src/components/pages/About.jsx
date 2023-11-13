@@ -76,7 +76,7 @@ function About() {
 
             </div>
 
-            <div section='rightside' className=' mb-4 lg:mb-0 w-full lg:mx-0 mx-auto -mt-10  lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full'>
+            <div section='rightside' className=' mb-4 lg:mb-0 w-full lg:mx-0 mx-auto -mt-10  lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full 2xl:h-screen'>
                 <div className=''>
                         <img src={boat} className=' lg:h-[300px] w-full'/>
                         <div className=' bg-gray-700 text-white text-5xl lg:text-[60px] leading-none font-bold p-10 text-left'>

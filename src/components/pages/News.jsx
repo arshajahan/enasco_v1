@@ -1,7 +1,6 @@
 import React from 'react'
 import WrapperCard from '../UI/WrapperCard'
 import { Link } from 'react-router-dom'
-import boat from '../../assets/images/sship.png'
 import { useLocation } from 'react-router-dom';
 
 function News() {

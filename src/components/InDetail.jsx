@@ -3,6 +3,7 @@ import map from '../assets/images/me.svg'
 import WrapperCard from './UI/WrapperCard'
 import '../../src/App.css'
 import { motion, useInView, useAnimation } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 
 function InDetail() {
@@ -47,7 +48,7 @@ function InDetail() {
                 </div>
             </div>
             <div className=' mt-20 grid sm:flex lg:grid gap-3 text-white md:font-bold w-fit'>
-                <span className='p-3 self-center navlink w-fit bg-[#ff6c40]'>SUSTAINABILITY</span>
+                <Link to='/enasco_v1/sustainability' className='p-3 self-center navlink w-fit bg-[#ff6c40]'>SUSTAINABILITY</Link>
                 <span className='p-3 self-center navlink w-fit bg-[#2d3540] '>VALUES</span>
                 <span className='p-3 self-center text-center navlink w-fit bg-[#2d3540] '>VISION / MISSION</span>
             </div>

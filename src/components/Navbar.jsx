@@ -35,7 +35,7 @@ function Navbar() {
       <div className={`transition-transform transform duration-500 ${isExpertiseClicked ? 'translate-y-0' : 'translate-y-full'} absolute top-20 h-screen w-full bg-[#ff6c40]`}>
         <WrapperCard className='relative h-screen text-white bg-[#ff6c40]'>
           <div className='flex gap-0'>
-            <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-[#2d3540] right-12 top-24'>X</span>
+            <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-[#ff6c40] right-12 top-24'>X</span>
             <div className='bg-[#ff6c40] py-32 lg:basis-1/3 z-30 grid items-center '>
               <span className='pl-6 mb-6'>LEARN MORE ABOUT</span>
               {services.map((service, key) => (
@@ -59,14 +59,18 @@ function Navbar() {
                         {answer}
                       </li>
                     ))}
+                  <hr/>
+                  <Link to={`/enasco_v1/${selectedQuestion}`} onClick={() => closeExpertise ()} className=' text-left text-sm ml-14'>About {services[selectedQuestion].question}</Link>
                   </ul>
+                 
                 </div>
               )}
             </div>
-
-            <div className={`${selectedQuestion !== null ? 'absolute -right-[20rem]  bottom-0 h-full' : 'hidden'} `}>
-              <img className='h-full ' src={bannerImage} alt="Banner" />
+            {selectedQuestion !== null &&
+            <div className=' absolute -right-[20rem]  bottom-0 h-full'>
+                <img className='h-full ' src={services[selectedQuestion].image} alt="Banner" />
             </div>
+            }
           </div>
         </WrapperCard>
       </div>
@@ -90,9 +94,9 @@ function Navbar() {
           <div className='text-[#2d3540] basis-1/3 my-auto'>
             <ul className='items-center justify-evenly hidden lg:flex'>
               <Link to='/enasco_v1/about' className='navlink hover:text-[#ff6c40]' onClick={() => menuClicked()}>About Us</Link>
-              <li className='hover:text-[#ff6c40] navlink' onClick={() => menuClicked()}>
+              <Link to='/enasco_v1/sustainability' className='hover:text-[#ff6c40] navlink' onClick={() => menuClicked()}>
                 Sustainability
-              </li>
+              </Link>
               <Link to='/enasco_v1/contact' onClick={() => menuClicked()} className='navlink hover:text-[#ff6c40]'>
                 Contact
               </Link>
@@ -142,9 +146,9 @@ function Navbar() {
                 <Link to='/enasco_v1/about' onClick={() => menuClicked()} className='navlink'>
                   About Us
                 </Link>
-                <li className='navlink' onClick={() => menuClicked()}>
+                <Link to='/enasco_v1/sustainability' className='navlink' onClick={() => menuClicked()}>
                   Sustainability
-                </li>
+                </Link>
                 <Link to='/enasco_v1/contact' onClick={() => menuClicked()} className='navlink'>
                   Contact
                 </Link>
