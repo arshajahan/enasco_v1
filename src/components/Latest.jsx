@@ -51,14 +51,14 @@ function Latest() {
                                 to='/enasco_v1/news'
                                 state = {{
                                     image: n2, // Make sure n1 is a defined variable or contains an image object
-                                    title: "E-Pusher 1 nominated for Ship of the year award 2023",
-                                    date: "Oct 21, 2023"
+                                    title: "Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour",
+                                    date: "Nov 14, 2023"
                                     }}
                                 className='navlink text-xl font-bold'>
-                                E-Pusher 1 nominated for Ship of the year award 2023
+                                Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour
                             </Link>
 
-                                <p className='text-sm'>Oct 21, 2023</p>
+                                <p className='text-sm'>Nov 14, 2023</p>
                             </div>
                         </div>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow bg-white'>
@@ -74,13 +74,13 @@ function Latest() {
                                     to='/enasco_v1/news'
                                     state = {{
                                         image: n1, // Make sure n1 is a defined variable or contains an image object
-                                        title: "ENASCO Canada partners with Robert Allan Ltd. and Sanmar to build two powerful, high bollard pull Methanol Fuelled Escort Tugs.",
-                                        date: "Oct 21, 2023"
+                                        title: "Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour.",
+                                        date: "Nov 14, 2023"
                                         }}
                                     className='navlink text-xl font-bold'>
-                                    ENASCO Canada partners with Robert Allan Ltd. and Sanmar to build two powerful, high bollard pull Methanol Fuelled Escort Tugs
+                                    Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour
                                 </Link>
-                                <p className='text-sm'>Oct 21, 2023</p>
+                                <p className='text-sm'>Nov 14, 2023</p>
                             </div>
                         </div>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow bg-white'>
@@ -96,13 +96,13 @@ function Latest() {
                                             to='/enasco_v1/news'
                                             state = {{
                                                 image: n3, // Make sure n1 is a defined variable or contains an image object
-                                                title: "ENASCO Canada Provides First State-of-the-Art Dual Fuel Methanol Escort Tugs for Trans Mountain’s Expanded Operations on Canada’s West Coast.",
-                                                date: "Oct 21, 2023"
+                                                title: "Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour",
+                                                date: "Nov 14, 2023"
                                                 }}
                                             className='navlink text-xl font-bold'>
-                                            ENASCO Canada Provides First State-of-the-Art Dual Fuel Methanol Escort Tugs for Trans Mountain’s Expanded Operations on Canada’s West Coast.
+                                            Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour
                                 </Link>
-                                <p className='text-sm'>Oct 21, 2023</p>
+                                <p className='text-sm'>Nov 14, 2023</p>
                             </div>
                         </div>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow  bg-white'>
@@ -118,13 +118,13 @@ function Latest() {
                                         to='/enasco_v1/news'
                                         state = {{
                                             image: n1, // Make sure n1 is a defined variable or contains an image object
-                                            title: "ENASCO Canada Provides First State-of-the-Art Dual Fuel Methanol Escort Tugs for Trans Mountain’s Expanded Operations on Canada’s West Coast.",
-                                            date: "Oct 21, 2023"
+                                            title: "Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour.",
+                                            date: "Nov 14, 2023"
                                             }}
                                         className='navlink text-xl font-bold'>
-                                        ENASCO Canada Provides First State-of-the-Art Dual Fuel Methanol Escort Tugs for Trans Mountain’s Expanded Operations on Canada’s West Coast
+                                        Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour
                                 </Link>
-                                <p className='text-sm'>Oct 21, 2023</p>
+                                <p className='text-sm'>Nov 14, 2023</p>
                             </div>
                         </div>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow '>

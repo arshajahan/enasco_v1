@@ -8,6 +8,7 @@ import { MdPhone, MdEmail, MdPhoneCallback} from 'react-icons/md';
 import contact from './images/contact.jpg'
 import contact2 from './images/contact2.jpg'
 import banner from './images/banner.jpg'
+import indt from './images/indt.jpg'
 
 export const socialicons = [
     {
@@ -55,10 +56,11 @@ export const services = [
       id: 1,
       question: "Marine Services",
       answer: [
-        "Operations & Maintenance ",
-        "Single Point Mooring ",
-        "Hose Inventory",
-        "Tanker Operations ",
+        "Vessel Handling",
+        "Pilotage & Mooring",
+        "Jetty Service",
+        "Terminal Management",
+        "Vessel Traffic Management"
       ],
       image: contact,
       content: (
@@ -82,9 +84,9 @@ export const services = [
       id: 2,
       question: "Subsea Services",
       answer: [
-        "(Hose) Integrity",
-        "Data Acquisition",
-        "Mooring Integrity & hose analysis"
+        "SPM Operations and Maintenance",
+        "Asset Integrity Management",
+        "Pollution control"        
       ],
       image: contact2,
       content: (
@@ -105,12 +107,13 @@ export const services = [
       id: 3,
       question: "Inspection & NDT",
       answer: [
-        "Operation Management",
-        "Technical Management",
-        "Risk Management",
-        "Vessel Accounting",
+        "OCTG / Tubular Inspection",
+        "Non Distractive Test",
+        "Rig Equipment Inspection",
+        "Lifting and Drop Survey",
+        "Calibration Service"
       ],
-      image: banner,
+      image: indt,
       content: (
         <>
             
@@ -132,8 +135,12 @@ export const services = [
       id: 4,
       question: "Workshop Facility",
       answer: [
-        "Welding & Fabrication",
-        "Pressure Testing",
+        "Welding and Fabrication",
+        "Well Control Testing ",
+        "Down Hole Tools Services",
+        "Hydro Testing",
+        "Post Welding Heat Treatment" 
+
       ],
       image: contact, 
       content: (
@@ -155,11 +162,8 @@ export const services = [
       question: `Training & 
       Consultancy`,
       answer: [
-        "OCTG Inspection",
-        "Non-Destructive Test",
-        "Drops Services",
-        "Drilling Derrick & Mast",
-        "Calibration Services"
+        "Training",
+        "Consultancy",
       ],
       image: contact2,
       content: (
