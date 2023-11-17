@@ -94,7 +94,7 @@ function Banner() {
             >
               <ul className='grid gap-4 py-4 '>
                 {service.answer.map((answer, index) => (
-                  <li className='lg:hover:text-[#ff6c40]' key={index}>{answer}</li>
+                  <Link Link to={`/enasco_v1/${service.id-1+'-'+index}`} className='lg:hover:text-[#ff6c40]' key={index}>{answer}</Link>
                 ))}
               </ul>
             </motion.div>
