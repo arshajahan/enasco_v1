@@ -1,59 +1,13 @@
-
-import { FiSend } from 'react-icons/fi';
-import { BsCardChecklist } from 'react-icons/bs';
-import { GiHospitalCross } from 'react-icons/gi';
-import { AiOutlineFileDone } from 'react-icons/ai';
-import { FaMediumM, FaWhatsapp, FaLinkedinIn, FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
-import { MdPhone, MdEmail, MdPhoneCallback} from 'react-icons/md';
 import contact from './images/contact.jpg'
 import contact2 from './images/contact2.jpg'
-import banner from './images/banner.jpg'
 import indt from './images/indt.jpg'
 
-export const socialicons = [
-    {
-        'icon': FaTwitter,
-        'link': 'https://twitter.com/treat_at',
-        'color': 'text-blue-500',
-        'label': 'twitter'
-    },
-    {
-        'icon': FaFacebookF,
-        'link': 'https://www.facebook.com/TeamTreatAt',
-        'color': 'text-blue-900',
-        'label': 'facebook'
-    },
-    {
-        'icon': FaInstagram,
-        'link': 'https://www.instagram.com/treatatindia/',
-        'color': 'text-yellow-900',
-        'label': 'instagram'
-    },
-    {
-        'icon': FaLinkedinIn,
-        'link': 'https://www.linkedin.com/company/treatat',
-        'color': 'text-blue-700',
-        'label': 'linkedin'
-    },
-    {
-        'icon': FaWhatsapp,
-        'link': 'https://api.whatsapp.com/send?phone=+916238880208&text=Hello%20TreatAt',
-        'color': 'text-green-600',
-        'label': 'whatsapp'
-    },
-    {
-        'icon': FaMediumM,
-        'link': 'https://medium.com/@treatat',
-        'color': 'text-black',
-        'label': 'medium'
-    }
-    
-]
+
 
 
 export const services = [
     {
-      id: 1,
+      id: 0,
       question: "Marine Services",
       answer: [
         "Vessel Handling",
@@ -62,6 +16,7 @@ export const services = [
         "Terminal Management",
         "Vessel Traffic Management"
       ],
+      path:'marine',
       image: contact,
       content: (
         <>
@@ -94,33 +49,57 @@ export const services = [
         Entrusting us with their business, our clients demonstrate confidence in ENASCO's integrity and expertise, allowing us to autonomously run operations. Terminal management, for us, goes beyond being just another assignment; it serves as a token of appreciation and a testament to a robust partnership.<br/><br/>
         </>,
         
-            <>
-            <h2><b><strong>Traffic Surveillance</strong></b></h2>
-            <br/><br/>
-            Effective traffic monitoring is crucial for ensuring the safety of vessels and installations. In today's modern and high-volume ports, vessel traffic management systems are employed to map and process vessel calls and movements within their waters. <br/><br/>
-            ENASCO offers a comprehensive solution by providing both the system and skilled specialists to operate it as an integrated service for our clients. Alternatively, we can integrate with pre-installed, client-owned vessel traffic systems for seamless port management.<br/><br/>
-            Our tug schedulers are highly trained specialists   equipped with extensive local port knowledge and a profound understanding of shipping operations. Each has successfully completed a 6–8-week theoretical course on vessel traffic management complexities and tug scheduling, complemented by hands-on training.<br/><br/>
-            One notable example of our vessel management expertise is evident in the ports of Gladstone and Brisbane, where we oversee the SLTA scheduling department. With a dedicated team working 24/7 in two 12-hour shifts, we monitor and control all marine traffic in and around the port from our Tug Management Control Centre. Using shore-based systems, we:<br/><br/>
-            <ul>
-            <li>Maintain communication with tugs maneuvering ships through the port</li><br/>
-            <li>Sustain 24/7 VHF radio contact</li><br/>
-            <li>Manage a 24/7 crewed emergency standby tug for three LNG plants</li><br/>
-            <li>Preserve the integrity of shipping schedules</li><br/>
-            <li>Strategically plan tug movements</li><br/>
-            <li>Utilize an effective tug scheduling tool tailored to local conditions</li><br/>
-            <li>Ensure compliance with relevant statutory requirements (Marine Radio)</li><br/>
-            <li>Enhance navigational safety through information exchange with tug crews</li><br/>
-            <li>Maximize customer satisfaction with the provided services</li><br/>
-            </ul>
-            <br/><br/>
-            In terms of communication tools, our scheduling department employs various channels such as VHF, mobile phones/SMS, internal domestic radio, email (including non-scheduling purposes), AIS, and privately developed scheduling tools to liaise with individual tugs, provide information, issue weather and safety warnings, and detail the position of other vessels.<br/><br/>
-            </>,
+        <>
+        <h2><b><strong>Traffic Surveillance</strong></b></h2>
+        <br/><br/>
+        Effective traffic monitoring is crucial for ensuring the safety of vessels and installations. In today's modern and high-volume ports, vessel traffic management systems are employed to map and process vessel calls and movements within their waters. <br/><br/>
+        ENASCO offers a comprehensive solution by providing both the system and skilled specialists to operate it as an integrated service for our clients. Alternatively, we can integrate with pre-installed, client-owned vessel traffic systems for seamless port management.<br/><br/>
+        Our tug schedulers are highly trained specialists   equipped with extensive local port knowledge and a profound understanding of shipping operations. Each has successfully completed a 6–8-week theoretical course on vessel traffic management complexities and tug scheduling, complemented by hands-on training.<br/><br/>
+        One notable example of our vessel management expertise is evident in the ports of Gladstone and Brisbane, where we oversee the SLTA scheduling department. With a dedicated team working 24/7 in two 12-hour shifts, we monitor and control all marine traffic in and around the port from our Tug Management Control Centre. Using shore-based systems, we:<br/><br/>
+        <ul>
+        <li>Maintain communication with tugs maneuvering ships through the port</li><br/>
+        <li>Sustain 24/7 VHF radio contact</li><br/>
+        <li>Manage a 24/7 crewed emergency standby tug for three LNG plants</li><br/>
+        <li>Preserve the integrity of shipping schedules</li><br/>
+        <li>Strategically plan tug movements</li><br/>
+        <li>Utilize an effective tug scheduling tool tailored to local conditions</li><br/>
+        <li>Ensure compliance with relevant statutory requirements (Marine Radio)</li><br/>
+        <li>Enhance navigational safety through information exchange with tug crews</li><br/>
+        <li>Maximize customer satisfaction with the provided services</li><br/>
+        </ul>
+        <br/><br/>
+        In terms of communication tools, our scheduling department employs various channels such as VHF, mobile phones/SMS, internal domestic radio, email (including non-scheduling purposes), AIS, and privately developed scheduling tools to liaise with individual tugs, provide information, issue weather and safety warnings, and detail the position of other vessels.<br/><br/>
+        </>,
+
+        <div>
+        <h2><b>Traffic Surveillance</b></h2><br/>
+        <p>
+        Effective traffic monitoring is crucial for ensuring the safety of vessels and installations. In today's modern and high-volume ports, vessel traffic management systems are employed to map and process vessel calls and movements within their waters. </p><br/>
+        <p>ENASCO offers a comprehensive solution by providing both the system and skilled specialists to operate it as an integrated service for our clients. Alternatively, we can integrate with pre-installed, client-owned vessel traffic systems for seamless port management.</p><br/>
+        <p>Our tug schedulers are highly trained specialists equipped with extensive local port knowledge and a profound understanding of shipping operations. Each has successfully completed a 6–8-week theoretical course on vessel traffic management complexities and tug scheduling, complemented by hands-on training.</p><br/>
+        <p>One notable example of our vessel management expertise is evident in the ports of Gladstone and Brisbane, where we oversee the SLTA scheduling department. With a dedicated team working 24/7 in two 12-hour shifts, we monitor and control all marine traffic in and around the port from our Tug Management Control Centre. Using shore-based systems, we:</p><br/>
+        <ul>
+        <li>Maintain communication with tugs maneuvering ships through the port</li>
+        <li>Sustain 24/7 VHF radio contact</li>
+        <li>Manage a 24/7 crewed emergency standby tug for three LNG plants</li>
+        <li>Preserve the integrity of shipping schedules</li>
+        <li>Strategically plan tug movements</li>
+        <li>Utilize an effective tug scheduling tool tailored to local conditions</li>
+        <li>Ensure compliance with relevant statutory requirements (Marine Radio)</li>
+        <li>Enhance navigational safety through information exchange with tug crews</li>
+        <li>Maximize customer satisfaction with the provided services</li>
+        </ul><br/>
+        <p>In terms of communication tools, our scheduling department employs various channels such as VHF, mobile phones/SMS, internal domestic radio, email (including non-scheduling purposes), AIS, and privately developed scheduling tools to liaise with individual tugs, provide information, issue weather and safety warnings, and detail the position of other vessels.</p>
+        <br/><br/>
+        </div>
+
       ]
 
     },
     {
-      id: 2,
+      id: 1,
       question: "Subsea Services",
+      path:'subsea',
       answer: [
         "SPM Operations and Maintenance",
         "Asset Integrity Management",
@@ -142,79 +121,80 @@ export const services = [
       ),
       subcontents: [
         <div className='grid gap-4'>
-        <h1>ENASCO's Management Inspection Repair Maintenance & Operation (MIRMO) Service Program</h1>
-        <p>ENASCO's MIRMO Service Program stands as the exclusive answer for ensuring the complete integrity, reliability, and availability of an offshore buoy terminal for our clients.</p>
-        
-        <h2><b>Our SPM O&M Services</b></h2>
-        <ul>
-            <li>Operations & Maintenance (O&M)</li><br/>
-            <li>Single Point Mooring Services</li><br/>
-            <li>Hose Inventory Management</li><br/>
-            <li>Hose Changeout</li><br/>
-            <li>Emergency Pipeline Repair Services</li><br/>
-            <li>Pipeline Solutions</li><br/>
-            <li>Interface Management</li><br/>
-            <li>Tanker Operations</li><br/>
-        </ul>
-        
-        <h2><b>Operations & Maintenance (O&M)</b></h2>
-        <p>Our tailored service offering comprises long-term Operation and Maintenance contracts that encompass, but are not limited to, the provision of the following components:</p>
-        <ul>
-            <li>Diving teams</li><br/>
-            <li>Vessels</li><br/>
-            <li>Operational crew</li><br/>
-        </ul>
-        
-        <h2><b>Single Point Mooring Services</b></h2>
-        <p>Our primary emphasis is on conducting inspection, repair, and maintenance (IRM) services for Single Point Mooring (SPM) systems, encompassing both their topside and subsea components. The goal is to sustain the facility's reliability and availability at the requisite levels and ensure the retention of Class certification. This service also encompasses the pre- and post-berth inspections of the SPM. Additionally, our service extends to the proactive maintenance of newly installed facilities, starting from the buoy's installation and continuing until its handover to the ultimate user or client.</p>
-        
-        <h2><b>Hose Inventory Management</b></h2>
-        <p>The ENASCO Hose Inventory Management Solution offers a holistic Life Cycle Management service for Submarine and Floating Marine Hoses utilized in offshore Oil and Gas Terminal Loading and Unloading Facilities. This solution adheres to OCIMF guidelines and is tailored by ENASCO to align with the specific needs and operational conditions of the client's site. It is also backed by our marine hose manufacturing Alliance Partners.</p>
-        
-        <h2><b>Hose Changeout</b></h2>
-        <p>Hose replacement is necessary in accordance with OCIMF guidelines and also when hoses are damaged, outdated, or subjected to extreme events. This service encompasses:</p>
-        <ul>
-            <li>Installation</li><br/>
-            <li>Disassembly or assembly of hose strings</li><br/>
-            <li>Flushing</li><br/>
-            <li>Removal</li><br/>
-            <li>Launch or recovery</li><br/>
-            <li>Towing</li><br/>
-            <li>In situ testing</li><br/>
-        </ul>
-        
-        <h2><b>Emergency Pipeline Repair Services</b></h2>
-        <p>We specialize in delivering emergency response services for the repair of pipelines within the expansive intertidal zone, where traditional open-water and land-based emergency response machinery may struggle to reach or operate effectively. Our primary aim is to reduce the environmental impact and production losses resulting from unforeseen events related to pipeline integrity failures or accidental damages. This is achieved through the use of appropriate machinery and established repair techniques to identify, isolate, contain, expose, repair/replace, restore, and rehabilitate the affected site.</p>
-        <p>Our ERS services are organized into the following key categories:</p>
-        <ul>
-            <li>Intertidal Zone</li><br/>
-            <li>Deep Water</li><br/>
-            <li>Oil Spill Response (OSR)</li><br/>
-            <li>Firefighting</li><br/>
-            <li>Emergency Towing</li><br/>
-        </ul>
-        
-        <h2><b>Pipeline Solutions</b></h2>
-        <p>Our core focus lies in offering a range of pipeline services, including cleaning, dewatering, de-oiling, flushing, and fluid separation, with a particular emphasis on undiggable pipelines and those with sensitive linings. We achieve this using elastic products that are not only environmentally friendly but also easily degradable, breaking down into non-harmful components.</p>
-        <p>We are dedicated to ensuring the correct filling of pipelines with preservation fluid and maintaining regular monitoring to safeguard the pipeline during the preservation period. The utilization of elastic pipeline products facilitates the proper filling of the pipeline with initial oil, minimizing the mixing of preservation fluid and initial oil. Additionally, it effectively cleans the pipeline before its first use.</p>
-        <p>Our comprehensive pipeline solution services encompass the following key components:</p>
-        <ul>
-            <li>PLEM Integrity Management</li><br/>
-            <li>Pipeline Preservation & First Oil</li><br/>
-            <li>Cathodic Protection</li><br/>
-            <li>Free Span Correction</li><br/>
-            <li>Scouring</li><br/>
-        </ul>
-        
-        <h2><b>Interface Management</b></h2>
-        <p>In the realm of intricate EPCI (Engineering, Procurement, Construction, and Installation) projects, which involve multiple subcontractors, consultants, and stakeholders, our role is to act as the crucial bridge connecting all parties. This connection ensures the successful culmination of projects, particularly during the commissioning phase, by prioritizing the overall project objective rather than just the individual components. This approach fosters efficiency and effectiveness in project completion, ensuring a smooth transition into the operational phase.</p>
-        
-        <h2><b>Tanker Operations</b></h2>
-        <p>ENASCO offers a comprehensive range of marine vessels and resources dedicated to guaranteeing the safe and efficient mooring and unmooring of tankers at Single Point Mooring (SPM) locations. Our services encompass hose connection and disconnection, product transfer services, and essential tier 1 oil spill response services needed at SPMs.</p>
-        <h2><b>Vessel & Crew</b></h2>
-        <p>This subset of tanker operations and Single Point Mooring (SPM) Inspection, Repair, and Maintenance (IRM) relies on marine vessels. We supply specialized personnel for maintenance and supervisory positions, such as Buoy Maintenance Supervisor, Mooring Master, and Dive Supervisor, on short and medium-term assignments.</p>
-        <br/><br/>
+            <h1>ENASCO's Management Inspection Repair Maintenance & Operation (MIRMO) Service Program</h1>
+            <p>ENASCO's MIRMO Service Program stands as the exclusive answer for ensuring the complete integrity, reliability, and availability of an offshore buoy terminal for our clients.</p>
+
+            <h2><b>Our SPM O&M Services</b></h2>
+            <ul>
+                <li><a href="#operations">Operations & Maintenance (O&M)</a></li>
+                <li><a href="#single-point">Single Point Mooring Services</a></li>
+                <li><a href="#hose-inventory">Hose Inventory Management</a></li>
+                <li><a href="#hose-changeout">Hose Changeout</a></li>
+                <li><a href="#emergency-pipeline">Emergency Pipeline Repair Services</a></li>
+                <li><a href="#pipeline-solutions">Pipeline Solutions</a></li>
+                <li><a href="#interface-management">Interface Management</a></li>
+                <li><a href="#tanker-operations">Tanker Operations</a></li>
+            </ul>
+
+            <h2 id="operations"><b>Operations & Maintenance (O&M)</b></h2>
+            <p>Our tailored service offering comprises long-term Operation and Maintenance contracts that encompass, but are not limited to, the provision of the following components:</p>
+            <ul>
+                <li>Diving teams</li>
+                <li>Vessels</li>
+                <li>Operational crew</li>
+            </ul>
+
+            <h2 id="single-point"><b>Single Point Mooring Services</b></h2>
+            <p>Our primary emphasis is on conducting inspection, repair, and maintenance (IRM) services for Single Point Mooring (SPM) systems, encompassing both their topside and subsea components. The goal is to sustain the facility's reliability and availability at the requisite levels and ensure the retention of Class certification. This service also encompasses the pre- and post-berth inspections of the SPM. Additionally, our service extends to the proactive maintenance of newly installed facilities, starting from the buoy's installation and continuing until its handover to the ultimate user or client.</p>
+
+            <h2 id="hose-inventory"><b>Hose Inventory Management</b></h2>
+            <p>The ENASCO Hose Inventory Management Solution offers a holistic Life Cycle Management service for Submarine and Floating Marine Hoses utilized in offshore Oil and Gas Terminal Loading and Unloading Facilities. This solution adheres to OCIMF guidelines and is tailored by ENASCO to align with the specific needs and operational conditions of the client's site. It is also backed by our marine hose manufacturing Alliance Partners.</p>
+
+            <h2 id="hose-changeout"><b>Hose Changeout</b></h2>
+            <p>Hose replacement is necessary in accordance with OCIMF guidelines and also when hoses are damaged, outdated, or subjected to extreme events. This service encompasses:</p>
+            <ul>
+                <li>Installation</li>
+                <li>Disassembly or assembly of hose strings</li>
+                <li>Flushing</li>
+                <li>Removal</li>
+                <li>Launch or recovery</li>
+                <li>Towing</li>
+                <li>In situ testing</li>
+            </ul>
+
+            <h2 id="emergency-pipeline"><b>Emergency Pipeline Repair Services</b></h2>
+            <p>We specialize in delivering emergency response services for the repair of pipelines within the expansive intertidal zone, where traditional open-water and land-based emergency response machinery may struggle to reach or operate effectively. Our primary aim is to reduce the environmental impact and production losses resulting from unforeseen events related to pipeline integrity failures or accidental damages. This is achieved through the use of appropriate machinery and established repair techniques to identify, isolate, contain, expose, repair/replace, restore, and rehabilitate the affected site.</p>
+            <p>Our ERS services are organized into the following key categories:</p>
+            <ul>
+                <li>Intertidal Zone</li>
+                <li>Deep Water</li>
+                <li>Oil Spill Response (OSR)</li>
+                <li>Firefighting</li>
+                <li>Emergency Towing</li>
+            </ul>
+
+            <h2 id="pipeline-solutions"><b>Pipeline Solutions</b></h2>
+            <p>Our core focus lies in offering a range of pipeline services, including cleaning, dewatering, de-oiling, flushing, and fluid separation, with a particular emphasis on undiggable pipelines and those with sensitive linings. We achieve this using elastic products that are not only environmentally friendly but also easily degradable, breaking down into non-harmful components.</p>
+            <p>We are dedicated to ensuring the correct filling of pipelines with preservation fluid and maintaining regular monitoring to safeguard the pipeline during the preservation period. The utilization of elastic pipeline products facilitates the proper filling of the pipeline with initial oil, minimizing the mixing of preservation fluid and initial oil. Additionally, it effectively cleans the pipeline before its first use.</p>
+            <p>Our comprehensive pipeline solution services encompass the following key components:</p>
+            <ul>
+                <li>PLEM Integrity Management</li>
+                <li>Pipeline Preservation & First Oil</li>
+                <li>Cathodic Protection</li>
+                <li>Free Span Correction</li>
+                <li>Scouring</li>
+            </ul>
+
+            <h2 id="interface-management"><b>Interface Management</b></h2>
+            <p>In the realm of intricate EPCI (Engineering, Procurement, Construction, and Installation) projects, which involve multiple subcontractors, consultants, and stakeholders, our role is to act as the crucial bridge connecting all parties. This connection ensures the successful culmination of projects, particularly during the commissioning phase, by prioritizing the overall project objective rather than just the individual components. This approach fosters efficiency and effectiveness in project completion, ensuring a smooth transition into the operational phase.</p>
+
+            <h2 id="tanker-operations"><b>Tanker Operations</b></h2>
+            <p>ENASCO offers a comprehensive range of marine vessels and resources dedicated to guaranteeing the safe and efficient mooring and unmooring of tankers at Single Point Mooring (SPM) locations. Our services encompass hose connection and disconnection, product transfer services, and essential tier 1 oil spill response services needed at SPMs.</p>
+            <h2><b>Vessel & Crew</b></h2>
+            <p>This subset of tanker operations and Single Point Mooring (SPM) Inspection, Repair, and Maintenance (IRM) relies on marine vessels. We supply specialized personnel for maintenance and supervisory positions, such as Buoy Maintenance Supervisor, Mooring Master, and Dive Supervisor, on short and medium-term assignments.</p>
+            <br/><br/>
         </div>,
+
 
         <div>
         <h1><b>Asset Integrity Management (AIM)</b></h1><br/>
@@ -251,8 +231,9 @@ export const services = [
       
     },
     {
-      id: 3,
+      id: 2,
       question: "Inspection & NDT",
+      path:'inspection',
       answer: [
         "OCTG / Tubular Inspection",
         "Non Distractive Test",
@@ -329,8 +310,9 @@ export const services = [
       ]
     },
     {
-      id: 4,
+      id: 3,
       question: "Workshop Facility",
+      path:'workshop',
       answer: [
         "Welding and Fabrication",
         "Well Control Testing ",
@@ -379,10 +361,10 @@ export const services = [
         <div>
         <p>We provide a comprehensive range of equipment and services, including:</p><br/>
         <ul>
-        <li>Reamers and stabilizers available in various sizes, crafted from chromium molybdenum solid alloy steel and meeting the specifications of AISI 4145H modified.</li>
-        <li>Double action drilling jars sourced from leading global suppliers, accompanied by complete maintenance, overhaul, and testing support.</li>
-        <li>Shock tools, available in both standard and non-standard configurations, sourced from top suppliers and designed to meet the demands of challenging tasks and environments.</li>
-        <li>Fishing tools encompassing a wide range of high-quality standard tools, with the capability to manufacture customized tools for unique and challenging conditions.</li>
+        <li>Reamers and stabilizers available in various sizes, crafted from chromium molybdenum solid alloy steel and meeting the specifications of AISI 4145H modified.</li><br/>
+        <li>Double action drilling jars sourced from leading global suppliers, accompanied by complete maintenance, overhaul, and testing support.</li><br/>
+        <li>Shock tools, available in both standard and non-standard configurations, sourced from top suppliers and designed to meet the demands of challenging tasks and environments.</li><br/>
+        <li>Fishing tools encompassing a wide range of high-quality standard tools, with the capability to manufacture customized tools for unique and challenging conditions.</li><br/>
         </ul><br/>
         </div>,
 
@@ -420,9 +402,10 @@ export const services = [
       ]
     },
     {
-      id: 5,
+      id: 4,
       question: `Training & 
       Consultancy`,
+      path:'training',
       answer: [
         "Training",
         "Consultancy",
@@ -555,275 +538,7 @@ export const services = [
 
 
 
-export const hows = [
-    {
-        'step': '1. Submit your request',
-        'icon': FiSend,
-        'detail': 'Let us know what treatment you require and upload the relevant reports for us to assist you better.'
-         
-    },
-    {
-        'step': '2. Get Medical Guidance',
-        'icon': BsCardChecklist,
-        'detail': 'Ask for guidance from our team of specialist doctors in choosing your treatment and hospital'
-
-    },
-    {
-        'step': '3. Choose Hospital',
-        'icon': GiHospitalCross,
-        'detail': 'Choose a hospital that suits your needs the best. Get your treatment plan and cost estimate from them.'
-
-    },
-    {
-        'step': '4. Make Reservations',
-        'icon': AiOutlineFileDone,
-        'detail': 'Confirm your treatment plan and make all the necessary bookings before going to the hospital.'
-
-    }
-]
-
-export const whys = [
-    {
-        'main': 'Accredited Hospitals Only',
-        'sub': 'JCI, NABL, NABH'
-    },
-    {
-        'main': 'Guaranteed Response',
-        'sub': 'Typically Responds In 4Hrs'
-    },
-    {
-        'main': 'Faster Process',
-        'sub': 'For TreatAt Patients'
-    },
-    {
-        'main': 'Dedicated Patient Manager',
-        'sub': 'End to End support'
-    },
-    {
-        'main': '20% Cost Savings',
-        'sub': 'Highest quality care and results'
-    }
-]
-
-export const reviews = [
-    {
-        'name': 'Rajib Baidya',
-        'rating': '★★★★★',
-        'from': 'from India',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FRajib%20baidya.png?alt=media&token=7da5b90b-d897-482a-b7b6-3fb011562e82',
-        'content': 'The Team TreatAt is very friendly to all my queries and their reply according to all my question are very frequent that I get very pleased. Thanks everybody and I wish all the best to Team TreatAt.'
-    },
-    {
-        'name': 'Tanver Hossain',
-        'rating': '★★★★★',
-        'from': 'from Bangladesh',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FTanvir%20Hossain.png?alt=media&token=230a2203-7527-4b7c-bf7f-1afdb657f53b',
-        'content': `Best service provided by them specially Mrs. Moushumi Mahesh. She did excellent job. I wish great success of her as well as the TreatAt.`
-    },
-    {
-        'name': 'Nil Sarkar',
-        'rating': '★★★★★',
-        'from': 'from Bangladesh',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FNil%20Sarkar.png?alt=media&token=35f39abd-d1fa-4065-a179-a8a067aaf4c0',
-        'content': `(Translated by Google) Very good service. I am fully satisfied with your service. Thank you so much seasonally for providing such wonderful service.
-                    (Original)
-                    খুব ভালো পরিষেবা। আমি পুরোপুরি সন্তুষ্ট আপানাদের পরিষেবায়। মৌসুমি আপনাকে অনেক অনেক ধন্যবাদ এত সুন্দর পরিষেবা দেয়ার জন্য।`
-    },
-    {
-        'name': 'Ts t',
-        'rating': '★★★★★',
-        'from' : 'from India',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FTs%20t.png?alt=media&token=b887251d-6af5-4859-8d65-8c6519771444',
-        'content': 'TreatAt service is very quick.They are understand patient needs and they are very helpful. Specially Moushumi she was guide us right path.'
-    },
-    {
-        'name': 'Mita begum',
-        'rating': '★★★★★',
-        'from': 'from Bangladesh',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FMita%20Begum.png?alt=media&token=cefaaf05-d8b9-486e-b0d5-d4cb364e5bb6',
-        'content': `(Translated by Google) Thank you very much for the seasonal Apu I love your processing and usage
-                    (Original)
-                    আপনাদে প্রসেসিং ও ব্যাবহার আমার কাছে অনেক ভাল লেগেছে  মৌসুমি আপুকে অনেক ধন্যবাদ`
-    },
-    {
-        'name': 'Rina Nasrin',
-        'rating': '★★★★★',
-        'from': 'from India',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FRina%20nasrin.png?alt=media&token=a0d9b259-762b-4593-8835-e2f31bdc60eb',
-        'content': 'Quick and friendly service provider.'
-    },
-    {
-        'name': 'Juher Choudhury',
-        'rating': '★★★★★',
-        'from': 'from Bangladesh',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FJuher%20Chaudri.png?alt=media&token=af8328cb-1382-4f0b-a2bb-aaec74bcfa3c',
-        'content': 'Thank you TreatAt Team I get doctors Appointment easily by TreatAt # Good service. # Good Commitment Helpfully Team'
-    },
-    {
-        'name': 'Mariyamath Ramseena',
-        'rating': '★★★★★',
-        'from': 'from India',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FMaryamath%20Ramseena.png?alt=media&token=8667b180-8293-4207-a4ec-8ddf26787e68',
-        'content': 'Thanks a lot for your assistance - I was very impressed with your site and shall recommend it to others........'
-    },
-    {
-        'name': 'Golam Moula',
-        'rating': '★★★★★',
-        'from': 'from Bangladesh',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FGulam%20moula.png?alt=media&token=ec3eb3c9-3c58-48eb-8b83-9f9449408b31',
-        'content': 'Your Service is excellent. Carry on Pl.'
-    },
-    {
-        'name': 'Misbah Uddin',
-        'rating': '★★★★★',
-        'from': 'from India',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FMisbah%20Uddin.png?alt=media&token=be481867-37c1-4fc0-a0bc-2d72f84b9b70',
-        'content': 'Excellent Service provider. Trustable services.'
-    },
-    
-    {
-        'name': 'Priyo Mon',
-        'rating': '★★★★★',
-        'from': 'from India',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FPriyo%20mon.png?alt=media&token=87d5af27-f84e-404f-8372-be1c31043343',
-        'content': 'I got excellent service from Mousumi. She is very punctual and helpful.'
-    },
-    {
-        'name': 'MESBAH UDDIN FOYSAL',
-        'rating': '★★★★★',
-        'from': 'from India',
-        'img': 'https://firebasestorage.googleapis.com/v0/b/treatat-project-1721e.appspot.com/o/reviews%2FMisbah%20Uddin%20Foysal.png?alt=media&token=72b87869-3378-49cc-a1de-15cb1b236d70',
-        'content': `Great and Quick service.`
-    },
-
-]
-
-export const says = [
-    {
-        'name': 'Abdullah Saleh Nasser Al Thahri',
-        'visit': 'Visited in January, 2018',
-        'from': 'From Saudi Arabia',
-        'say': `I found out about TreatAt online as I was looking for management of my post stroke conditions. 
-                I needed advice on my future lifestyle choices and medical management. TreatAt helped me get connected to one 
-                of the best doctor for my treatment. Their medical team was pleasant and supportive. Really happy with the services`
-    },
-    {
-        'name': 'Kalumba John',
-        'visit': 'Visited in January, 2018',
-        'from': 'Uganda',
-        'say': `Truly reliable medical support from TreatAt. They have all the things you need for treatment.`
-    },
-    {
-        'name': 'Mohammed Iqbal Hossain',
-        'visit': 'Visited in Feb, 2018',
-        'from': 'From Bangladesh',
-        'say': `looking for management of my post stroke conditions. 
-                I needed advice on my future lifestyle choices and medical management. TreatAt helped me get connected to one 
-                of the best doctor for my treatment. Their medical team was pleasant and supportive. Really happy with the services`
-    },
-    {
-        'name': 'Ben Twine',
-        'visit': 'Visited in April, 2018',
-        'from': 'From Uganda',
-        'say': `I found out about TreatAt online as I was looking for management of my post stroke conditions. 
-                I lifestyle choices and medical management. TreatAt helped me get connected to one 
-                of the best doctor for my treatment. Their medical team was pleasant and supportive. Really happy with the services`
-    },
-    {
-        'name': 'Gerald Adinde',
-        'visit': 'Visited in March, 2018',
-        'from': 'From Nigeria',
-        'say': `I found out about s I was looking for management of my post stroke conditions. 
-                I lifestyle choices and medical management. TreatAt helped me get connected to one 
-                of the best doctor for my treatment. Their medical team was pleasant and supportive. Really happy with the services`
-    },
-    {
-        'name': 'Shameem',
-        'visit': 'Visited in jan, 2017',
-        'from': 'From Bangladesh',
-        'say': `g for management of my post stroke conditions. 
-                I lifestyle choices and medical management. TreatAt helped me get connected to one 
-                of the best doctor for my treatment. Their medical team was pleasant and supportive. Really happy with the services`
-    }
-
-]
 
 
-export const footers = [
-    {
-        'contact': [
-            {
-                'type': 'Phone:',
-                'data': '(+91) 623 886 1334',
-                'link': 'tel:+91 623 886 1334',
-                'icon': MdPhone
-            },
-            {
-                'type': 'Email:',
-                'data': ' care@treatat.com',
-                'link': 'mailto:care@treatat.com',
-                'icon': MdEmail
-            },
-            {
-                'type': 'Chat:',
-                'data': '(+91) 623 888 0208',
-                'link': 'https://api.whatsapp.com/send?phone=+916238880208&text=Hello%20TreatAt',
-                'icon': FaWhatsapp
-            },
-            {
-                'type': 'Get a call back',
-                'data': '',
-                'link': 'https://treatat.com/contact',
-                'icon': MdPhoneCallback
-            }
-            
-        ],
 
-        'more': [
-            {
-                'to' : 'About',
-                'link': '/about'
-            },
-            {
-                'to' : 'Contact',
-                'link': '/contact'
-            },
-            {
-                'to' : 'Disclaimer',
-                'link': '/disclaimer'
-            },
-            {
-                'to' : 'Terms & Conditions',
-                'link': '/tc'
-            },
-            {
-                'to' : 'Privacy & Statement',
-                'link': '/privacy-policy'
-            }
-        ],
 
-        'forpatients': [
-            {
-                'to' : 'TreatAt Assist',
-                'link': '/help'
-            },
-            {
-                'to' : 'Steps For Medical Treatment in India',
-                'link': '/steps-for-medical-treatment-in-india'
-            },
-            {
-                'to' : 'Medical Visa',
-                'link': '/visa-process'
-            },
-            {
-                'to' : 'FAQs',
-                'link': '/faqs'
-            },
-            {
-                'to' : 'Refund policy',
-                'link': '/refund'
-            }
-        ]
-
-    }
-]

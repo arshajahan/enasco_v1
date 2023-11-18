@@ -10,12 +10,12 @@ const passedData = location.state;
 
 
   return (
-   <div className='bg-[#e3e3e3]'>
-        <WrapperCard className=' py-8'>
+   <div className='bg-[#e3e3e3] lg:mx-36'>
+        <WrapperCard className=' py-8 '>
         <Link to='/enasco_v1' className='navlink'>Home<span> &#8594;</span></Link>
         <div className='relative mt-12 bg-slate-100'>
             <Link to='/enasco_v1' className='navlink py-2 px-4 text-white font-bold bg-[#2d3540] absolute left-0 top-0'>Back</Link>
-            <img src={passedData.image} className=' w-full h-auto mx-auto'/>
+            <img src={passedData.image} className=' w-full h-full mx-auto'/>
         </div>
         <div className=' bg-white text-[#2d3540]  p-6 md:p-12 grid gap-6'>
             <h2 className=' text-xl md:text-3xl font-bold'>

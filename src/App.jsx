@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
@@ -7,7 +6,7 @@ import InDetail from './components/InDetail'
 import Footer from './components/Footer'
 import About from './components/pages/About'
 import {
-  BrowserRouter as Router, Routes, Route
+  BrowserRouter as Router, Routes, Route, Navigate
 } from "react-router-dom";
 import News from './components/pages/News'
 import Contact from './components/pages/Contact'
@@ -21,7 +20,7 @@ function App() {
       <Router>
         <Navbar/>
           <Routes>
-            <Route exact path='/enasco_v1' 
+            <Route exact path='/enasco_v1/' 
               element={
                 <>
                   <Banner/>
@@ -41,7 +40,9 @@ function App() {
             <Route exact path='enasco_v1/sustainability' element={<Sustainability/>} />
             <Route exact path='enasco_v1/news' element={<News/>} />
             <Route exact path='enasco_v1/contact' element={<Contact/>} />
-            <Route exact path='enasco_v1/:id' element={<SubServices/>} />
+            <Route exact path='enasco_v1/service/:id' element={<SubServices/>} />
+
+            <Route path='enasco_v1/*' element={<Navigate to='/enasco_v1/' />} />
           </Routes>
           <Footer/>
       </Router>

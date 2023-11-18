@@ -11,14 +11,18 @@ function SubServices() {
     // const location = useLocation();
     let x, xx, subid;
 
-    if (id.includes('-')) {
-      const splitIds = id.split('-');
+    function getIdByPath(pathValue) {
+      const foundObject = services.find(obj => obj.path === pathValue);
+      return foundObject ? foundObject.id : null;
+    }
+
+    if (id.includes(':')) {
+      const splitIds = id.split(':');
       x = 9;
-      xx = splitIds[0];
+      xx = getIdByPath(splitIds[0]);
       subid = splitIds[1];
-      console.log(x + "---"+subid)
     } else {
-      xx = id;
+      xx = getIdByPath(id);
       // If it's not in the "x-y" format, subid might be undefined or null depending on your logic.
     }
 
@@ -37,11 +41,11 @@ function SubServices() {
               {x === 9 && services[xx].answer[subid]} 
             </h1>
             <br/><br/>
-            <p>
+            <div>
                 {x !== 9 && services[xx].content}
                 {x === 9 && services[xx].subcontents[subid]} 
                 
-            </p>
+            </div>
         </div>
 
         <div section='rightside' className='mb-4 lg:mb-0 w-full lg:mx-0 mx-auto -mt-10 lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full 2xl:h-screen'>

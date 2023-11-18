@@ -53,14 +53,15 @@ function Navbar() {
                 <div className='w-full'>
                   <ul className='grid gap-6 '>
                     {services[selectedQuestion].answer.map((answer, index) => (
-                      <li
+                      <Link
+                        to={`/enasco_v1/service/${services[selectedQuestion].path+':'+index}`}
                         onClick={() => menuClicked()}
                         className={`${isExpertiseClicked ? 'px-12' : ''} lg:hover:text-[#ff6c40]`} key={index}>
                         {answer}
-                      </li>
+                      </Link>
                     ))}
                   <hr/>
-                  <Link to={`/enasco_v1/${selectedQuestion}`} onClick={() => closeExpertise ()} className=' text-left text-sm ml-14'>About {services[selectedQuestion].question}</Link>
+                  <Link to={`/enasco_v1/service/${services[selectedQuestion].path}`} onClick={() => closeExpertise ()} className=' text-left text-sm ml-14'>About {services[selectedQuestion].question}</Link>
                   </ul>
                  
                 </div>
@@ -133,7 +134,13 @@ function Navbar() {
                   <div className={`content ${collapsed === i ? 'show_content' : 'hide_content'} shadow-md`}>
                     <ul className='grid gap-4 py-4 text-lg text-[#2d3540]'>
                       {item.answer.map((answer, j) => (
-                        <li key={j}>{answer}</li>
+                        <Link
+                          to={`/enasco_v1/service/${item.path+':'+j}`} 
+                          key={j}
+                          onClick={ () => menuClicked()}
+                        >
+                          {answer}
+                        </Link>
                       ))}
                     </ul>
                   </div>

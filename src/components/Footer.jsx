@@ -7,6 +7,7 @@ import { BsInstagram } from 'react-icons/bs';
 import { BsYoutube } from 'react-icons/bs';
 import { services } from '../assets/constants';
 import { motion, useInView, useAnimation } from 'framer-motion'
+import { Link } from 'react-router-dom';
 
 function Footer() {
 
@@ -84,12 +85,12 @@ function Footer() {
                   <div className=' basis-full md:basis-2/4'>
                       <h2 className=' font-extrabold text-lg'>ACTIVITIES</h2>
                       <hr/><hr/><hr/><hr/><br/>
-                      {services.map((service) => (
-                        <div key={service.id}>
-                        <h2 className='uppercase text-[#ff6c40] font-bold'>{service.question}</h2>
+                      {services.map((service, key) => (
+                        <div key={key}>
+                        <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
                         <div className='mt-3 grid w-fit gap-3'>
                             {service.answer.map((answer, index) => (
-                            <span key={index}>{answer}</span>
+                            <Link to={`/enasco_v1/service/${service.path+':'+index}`} key={index}>{answer}</Link>
                     ))}
                 </div>
           <br />

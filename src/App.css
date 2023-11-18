@@ -8,9 +8,8 @@
 }
 
 
-ul li:hover{
+ul a:hover{
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .faqs{
