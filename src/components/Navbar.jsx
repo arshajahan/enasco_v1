@@ -12,7 +12,7 @@ import bannerImage from '../assets/images/boat.jpg'
 function Navbar() {
   const [isExpertiseClicked, setExpertiseClicked] = useState(false);
   const [isNavClicked, setNavClicked] = useState(false);
-  const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const [selectedQuestion, setSelectedQuestion] = useState(0);
   const [collapsed, setCollapsed] = useState(null);
 
   const navToggle = () => {

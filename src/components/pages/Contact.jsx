@@ -14,20 +14,15 @@ function Contact() {
 
             <div className='mt-10 '>
                 <h1 className='text-gray-700 text-4xl md:text-5xl font-extrabold'>CONTACT</h1>
-                <p className=' mt-8 '>
-                    
-                    ENASCO International - Headquaters
-                    <br/>
-                    ENASCO HQ: T. +91 89 67 98 798
-                    <br/>
-                    EMERGENCY RESPONSE : T. +897 798 797 93
-                    </p>
-                <br/>
-                <p className='' >
-                <b>Visitor address</b><br/>
-                Wilhelminakade 318<br/>
-                3072 AR Rotterdam<br/>
-                The State of Kuwait<br/>
+                <p className=' mt-8 '>  
+                21st Floor, Al Jon Tower<br/>
+                Fahad Al Salem Street, Block # 12<br/>
+                Qibla, Kuwait City<br/>
+                </p>
+                <p className='' ><br/>
+                Tel: +965 224 51 615<br/>
+                Fax: +965 224 51 614<br/>
+                Email: info@enas.co<br/>
                 </p><br/><br/>
 
                 <p className=''>
@@ -62,10 +57,12 @@ function Contact() {
                         NEED AN EXPERT ADVICE?
                         </p>
                         <p className=' text-xl'>
-                            Our team of dedicated experts is here to<br/> help.<br/>
-                            T. +31 10 217 0 217
+                            Our team of dedicated experts is here to help.<br/><br/>
+                            T. +965 224 51 615
                             <br/>
-                            <span className=' underline navlink'>Mail us!</span>
+                            <span className='underline navlink'>
+                                <a href="mailto:info@enas.co">Mail us!</a>
+                            </span>
                         </p>
                         <div className=' mt-12 w-fit flex gap-4'>
                             <a href='#'><BsLinkedin size={28} /></a>

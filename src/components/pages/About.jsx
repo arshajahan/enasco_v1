@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import WrapperCard from '../UI/WrapperCard'
 import directors from '../../assets/images/directors.jpg'
 import boat from '../../assets/images/boat.jpg'
 import { Link } from 'react-router-dom'
 
 function About() {
+
+    useEffect ( () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    })
+
   return (
     
     <div className=' pt-8 bg-gray-200'>

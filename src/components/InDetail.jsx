@@ -48,9 +48,11 @@ function InDetail() {
                 </div>
             </div>
             <div className=' mt-20 grid sm:flex lg:grid gap-3 text-white md:font-bold w-fit'>
-                <Link to='/enasco_v1/sustainability' className='p-3 self-center navlink w-fit bg-[#ff6c40]'>SUSTAINABILITY</Link>
-                <span className='p-3 self-center navlink w-fit bg-[#2d3540] '>VALUES</span>
-                <span className='p-3 self-center text-center navlink w-fit bg-[#2d3540] '>VISION / MISSION</span>
+                <Link to='/enasco_v1/sustainability' className='p-3 self-center navlink w-fit bg-[#ff6c40]'>
+                    SUSTAINABILITY
+                </Link>
+                <Link to='/enasco_v1/about' className='p-3 self-center navlink w-fit bg-[#2d3540] '>VALUES</Link>
+                <Link to='/enasco_v1/about' className='p-3 self-center text-center navlink w-fit bg-[#2d3540] '>VISION / MISSION</Link>
             </div>
         </WrapperCard>
    </motion.div>

@@ -48,19 +48,20 @@ function SubServices() {
             </div>
         </div>
 
-        <div section='rightside' className='mb-4 lg:mb-0 w-full lg:mx-0 mx-auto -mt-10 lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full 2xl:h-screen'>
+        <div section='rightside' className='mb-4 lg:mb-0 w-full lg:mx-0 mx-auto -mt-10 lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full 2xl:h-full'>
           <div className='relative'>
-            <img src={services[xx].image} className='lg:h-[300px] w-full object-cover' />
-            <div className='absolute inset-0 bg-[#ff6c40] opacity-40'></div>
+            
             <div className='bg-red-700 text-white p-8 xl:p-14 text-left relative z-10'>
               <p className='text-2xl md:text-3xl xl:text-[35px] leading-none font-extrabold mb-8'>
                 GET IN TOUCH
               </p>
               <p className='text-xl'>
-                Our team of dedicated experts is here to<br/> help.<br/>
-                T. +31 10 217 0 217
+                Our team of dedicated experts is here to help.<br/><br/>
+                T. +965 224 51 615
                 <br/>
-                <span className='underline navlink'>Mail us!</span>
+                <span className='underline navlink'>
+                  <a href="mailto:info@enas.co">Mail us!</a>
+                </span>
               </p>
               <div className='mt-12 w-fit flex gap-4'>
                 <a href='#'><BsLinkedin size={28} /></a>
@@ -69,6 +70,8 @@ function SubServices() {
                 <a href='#'><BsYoutube size={28} /></a>
               </div>
             </div>
+            <img src={services[xx].image} className='lg:h-full w-full object-cover' />
+            <div className='absolute inset-0 bg-[#ff6c40] opacity-40'></div>
           </div>
         </div>
 

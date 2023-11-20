@@ -40,8 +40,8 @@ function Footer() {
             
             className=' bg-gray-700' id='footer'>
           <WrapperCard className=' pt-8 text-textfooter text-white '>
-              <div className=' flex flex-wrap md:flex-nowrap gap-6 '>
-                  <div className=' basis-2/4 md:basis-1/4'>
+              <div className=' flex flex-wrap justify-between md:flex-nowrap gap-6 '>
+                  {/* <div className=' basis-2/4 md:basis-1/4'>
                       <h2 className=' font-extrabold text-lg'>QUICK LINKS</h2>
                       <hr/><hr/><hr/><hr/><br/>
                       <div className=' grid gap-5'>
@@ -54,7 +54,7 @@ function Footer() {
                           <span>Projects</span>
                           <span>Downloads & Media Center</span>
                       </div>
-                  </div>
+                  </div> */}
 
                   <div className=' basis-auto md:basis-1/4 md:order-3'>
                       <h2 className=' font-extrabold text-lg'>CONTACT</h2>
@@ -82,21 +82,41 @@ function Footer() {
                       </div>
                   </div>
 
-                  <div className=' basis-full md:basis-2/4'>
-                      <h2 className=' font-extrabold text-lg'>ACTIVITIES</h2>
-                      <hr/><hr/><hr/><hr/><br/>
-                      {services.map((service, key) => (
-                        <div key={key}>
-                        <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
-                        <div className='mt-3 grid w-fit gap-3'>
-                            {service.answer.map((answer, index) => (
+                  <div className='basis-full md:basis-2/4'>
+    <h2 className='font-extrabold text-lg'>ACTIVITIES</h2>
+    <hr /><br />
+
+    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+        <div>
+            {services.slice(0, 3).map((service, key) => (
+                <div key={key}>
+                    <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
+                    <div className='mt-3 grid w-fit gap-3'>
+                        {service.answer.map((answer, index) => (
                             <Link to={`/enasco_v1/service/${service.path+':'+index}`} key={index}>{answer}</Link>
-                    ))}
+                        ))}
+                    </div>
+                    <br />
                 </div>
-          <br />
+            ))}
         </div>
-      ))}
-                  </div>
+
+        <div>
+            {services.slice(3, 5).map((service, key) => (
+                <div key={key}>
+                    <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
+                    <div className='mt-3 grid w-fit gap-3'>
+                        {service.answer.map((answer, index) => (
+                            <Link to={`/enasco_v1/service/${service.path+':'+index}`} key={index}>{answer}</Link>
+                        ))}
+                    </div>
+                    <br />
+                </div>
+            ))}
+        </div>
+    </div>
+</div>
+
 
               </div>
               <br/>

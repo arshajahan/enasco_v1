@@ -113,7 +113,7 @@ function Banner() {
             <div className={` -ml-2 lg:-ml-0 content ${collapsed === i ? "show_content" : "hide_content"}`}>
                 <ul className=' grid gap-4 py-4 text-lg text-[#2d3540]'>
                     {item.answer.map((sub, j) => (
-                        <Link to={`/enasco_v1/service/${item.id-1+':'+j}`} key={j}>{sub}</Link>
+                        <Link to={`/enasco_v1/service/${item.path+':'+j}`} key={j}>{sub}</Link>
                     ))}
                 </ul>
             </div>

@@ -30,17 +30,19 @@ function Latest() {
             }}
         
             initial = 'hidden'
-            animate = {mainControls}
+            animate = {mainControls}np
             transition = {{ duration: 0.8, delay: 0.3 }}
              
             className='bg-[#e3e3e3]' id='latest'>
             <WrapperCard className=' mt-16 lg:mt-52'>
                 <div className=' text-gray-700 h-fit'>
                     <h1 className=' text-3xl lg:text-5xl font-extrabold pb-4'>LATEST NEWS</h1>
-                    <div className='flex flex-wrap gap-7 2xl:gap'>
+                    <div className='flex flex-wrap gap-5 2xl:gap'>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow bg-white'>
-                            <img src={n2} className=' h-60 w-full' alt='News 1' />
-                            <div className='flex flex-col justify-between p-6 gap-4 h-full '>
+                            <div className=''>
+                                <img src={n2} className=' h-48 w-full' alt='News 1' />
+                            </div>
+                            <div className='flex flex-col justify-between p-6 gap-16 h-full '>
                             <Link
                                 onClick={() => {
                                     window.scrollTo({
@@ -62,8 +64,10 @@ function Latest() {
                             </div>
                         </div>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow bg-white'>
-                            <img src={n1} className=' h-60 w-full' alt='News 2' />
-                            <div className='flex flex-col justify-between p-6 gap-4 h-full '>
+                            <div className='h-48'>
+                                <img src={n3} className=' h-full w-full' alt='News 2' />
+                            </div>
+                            <div className='flex flex-col justify-between p-6 gap-16 h-full '>
                                 <Link
                                     onClick={() => {
                                         window.scrollTo({
@@ -84,8 +88,10 @@ function Latest() {
                             </div>
                         </div>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow bg-white'>
-                            <img src={n3} className=' h-60 w-full' alt='News 3' />
-                            <div className='flex flex-col justify-between p-6 gap-4 h-full '>
+                            <div className=''>
+                                <img src={n3} className=' h-48 w-full' alt='News 3' />
+                            </div>
+                            <div className='flex flex-col justify-between p-6 gap-16 h-full '>
                                 <Link
                                             onClick={() => {
                                                 window.scrollTo({
@@ -106,8 +112,10 @@ function Latest() {
                             </div>
                         </div>
                         <div className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow  bg-white'>
-                            <img src={n1} className=' h-60 w-full' alt='News 4' />
-                            <div className='flex flex-col justify-between p-6 gap-4 h-full '>
+                            <div className=''>
+                                <img src={n1} className=' h-48 w-full' alt='News 4' />
+                            </div>
+                            <div className='flex flex-col justify-between p-6 gap-16 h-full '>
                                 <Link
                                         onClick={() => {
                                             window.scrollTo({

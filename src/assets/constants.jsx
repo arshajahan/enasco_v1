@@ -120,7 +120,7 @@ export const services = [
         </>
       ),
       subcontents: [
-        <div className='grid gap-4'>
+        <div className='grid gap-4 '>
             <h1>ENASCO's Management Inspection Repair Maintenance & Operation (MIRMO) Service Program</h1>
             <p>ENASCO's MIRMO Service Program stands as the exclusive answer for ensuring the complete integrity, reliability, and availability of an offshore buoy terminal for our clients.</p>
 
@@ -136,7 +136,7 @@ export const services = [
                 <li><a href="#tanker-operations">Tanker Operations</a></li>
             </ul>
 
-            <h2 id="operations"><b>Operations & Maintenance (O&M)</b></h2>
+            <h2 id="operations" className='pt-16 md:pt-20'><b>Operations & Maintenance (O&M)</b></h2>
             <p>Our tailored service offering comprises long-term Operation and Maintenance contracts that encompass, but are not limited to, the provision of the following components:</p>
             <ul>
                 <li>Diving teams</li>
@@ -144,13 +144,13 @@ export const services = [
                 <li>Operational crew</li>
             </ul>
 
-            <h2 id="single-point"><b>Single Point Mooring Services</b></h2>
+            <h2 id="single-point" className='pt-16 md:pt-20'><b>Single Point Mooring Services</b></h2>
             <p>Our primary emphasis is on conducting inspection, repair, and maintenance (IRM) services for Single Point Mooring (SPM) systems, encompassing both their topside and subsea components. The goal is to sustain the facility's reliability and availability at the requisite levels and ensure the retention of Class certification. This service also encompasses the pre- and post-berth inspections of the SPM. Additionally, our service extends to the proactive maintenance of newly installed facilities, starting from the buoy's installation and continuing until its handover to the ultimate user or client.</p>
 
-            <h2 id="hose-inventory"><b>Hose Inventory Management</b></h2>
+            <h2 id="hose-inventory" className='pt-16 md:pt-20'><b>Hose Inventory Management</b></h2>
             <p>The ENASCO Hose Inventory Management Solution offers a holistic Life Cycle Management service for Submarine and Floating Marine Hoses utilized in offshore Oil and Gas Terminal Loading and Unloading Facilities. This solution adheres to OCIMF guidelines and is tailored by ENASCO to align with the specific needs and operational conditions of the client's site. It is also backed by our marine hose manufacturing Alliance Partners.</p>
 
-            <h2 id="hose-changeout"><b>Hose Changeout</b></h2>
+            <h2 id="hose-changeout" className='pt-16 md:pt-20'><b>Hose Changeout</b></h2>
             <p>Hose replacement is necessary in accordance with OCIMF guidelines and also when hoses are damaged, outdated, or subjected to extreme events. This service encompasses:</p>
             <ul>
                 <li>Installation</li>
@@ -162,7 +162,7 @@ export const services = [
                 <li>In situ testing</li>
             </ul>
 
-            <h2 id="emergency-pipeline"><b>Emergency Pipeline Repair Services</b></h2>
+            <h2 id="emergency-pipeline" className='pt-16 md:pt-20'><b>Emergency Pipeline Repair Services</b></h2>
             <p>We specialize in delivering emergency response services for the repair of pipelines within the expansive intertidal zone, where traditional open-water and land-based emergency response machinery may struggle to reach or operate effectively. Our primary aim is to reduce the environmental impact and production losses resulting from unforeseen events related to pipeline integrity failures or accidental damages. This is achieved through the use of appropriate machinery and established repair techniques to identify, isolate, contain, expose, repair/replace, restore, and rehabilitate the affected site.</p>
             <p>Our ERS services are organized into the following key categories:</p>
             <ul>
@@ -173,7 +173,7 @@ export const services = [
                 <li>Emergency Towing</li>
             </ul>
 
-            <h2 id="pipeline-solutions"><b>Pipeline Solutions</b></h2>
+            <h2 id="pipeline-solutions" className='pt-16 md:pt-20'><b>Pipeline Solutions</b></h2>
             <p>Our core focus lies in offering a range of pipeline services, including cleaning, dewatering, de-oiling, flushing, and fluid separation, with a particular emphasis on undiggable pipelines and those with sensitive linings. We achieve this using elastic products that are not only environmentally friendly but also easily degradable, breaking down into non-harmful components.</p>
             <p>We are dedicated to ensuring the correct filling of pipelines with preservation fluid and maintaining regular monitoring to safeguard the pipeline during the preservation period. The utilization of elastic pipeline products facilitates the proper filling of the pipeline with initial oil, minimizing the mixing of preservation fluid and initial oil. Additionally, it effectively cleans the pipeline before its first use.</p>
             <p>Our comprehensive pipeline solution services encompass the following key components:</p>
@@ -185,10 +185,10 @@ export const services = [
                 <li>Scouring</li>
             </ul>
 
-            <h2 id="interface-management"><b>Interface Management</b></h2>
+            <h2 id="interface-management" className='pt-16 md:pt-20'><b>Interface Management</b></h2>
             <p>In the realm of intricate EPCI (Engineering, Procurement, Construction, and Installation) projects, which involve multiple subcontractors, consultants, and stakeholders, our role is to act as the crucial bridge connecting all parties. This connection ensures the successful culmination of projects, particularly during the commissioning phase, by prioritizing the overall project objective rather than just the individual components. This approach fosters efficiency and effectiveness in project completion, ensuring a smooth transition into the operational phase.</p>
 
-            <h2 id="tanker-operations"><b>Tanker Operations</b></h2>
+            <h2 id="tanker-operations" className='pt-16 md:pt-20'><b>Tanker Operations</b></h2>
             <p>ENASCO offers a comprehensive range of marine vessels and resources dedicated to guaranteeing the safe and efficient mooring and unmooring of tankers at Single Point Mooring (SPM) locations. Our services encompass hose connection and disconnection, product transfer services, and essential tier 1 oil spill response services needed at SPMs.</p>
             <h2><b>Vessel & Crew</b></h2>
             <p>This subset of tanker operations and Single Point Mooring (SPM) Inspection, Repair, and Maintenance (IRM) relies on marine vessels. We supply specialized personnel for maintenance and supervisory positions, such as Buoy Maintenance Supervisor, Mooring Master, and Dive Supervisor, on short and medium-term assignments.</p>
@@ -230,87 +230,9 @@ export const services = [
       ],
       
     },
+
     {
       id: 2,
-      question: "Inspection & NDT",
-      path:'inspection',
-      answer: [
-        "OCTG / Tubular Inspection",
-        "Non Distractive Test",
-        "Rig Equipment Inspection",
-        "Lifting and Drop Survey",
-        "Calibration Service"
-      ],
-      image: indt,
-      content: (
-        <>
-            
-                With its pioneering spirit, ENASCO has always been an early adopter of emerging technologies. Today, technologies such as Artificial Intelligence (AI) and Drone Technology are at the center of our ENASCO Intelligence division. With these technologies, we develop applications that optimize the efficiency and sustainability of maritime operations worldwide.
-            <br/><br/>
-            
-                ENASCO OptiPort supports asset optimization over the entire nautical value chain. From tug scheduling to port activity reporting, crew planning, port optimization, and inland towage. Leading to significant cost savings and sustainable operations.
-            <br/><br/>
-            
-                ENASCO Analytics & Reporting gives insights into your fleet's performance, but also into the performance of competing operators to benchmark your fleet.
-            <br/><br/>
-            
-                ENASCO Drone Line Transfer is a patented drone technology for future use in its tug operations.
-            <br/><br/>
-        </>
-      ),
-      subcontents: [
-        <div>
-            <br/>
-            <p>We have a team of highly qualified and certified professional inspectors who specialize in the task at hand. These inspectors undergo thorough training to ensure they possess the necessary skills and knowledge for the job. Whether it's inspection, management, inventory, maintenance, or repair, our processes strictly adhere to the guidelines set forth by API, the manufacturer, or our client, depending on what is applicable and required.</p><br/>
-            <p>Our comprehensive approach covers the inspection of various tubing and casing types, including pup joints of all sizes. This means that our team is well-equipped to handle the examination and assessment of different components with precision and in accordance with industry standards. We prioritize the meticulous inspection and maintenance of equipment to ensure optimal performance and compliance with specifications.</p><br/>
-            <p>By entrusting us with these tasks, you can be confident that our team of professionals will carry out their responsibilities with the utmost expertise and dedication. We are committed to meeting and exceeding your expectations in all aspects of inspection, management, inventory, maintenance, and repair activities.</p><br/>
-            <b>Inspections are conducted in compliance with either API RP 5A5, 5C1, 5CT, or as specified by the client or manufacturer, depending on the relevant and applicable standards.</b><br/>
-            <br/><p>The range of services encompasses, but is not restricted to: Visual Thread Inspection, Visual Body Inspection, Full-Length Drift Test, UT Wall Thickness Test, Optional Full-Length EMI 1, Hydrostatic Testing, and Storage and Management.</p><br/>
-            <b>Maintenance work is performed in accordance with API standards or client specifications, including the selection of the coating product to be applied.</b><br/>
-            <br/><p>The services provided cover, but are not limited to: Cleaning and re-doping connections, Full-Length Internal/External Cleaning and Coating, Re-stenciling pipe specifications, Re-painting coupling and pipe color code identification, as well as Storage and Management.</p><br/><br/>
-        </div>,
-
-        <div>
-        <p>OPS NDT extends its comprehensive Non-Destructive Testing (NDT) services to cover a broad spectrum of locations, including both onshore and offshore environments. Our NDT inspectors are distinguished by their high level of expertise, holding certifications at Level II and III. These professionals undergo rigorous training, equipping them with the skills necessary for their roles. Importantly, our inspectors are readily available for short-notice assignments, whether they be onshore or offshore.</p><br/>
-        <p>At OPS NDT, we prioritize the adherence to specific procedures and the highest standards of Safety, Security, Health, and Environment (SSHE). This commitment ensures that all inspections and tests conducted by our skilled professionals meet stringent criteria for safety and environmental responsibility. Clients can have confidence in the reliability and proficiency of OPS NDT services, whether in onshore or offshore settings, with the assurance that inspections and tests are carried out to the highest industry standards.</p>
-        </div>,
-
-        <div>
-        <p>OPS-OES conducts inspections on various components, including Rig Structure, handling tools, lifting/hoisting equipment and accessories, BOP, pressure lines, travelling block, links, skids, swivels, containers, pumps, and other rig accessories.</p><br/>
-        <p>The Scope of Services includes inspections in accordance with related API specifications, API RP8B Category I to V. This involves the disassembly and replacement of defective components, cleaning and re-greasing movable parts, repainting, minor repairs, and more.</p><br/>
-        <p>OPS employs a Tagging System designed in compliance with API RP8B recommendations. According to these recommendations, the inspection frequency applies to equipment in use during a specified period. Equipment that successfully passes an API RP 8B inspection is tagged. When the due date for the next inspection arrives, equipment with intact seals indicates that it has not been in service during the specified period. In such cases, the results of the last inspection are considered valid, and the equipment does not have to undergo re-inspection.</p><br/><br/>
-        </div>,
-
-        <div>
-        <h2><b>LIFTING EQUIPMENT INSPECTION AND TESTING</b></h2>
-        <p>Our surveys offer a precise register and database reporting system that comprehensively covers all onboard hoisting and lifting equipment, ranging from shackles and slings to lifeboats and offshore cranes.</p>
-        <p>– All inspections adhere strictly to manufacturers' guidelines and relevant API, BS, Euro norms, in conjunction with LOLER SI 2307/1998.</p>
-        <p>– CD-ROMS are supplied, featuring a complete database containing identification numbers, descriptions, safe working loads, test certificate numbers, and details of previous inspections.</p>
-        <p>– Surveys are typically consolidated with those for hoisting and lifting equipment, ensuring comprehensive inspection coverage of all such equipment.</p>
-        <p>– Internet-based reporting provides clients with convenient and full access to the status of all equipment.</p>
-        <h2><b>DROPS SERVICES INSPECTION</b></h2>
-        <p>Dropped objects considerations are fundamental to every aspect of our supply chain, encompassing design, construction, delivery, and installation.</p>
-        <p>We prioritize maintaining the highest standards throughout the entire process, adopting an early and proactive approach to eliminate as many faults or failures as possible onsite. This strategy aims to minimize the necessity for subsequent remedial actions.</p>
-        </div>,
-
-        <div>
-        <p>Our team possesses extensive expertise in calibrating weight indicators and various types of pressure gauges. We employ approved methods to ensure calibration aligns with industry standards, including:</p><br/>
-        <ul>
-        <li>DKD R-6-1, ASME B40, ASME B40.1, and ASME B40.7 for gauges</li><br/>
-        <li>ISO 4126-1/2004, Safety valves Part 1 – General Requirements, ISO 14313:2007, and API Recommended Practice 576 Second Edition for safety valves</li><br/>
-        <li>Standard API Specification 6A, Eighteenth Edition, May 2002, ISO 10423:2003 for manifolds</li><br/>
-        </ul><br/>
-        </div>
-
-
-
-
-
-            
-      ]
-    },
-    {
-      id: 3,
       question: "Workshop Facility",
       path:'workshop',
       answer: [
@@ -395,12 +317,89 @@ export const services = [
         <br/><br/>
         </div>,
 
-
-
-
-
       ]
     },
+
+    {
+      id: 3,
+      question: "Inspection & NDT",
+      path:'inspection',
+      answer: [
+        "OCTG / Tubular Inspection",
+        "Non Distractive Test",
+        "Rig Equipment Inspection",
+        "Lifting and Drop Survey",
+        "Calibration Service"
+      ],
+      image: indt,
+      content: (
+        <>
+            
+                With its pioneering spirit, ENASCO has always been an early adopter of emerging technologies. Today, technologies such as Artificial Intelligence (AI) and Drone Technology are at the center of our ENASCO Intelligence division. With these technologies, we develop applications that optimize the efficiency and sustainability of maritime operations worldwide.
+            <br/><br/>
+            
+                ENASCO OptiPort supports asset optimization over the entire nautical value chain. From tug scheduling to port activity reporting, crew planning, port optimization, and inland towage. Leading to significant cost savings and sustainable operations.
+            <br/><br/>
+            
+                ENASCO Analytics & Reporting gives insights into your fleet's performance, but also into the performance of competing operators to benchmark your fleet.
+            <br/><br/>
+            
+                ENASCO Drone Line Transfer is a patented drone technology for future use in its tug operations.
+            <br/><br/>
+        </>
+      ),
+      subcontents: [
+        <div>
+            <br/>
+            <p>We have a team of highly qualified and certified professional inspectors who specialize in the task at hand. These inspectors undergo thorough training to ensure they possess the necessary skills and knowledge for the job. Whether it's inspection, management, inventory, maintenance, or repair, our processes strictly adhere to the guidelines set forth by API, the manufacturer, or our client, depending on what is applicable and required.</p><br/>
+            <p>Our comprehensive approach covers the inspection of various tubing and casing types, including pup joints of all sizes. This means that our team is well-equipped to handle the examination and assessment of different components with precision and in accordance with industry standards. We prioritize the meticulous inspection and maintenance of equipment to ensure optimal performance and compliance with specifications.</p><br/>
+            <p>By entrusting us with these tasks, you can be confident that our team of professionals will carry out their responsibilities with the utmost expertise and dedication. We are committed to meeting and exceeding your expectations in all aspects of inspection, management, inventory, maintenance, and repair activities.</p><br/>
+            <b>Inspections are conducted in compliance with either API RP 5A5, 5C1, 5CT, or as specified by the client or manufacturer, depending on the relevant and applicable standards.</b><br/>
+            <br/><p>The range of services encompasses, but is not restricted to: Visual Thread Inspection, Visual Body Inspection, Full-Length Drift Test, UT Wall Thickness Test, Optional Full-Length EMI 1, Hydrostatic Testing, and Storage and Management.</p><br/>
+            <b>Maintenance work is performed in accordance with API standards or client specifications, including the selection of the coating product to be applied.</b><br/>
+            <br/><p>The services provided cover, but are not limited to: Cleaning and re-doping connections, Full-Length Internal/External Cleaning and Coating, Re-stenciling pipe specifications, Re-painting coupling and pipe color code identification, as well as Storage and Management.</p><br/><br/>
+        </div>,
+
+        <div>
+        <p>OPS NDT extends its comprehensive Non-Destructive Testing (NDT) services to cover a broad spectrum of locations, including both onshore and offshore environments. Our NDT inspectors are distinguished by their high level of expertise, holding certifications at Level II and III. These professionals undergo rigorous training, equipping them with the skills necessary for their roles. Importantly, our inspectors are readily available for short-notice assignments, whether they be onshore or offshore.</p><br/>
+        <p>At OPS NDT, we prioritize the adherence to specific procedures and the highest standards of Safety, Security, Health, and Environment (SSHE). This commitment ensures that all inspections and tests conducted by our skilled professionals meet stringent criteria for safety and environmental responsibility. Clients can have confidence in the reliability and proficiency of OPS NDT services, whether in onshore or offshore settings, with the assurance that inspections and tests are carried out to the highest industry standards.</p>
+        </div>,
+
+        <div>
+        <p>OPS-OES conducts inspections on various components, including Rig Structure, handling tools, lifting/hoisting equipment and accessories, BOP, pressure lines, travelling block, links, skids, swivels, containers, pumps, and other rig accessories.</p><br/>
+        <p>The Scope of Services includes inspections in accordance with related API specifications, API RP8B Category I to V. This involves the disassembly and replacement of defective components, cleaning and re-greasing movable parts, repainting, minor repairs, and more.</p><br/>
+        <p>OPS employs a Tagging System designed in compliance with API RP8B recommendations. According to these recommendations, the inspection frequency applies to equipment in use during a specified period. Equipment that successfully passes an API RP 8B inspection is tagged. When the due date for the next inspection arrives, equipment with intact seals indicates that it has not been in service during the specified period. In such cases, the results of the last inspection are considered valid, and the equipment does not have to undergo re-inspection.</p><br/><br/>
+        </div>,
+
+        <div>
+        <h2><b>LIFTING EQUIPMENT INSPECTION AND TESTING</b></h2>
+        <p>Our surveys offer a precise register and database reporting system that comprehensively covers all onboard hoisting and lifting equipment, ranging from shackles and slings to lifeboats and offshore cranes.</p>
+        <p>– All inspections adhere strictly to manufacturers' guidelines and relevant API, BS, Euro norms, in conjunction with LOLER SI 2307/1998.</p>
+        <p>– CD-ROMS are supplied, featuring a complete database containing identification numbers, descriptions, safe working loads, test certificate numbers, and details of previous inspections.</p>
+        <p>– Surveys are typically consolidated with those for hoisting and lifting equipment, ensuring comprehensive inspection coverage of all such equipment.</p>
+        <p>– Internet-based reporting provides clients with convenient and full access to the status of all equipment.</p>
+        <h2><b>DROPS SERVICES INSPECTION</b></h2>
+        <p>Dropped objects considerations are fundamental to every aspect of our supply chain, encompassing design, construction, delivery, and installation.</p>
+        <p>We prioritize maintaining the highest standards throughout the entire process, adopting an early and proactive approach to eliminate as many faults or failures as possible onsite. This strategy aims to minimize the necessity for subsequent remedial actions.</p>
+        </div>,
+
+        <div>
+        <p>Our team possesses extensive expertise in calibrating weight indicators and various types of pressure gauges. We employ approved methods to ensure calibration aligns with industry standards, including:</p><br/>
+        <ul>
+        <li>DKD R-6-1, ASME B40, ASME B40.1, and ASME B40.7 for gauges</li><br/>
+        <li>ISO 4126-1/2004, Safety valves Part 1 – General Requirements, ISO 14313:2007, and API Recommended Practice 576 Second Edition for safety valves</li><br/>
+        <li>Standard API Specification 6A, Eighteenth Edition, May 2002, ISO 10423:2003 for manifolds</li><br/>
+        </ul><br/>
+        </div>
+
+
+
+
+
+            
+      ]
+    },
+    
     {
       id: 4,
       question: `Training & 
