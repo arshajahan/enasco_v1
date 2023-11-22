@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Line from './UI/Line';
 import WrapperCard from './UI/WrapperCard';
-import { BsLinkedin } from 'react-icons/bs';
+import { BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { BsYoutube } from 'react-icons/bs';
@@ -60,35 +60,39 @@ function Footer() {
                       <h2 className=' font-extrabold text-lg'>CONTACT</h2>
                       <hr/><hr/><hr/><hr/><br/>
                       <p>Emergency Response:</p>
-                      <p>T. +31 10 217 0 246</p>
+                      <p>T. +965 224 51 615</p>
                       <br/><hr/><br/>
-                      <p>T. +31 10 217 0 217</p>
-                      <p>F. +31 10 217 0 217</p>
+                      <p>
+                        Tel: +965 224 51 615<br/>
+                        Fax: +965 224 51 614<br/>
+                        Email: info@enas.co<br/>
+                      </p>
                       <br/>
-                      <a href=''>Mail us!</a>
+                      <a href='mailto:info@enas.co'>Mail us!</a>
                       <br/>
                       <br/><hr/><br/>
                       <h3>Visitor Address:</h3>
-                      <span>Wilhelminakade 318<br/>3072 AR Rotterdam<br/>State of Kuwait</span>
-                      <br/><br/>
-                      <h3>Postal Address:</h3>
-                      <span>PO Box 22002<br/>3003 DA Rotterdam<br/>State of Kuwait</span>
-                      <br/><br/>
+                      <p className=' mt-3 '>  
+                        21st Floor, Al Jon Tower<br/>
+                        Fahad Al Salem Street, Block # 12<br/>
+                        Qibla, Kuwait City<br/>
+                      </p>
+                      <br/>
                       <div className=' w-fit flex gap-4'>
-                        <a href='#'><BsLinkedin size={20} /></a>
-                        <a href='#'><BsFacebook size={20} /></a>
-                        <a href='#'><BsInstagram size={20} /></a>
-                        <a href='#'><BsYoutube size={20} /></a>
+                        <a href='https://www.linkedin.com/company/enasco/'><BsLinkedin size={20} /></a>
+                        <a href='https://en-gb.facebook.com/enascowll'><BsFacebook size={20} /></a>
+                        <a href='https://twitter.com/ENASCO_WLL'><BsTwitter size={20} /></a>
+                        <a href='https://api.whatsapp.com/send?phone=+96522451615&text=Hello%20Enasco'><BsWhatsapp size={20} /></a>
                       </div>
                   </div>
 
-                  <div className='basis-full md:basis-2/4'>
+                  <div className='basis-full md:basis-3/4'>
     <h2 className='font-extrabold text-lg'>ACTIVITIES</h2>
     <hr /><br />
 
-    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 lg:gap-14 md:gap-10 gap-4">
         <div>
-            {services.slice(0, 3).map((service, key) => (
+            {services.slice(0, 2).map((service, key) => (
                 <div key={key}>
                     <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
                     <div className='mt-3 grid w-fit gap-3'>
@@ -101,6 +105,19 @@ function Footer() {
             ))}
         </div>
 
+        <div>
+            {services.slice(2, 3).map((service, key) => (
+                <div key={key}>
+                    <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
+                    <div className='mt-3 grid w-fit gap-3'>
+                        {service.answer.map((answer, index) => (
+                            <Link to={`/enasco_v1/service/${service.path+':'+index}`} key={index}>{answer}</Link>
+                        ))}
+                    </div>
+                    <br />
+                </div>
+            ))}
+        </div>
         <div>
             {services.slice(3, 5).map((service, key) => (
                 <div key={key}>

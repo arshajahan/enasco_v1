@@ -1,7 +1,7 @@
 import React from 'react'
 import WrapperCard from '../UI/WrapperCard'
 import { Link } from 'react-router-dom'
-import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from 'react-icons/bs'
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter, BsWhatsapp, BsYoutube } from 'react-icons/bs'
 import { useParams } from 'react-router-dom'
 import { services } from '../../assets/constants'
 
@@ -64,10 +64,10 @@ function SubServices() {
                 </span>
               </p>
               <div className='mt-12 w-fit flex gap-4'>
-                <a href='#'><BsLinkedin size={28} /></a>
-                <a href='#'><BsFacebook size={28} /></a>
-                <a href='#'><BsInstagram size={28} /></a>
-                <a href='#'><BsYoutube size={28} /></a>
+                <a href='https://www.linkedin.com/company/enasco/'><BsLinkedin size={28} /></a>
+                <a href='https://en-gb.facebook.com/enascowll'><BsFacebook size={28} /></a>
+                <a href='https://twitter.com/ENASCO_WLL'><BsTwitter size={28} /></a>
+                <a href='https://api.whatsapp.com/send?phone=+96522451615&text=Hello%20Enasco'><BsWhatsapp size={28} /></a>
               </div>
             </div>
             <img src={services[xx].image} className='lg:h-full w-full object-cover' />

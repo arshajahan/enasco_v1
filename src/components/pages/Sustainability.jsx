@@ -46,7 +46,7 @@ function Sustainability() {
         <div section='rightside' className=' mb-4 lg:mb-0 w-full lg:mx-0 mx-auto -mt-10  lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full 2xl:h-screen'>
             <div className=''>
                     <img src={directors} className=' lg:h-[300px] w-full'/>
-                    <div className=' bg-gray-700 text-white text-5xl lg:text-[60px] leading-none font-bold p-16 text-left'>
+                    <div className=' bg-gray-700 text-white text-5xl xl:text-[60px] leading-none font-bold p-8 md:p-12 lg:p-16 text-left'>
                         <p className=''>
                         PEOPLE, PLANET, BUSINESS CONTINUITY
                         </p>

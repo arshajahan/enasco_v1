@@ -112,11 +112,11 @@ function Navbar() {
         </div>
       </WrapperCard>
 
-      <div className='overflow-scroll lg:hidden absolute top-0 right-0 z-10 bg-white h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
+      <div className=' overflow-scroll z-10 lg:hidden absolute top-0 right-0  bg-white h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
         {isNavClicked && (
           <>
-            <div className='mx-4 flex justify-between mt-4'>
-              <div>
+            <div className=' mx-4 flex justify-between mt-4'>
+              <div className=''>
                 <img src={logo} onClick={() => navToggle()} className='navlink w-28' alt="Logo" />
               </div>
               <span className='navlink text-[#2d3540]' onClick={() => navToggle()}>
@@ -124,7 +124,7 @@ function Navbar() {
               </span>
             </div>
 
-            <div className='mt-7 faqs lg:hidden'>
+            <div className=' mt-7 faqs lg:hidden'>
               {services.map((item, i) => (
                 <div className='faq' key={item.id}>
                   <button className={`hover:bg-[#ff6c40] text-[#2d3540] collapsible ${collapsed === i ? 'faqactive' : ''}`} onClick={() => toggle(i)}>
@@ -132,7 +132,7 @@ function Navbar() {
                   </button>
                   <hr />
                   <div className={`content ${collapsed === i ? 'show_content' : 'hide_content'} shadow-md`}>
-                    <ul className='grid gap-4 py-4 text-lg text-[#2d3540]'>
+                    <ul className=' grid gap-4 py-4 text-lg text-[#2d3540]'>
                       {item.answer.map((answer, j) => (
                         <Link
                           to={`/enasco_v1/service/${item.path+':'+j}`} 
@@ -146,17 +146,17 @@ function Navbar() {
                   </div>
                 </div>
               ))}
-              <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase navlink text-[#2d3540] lg:hidden'>
-                <HashLink to='/enasco_v1/#footer' onClick={() => menuClicked()} className='navlink'>
+              <ul className=' pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase navlink text-[#2d3540] lg:hidden'>
+                <HashLink  to='/enasco_v1/#footer' onClick={() => menuClicked()} className='navlink'>
                   Search
                 </HashLink>
-                <Link to='/enasco_v1/about' onClick={() => menuClicked()} className='navlink'>
+                <Link  to='/enasco_v1/about' onClick={() => menuClicked()} className='navlink'>
                   About Us
                 </Link>
-                <Link to='/enasco_v1/sustainability' className='navlink' onClick={() => menuClicked()}>
+                <Link  to='/enasco_v1/sustainability' className='navlink' onClick={() => menuClicked()}>
                   Sustainability
                 </Link>
-                <Link to='/enasco_v1/contact' onClick={() => menuClicked()} className='navlink'>
+                <Link  to='/enasco_v1/contact' onClick={() => menuClicked()} className='navlink'>
                   Contact
                 </Link>
               </ul>
