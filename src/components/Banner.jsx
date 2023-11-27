@@ -29,15 +29,16 @@ function Banner() {
     }
 
   return (
-    <div className='bg-[#e3e3e3] -mt-20' id='banner'>
-    <div 
-        className=" bg-cover bg-center h-screen"
-        style={{
-            backgroundImage: `url(${bannerImage})`, // Set the background image
-        }}
-    >  
-    </div>
-    <WrapperCard className='relative '>
+    <div className='bg-[#e3e3e3] -mt-20 overflow-hidden ' id='banner'>
+      <div
+          className="bg-cover bg-center h-screen "
+          style={{
+              backgroundImage: `url(${bannerImage})`, // Set the background image
+              animation: 'zoom 10s infinite alternate', // Apply the zoom animation
+          }}
+      >
+      </div>
+    <WrapperCard className='relative'>
         <div
         
             variants = {{

@@ -61,3 +61,13 @@ ul a:hover{
   transition: max-height .9s ease-out; /* Adjust the duration to your preference */
 }
 
+/* Your CSS file or style block */
+@keyframes zoom {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.2); /* Change the scale factor for the desired zoom level */
+  }
+}
+

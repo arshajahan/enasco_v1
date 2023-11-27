@@ -38,7 +38,7 @@ function App() {
             } />
             <Route exact path='enasco_v1/about' element={<About/>} />
             <Route exact path='enasco_v1/sustainability' element={<Sustainability/>} />
-            <Route exact path='enasco_v1/news' element={<News/>} />
+            <Route exact path='enasco_v1/news/:id' element={<News/>} />
             <Route exact path='enasco_v1/contact' element={<Contact/>} />
             <Route exact path='enasco_v1/service/:id' element={<SubServices/>} />
 

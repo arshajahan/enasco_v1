@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import WrapperCard from '../UI/WrapperCard'
 import directors from '../../assets/images/directors.jpg'
-import boat from '../../assets/images/boat.jpg'
+import boat from '../../assets/images/about.jpg'
 import { Link } from 'react-router-dom'
 
 function About() {
@@ -69,13 +69,13 @@ function About() {
                     <h2 className='text-gray-700 text-xl md:text-2xl font-extrabold mb-4'>Our Board</h2>
                     <img src={directors}  className=''/>
                     <div className='mt-3'>
-                        <span className=' font-semibold'>President & CEO: Ard-Jan Kooren</span>
-                        <p className=' text-justify mt-1'>Ard-Jan Kooren, 4th generation Kooren, joined KOTUG in 1990 as Operations Employee. He was promoted to Manager Marketing and Operations in 1993 and became Commercial Director and Vice President in 1996. He followed in his father’s footsteps as CEO in 2002. </p>
+                        <span className=' font-extrabold'>CEO - Muhammad F. Al Hajri</span>
+                        <p className=' text-justify mt-2'>ENASCO's dynamic CEO, a Civil Engineering graduate from The University of Salford, UK, and a former standout at Kuwait Oil Company, has shaped the company into a powerhouse since taking the helm. With a focus on Petroleum, Energy, Management, and Engineering, this business luminary has led ENASCO to prominence in Manpower, Oil/Gas Services, and ICT.</p>
                     </div>
                     <br/>
                     <div className='mt-3'>
-                        <span className=' font-semibold'>Vice President & CCO: Osman Munir</span>
-                        <p className=' text-justify mt-1'>Osman Munir joined KOTUG in 2007. Having started as Group Controller and later on as Manager Project Department, he rose through the ranks to become Director Business Development, Terminals & JVC (Joint Venture Companies) of the Group. In January 2017 he was appointed CCO. In 2021 Osman Munir was promoted to Vice President of the KOTUG Group of Companies.</p>
+                        <span className=' font-semibold'></span>
+                        <p className=' text-justify mt-1'>A born leader, deeply rooted in family values and dedicated to quality, this CEO has been the driving force behind ENASCO's remarkable ascent. Under their stewardship, the company has not only met but surpassed expectations, emerging as a standout in the region. With an unwavering commitment to excellence, coupled with ambitious visions and unmatched leadership, ENASCO's trajectory under this CEO foretells ongoing expansion and growth to unprecedented heights.</p>
                     </div>
                 </div>
 

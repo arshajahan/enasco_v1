@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import WrapperCard from '../UI/WrapperCard'
-import directors from '../../assets/images/meet.jpg'
+import directors from '../../assets/images/sustainability.jpg'
 
 function Sustainability() {
   return (
