@@ -1,12 +1,9 @@
-import contact from './images/contact.jpg'
-import contact2 from './images/contact2.jpg'
 import indt from './images/ndt.jpg'
 import wct from './images/wct.jpg'
 import training from './images/training.jpg'
-import marine from './images/marine.jpg'
+import n3 from './images/marine.jpg'
 import n1 from '../assets/images/news1.jpg'
 import n2 from '../assets/images/new2.jpeg'
-import n3 from '../assets/images/news3.jpg' 
 
 
 
@@ -27,6 +24,7 @@ export const news = [
                     Parallel to the commissioning of the Al Zour Refinery, a crucial liaison meeting was convened. The primary objective of this meeting was to facilitate in-depth discussions on the intricacies of the work mechanism and to outline a comprehensive work plan. This meticulous planning process aimed to establish a clear understanding of the roles and responsibilities of each party involved in the project. Additionally, it allowed for the alignment of strategies to ensure that the maintenance services provided by ENASCO seamlessly integrate with the operational requirements of the Al Zour Refinery and the associated marine facilities.
                     <br/><br/>
                     By holding this liaison meeting in conjunction with the refinery's commissioning, KIPIC and ENASCO demonstrated their commitment to a collaborative and synergistic approach. This strategic coordination is vital for the seamless integration of maintenance services into the operational framework of the Al Zour Refinery, ensuring optimal performance and longevity of the marine infrastructure over the contracted 4-year period.
+                <br/>
                 </>
             
   },
@@ -39,6 +37,7 @@ export const news = [
               ENASCO General Trading and Company recently marked a significant achievement by celebrating 1 million safety hours without any incidents. The Chief Operating Officer, Mr. Mubarak Al Hajiri, extended his heartfelt congratulations to the entire team for reaching this remarkable milestone. <br/><br/> 
 
               He emphasized the importance of promoting a safe working environment and reiterated the company's commitment to achieving zero injuries and minimizing safety losses. This accomplishment reflects ENASCO’s dedication to prioritizing the well-being of its employees and fostering a culture of safety within the organization. 
+            <br/>
             </>
   },
   {
@@ -57,6 +56,7 @@ export const news = [
                     Parallel to the commissioning of the Al Zour Refinery, a crucial liaison meeting was convened. The primary objective of this meeting was to facilitate in-depth discussions on the intricacies of the work mechanism and to outline a comprehensive work plan. This meticulous planning process aimed to establish a clear understanding of the roles and responsibilities of each party involved in the project. Additionally, it allowed for the alignment of strategies to ensure that the maintenance services provided by ENASCO seamlessly integrate with the operational requirements of the Al Zour Refinery and the associated marine facilities.
                     <br/><br/>
                     By holding this liaison meeting in conjunction with the refinery's commissioning, KIPIC and ENASCO demonstrated their commitment to a collaborative and synergistic approach. This strategic coordination is vital for the seamless integration of maintenance services into the operational framework of the Al Zour Refinery, ensuring optimal performance and longevity of the marine infrastructure over the contracted 4-year period.
+                <br/>
                 </>
             
   },
@@ -76,6 +76,7 @@ export const news = [
                     Parallel to the commissioning of the Al Zour Refinery, a crucial liaison meeting was convened. The primary objective of this meeting was to facilitate in-depth discussions on the intricacies of the work mechanism and to outline a comprehensive work plan. This meticulous planning process aimed to establish a clear understanding of the roles and responsibilities of each party involved in the project. Additionally, it allowed for the alignment of strategies to ensure that the maintenance services provided by ENASCO seamlessly integrate with the operational requirements of the Al Zour Refinery and the associated marine facilities.
                     <br/><br/>
                     By holding this liaison meeting in conjunction with the refinery's commissioning, KIPIC and ENASCO demonstrated their commitment to a collaborative and synergistic approach. This strategic coordination is vital for the seamless integration of maintenance services into the operational framework of the Al Zour Refinery, ensuring optimal performance and longevity of the marine infrastructure over the contracted 4-year period.
+                <br/>
                 </>
             
   },
@@ -93,7 +94,7 @@ export const services = [
         "Vessel Traffic Management"
       ],
       path:'marine',
-      image: marine,
+      image: n3,
       content: (
         <>
         ENASCO provides sustainable towage and related services to the maritime industry across the globe. Our services, spread over the full range of the towage supply chain, help clients improve their operations, optimize their safety, and support sustainable development.
@@ -107,22 +108,26 @@ export const services = [
         Chartering & Salvage <br/>
         Inland Towage<br/>
 
-
+       
+        <br/>
         </>
       ),
       subcontents: [
         <>ENASCO has developed a comprehensive vessel management service with the goal of delivering an all-encompassing and cohesive solution. This service is specifically tailored to be included in long-term contracts for Field Operations Services or EPC projects.<br/><br/>
         Within this framework, ENASCO seamlessly integrates offshore support vessels into its array of diving services, tanker pilotage, mooring services, and the PSV fleet for the efficient management of offshore units and logistics.<br/><br/>
         In the realm of engineering and construction services, ENASCO is well-equipped to provide construction or installation support vessels, as well as diving support vessels for various purposes. These include cable layers, diving support vessels for saturated diving and ROV services, and anchor handling tugs, all of which can be chartered for projects requiring such specialized capabilities.<br/><br/>
+        <br/>
         </>,
         <>ENASCO delivers secure, effective, and dependable pilotage and mooring services tailored to meet our client's needs, ensuring a swift vessel turnaround in ports. We prioritize a seamless ship-to-shore interface to enhance operational efficiency. Our company is fully dedicated to upholding the highest international standards for training and certification in our pilotage services.<br/><br/>
         Clients can rely on our capable, professional, and thoroughly vetted personnel to execute a wide range of marine activities. Whether it's straightforward port navigation or highly specialized LNG operations, we offer specialized pilot and mooring personnel, available whenever and wherever needed.<br/><br/>
         In terms of vessels and terminals, ENASCO boasts expertise in servicing a variety of vessels, including LNG carriers, bulk carriers, containerships, and tankers up to VLCC/ULCC. We have a proven track record of providing pilotage services for numerous terminals, including SPM terminals, FPSO terminals (berthed in tandem or with associated CALM buoy), in-shore and off-shore jetties, ports and harbors, and Ship-to-Ship (STS) operations for many oil and gas companies.<br/><br/>
+        <br/>
         </>,
         <><h2><b><strong>Practical Support</strong></b></h2><br/><br/>
         With over five decades of operational experience in some of the world's most remote and challenging locations, we possess the expertise to adeptly manage marine operations. Equipped with both skilled personnel and ample resources, we are proficient in the safe operation and control of onshore and offshore terminal facilities. As a service, we aim to extend the advantage of our experience to our clients.<br/><br/>
         When the need arises, we offer hands-on assistance for remote (sub) contr\acted operations, ensuring seamless execution and heightened cost efficiency. ENASCO provides a competent team to operate and manage diverse marine terminal facilities. Acting on behalf of our clients, we can undertake a range of terminal management activities, including shore facility management, warehouse and jetty supervision, materials control, supervision, and scheduling of third-party contracted vessels, as well as export tanker berthing and loading scheduling.<br/><br/>
         Entrusting us with their business, our clients demonstrate confidence in ENASCO's integrity and expertise, allowing us to autonomously run operations. Terminal management, for us, goes beyond being just another assignment; it serves as a token of appreciation and a testament to a robust partnership.<br/><br/>
+        <br/>
         </>,
         
         <>
@@ -132,7 +137,7 @@ export const services = [
         ENASCO offers a comprehensive solution by providing both the system and skilled specialists to operate it as an integrated service for our clients. Alternatively, we can integrate with pre-installed, client-owned vessel traffic systems for seamless port management.<br/><br/>
         Our tug schedulers are highly trained specialists   equipped with extensive local port knowledge and a profound understanding of shipping operations. Each has successfully completed a 6–8-week theoretical course on vessel traffic management complexities and tug scheduling, complemented by hands-on training.<br/><br/>
         One notable example of our vessel management expertise is evident in the ports of Gladstone and Brisbane, where we oversee the SLTA scheduling department. With a dedicated team working 24/7 in two 12-hour shifts, we monitor and control all marine traffic in and around the port from our Tug Management Control Centre. Using shore-based systems, we:<br/><br/>
-        <ul>
+        <ul >
         <li>Maintain communication with tugs maneuvering ships through the port</li><br/>
         <li>Sustain 24/7 VHF radio contact</li><br/>
         <li>Manage a 24/7 crewed emergency standby tug for three LNG plants</li><br/>
@@ -145,6 +150,7 @@ export const services = [
         </ul>
         <br/><br/>
         In terms of communication tools, our scheduling department employs various channels such as VHF, mobile phones/SMS, internal domestic radio, email (including non-scheduling purposes), AIS, and privately developed scheduling tools to liaise with individual tugs, provide information, issue weather and safety warnings, and detail the position of other vessels.<br/><br/>
+        <br/>
         </>,
 
         <div>
@@ -181,7 +187,7 @@ export const services = [
         "Asset Integrity Management",
         "Pollution control"        
       ],
-      image: marine,
+      image: n3,
       content: (
         <>
             
@@ -193,6 +199,7 @@ export const services = [
             
                 The services of the ENASCO Towage division include:
             <br/><br/>
+        
         </>
       ),
       subcontents: [
@@ -268,7 +275,7 @@ export const services = [
             <p>ENASCO offers a comprehensive range of marine vessels and resources dedicated to guaranteeing the safe and efficient mooring and unmooring of tankers at Single Point Mooring (SPM) locations. Our services encompass hose connection and disconnection, product transfer services, and essential tier 1 oil spill response services needed at SPMs.</p>
             <h2><b>Vessel & Crew</b></h2>
             <p>This subset of tanker operations and Single Point Mooring (SPM) Inspection, Repair, and Maintenance (IRM) relies on marine vessels. We supply specialized personnel for maintenance and supervisory positions, such as Buoy Maintenance Supervisor, Mooring Master, and Dive Supervisor, on short and medium-term assignments.</p>
-            <br/><br/>
+            <br/>
         </div>,
 
 
@@ -288,7 +295,7 @@ export const services = [
         <p>ENASCO’s Offshore Asset Data Acquisition (DAQ) system plays a vital role in an Asset Owner's endeavors to enhance both RAM (Reliability, Availability, and Maintainability) and asset integrity. It is seamlessly integrated into s's ASIM (Advanced System Integrity Management) Program, enabling the automated and real-time collection of pertinent data from offshore assets. This data is a critical element in achieving improved Asset Availability, Reliability, and the establishment of a well-structured integrity management framework for these offshore assets.</p><br/>
         <h1><b>Mooring integrity & hose analysis</b></h1><br/>
         <p>This represents a highly specialized case involving the Inspection, Repair, and Maintenance (IRM) of SPM (Single Point Mooring) systems, with a primary focus on activities conducted in the pre Front-End Engineering Design (pre FEED) and FEED stages of the project. Based on the data obtained from nearby or similar installations, we can offer tailored recommendations at the design phase to address site-specific requirements.</p>
-        <br/><br/>
+        <br/>
         </div>,
 
         <div>
@@ -301,7 +308,7 @@ export const services = [
         <p>ENASCO vessels are strategically designed for rapid response. Many of our tugs are equipped with oil dispersant systems, featuring extended spraying booms. Larger vessels are furnished with integrated recovered oil tanks (ranging from 50m3 to 100m3), collaborating with oil skimmers to collect and store sea surface contamination. Depending on client needs, we can integrate additional 'environmental response assets' into our operational plan, including containing booms, boom towing daughter craft, containerized oil skimmers, and containerized pumping systems.</p><br/>
         <h1><b>Skilled Crew</b></h1><br/>
         <p>Our crews are extensively trained in environmental protection. As first responders, they understand their responsibility and are equipped to act accordingly. Highly qualified and experienced in spill control and recovery techniques, our crews are on standby 24/7. Ready to deploy floating booms, spray dispersants, pump out remaining fuel, transfer hazardous materials to recycling centers, clean water surfaces with skimmers, and treat pollution in settling tanks, our crew is prepared for any environmental challenge.</p>
-        <br/><br/>
+        <br/>
         </div>,
       ],
       
@@ -316,7 +323,7 @@ export const services = [
         "Well Control Testing ",
         "Down Hole Tools Services",
         "Hydro Testing",
-        "Post Welding Heat Treatment" 
+        "Heat Treatment" 
 
       ],
       image: wct, 
@@ -331,6 +338,7 @@ export const services = [
                 <span>Providing new building support</span><br/>
                 <span>Project management for green field operations</span><br/>
             </ul>
+        
         </>
       ),
       subcontents: [
@@ -357,31 +365,43 @@ export const services = [
         </div>,
 
         <div>
-        <p>We provide a comprehensive range of equipment and services, including:</p><br/>
-        <ul>
-        <li>Reamers and stabilizers available in various sizes, crafted from chromium molybdenum solid alloy steel and meeting the specifications of AISI 4145H modified.</li><br/>
-        <li>Double action drilling jars sourced from leading global suppliers, accompanied by complete maintenance, overhaul, and testing support.</li><br/>
-        <li>Shock tools, available in both standard and non-standard configurations, sourced from top suppliers and designed to meet the demands of challenging tasks and environments.</li><br/>
-        <li>Fishing tools encompassing a wide range of high-quality standard tools, with the capability to manufacture customized tools for unique and challenging conditions.</li><br/>
-        </ul><br/>
-        </div>,
+        <h2 className=' font-bold'>We supply a full range of equipment and services, including:</h2><br/>
+        <ul className=' list-disc grid gap-4 text-justify'>
+        <li>Reamers and stabilizers in a wide range of sizes, in chromium molybdenum solid alloy steel, to the requirements of AISI 4145H modified</li>
+        <li>Double action drilling jars from the world’s leading suppliers, with full maintenance, overhaul and testing support</li>
+        <li>Shock tools both standard and non-standard, from top suppliers, suitable for the most testing tasks and environments</li>
+        <li>Fishing tools a comprehensive range of top-quality standard tools, and the ability to manufacture one-off tools for unusual and difficult conditions</li>
+        </ul>
+
+        </div>
+
+        ,
 
         <div>
-        <p>Each OPS inspection facility is equipped with a hydro test bay designed for safe and efficient testing. These test bays, strategically located in various sites, ensure that hydro testing can be conducted safely and promptly. For remote locations, our mobile hydro testing containers, constructed with the highest standard steel/wood walls, enable on-the-go testing operations. The p-test lines are seamlessly fed through the wall to the test area, allowing operators to work safely within the built-in operator safe cabin. The test unit comes equipped with a lifting hoist, barriers, warning devices, and SSHE signs.</p><br/>
-        <p>Experienced technicians and crew, possessing the necessary training and certification, perform the tests. All test equipment, including pumps, gauges, and chart recorders, are sourced from international brands, duly calibrated, and certified. Hydro tests adhere to ASME standards, OPS Hydro testing IOP, manufacturer’s specifications, or client requirements.</p><br/>
-        <p>As a safety measure, ENASCO strongly recommends the performance of applicable Non-Destructive Testing (NDT) before hydro testing on any pressurized equipment.</p><br/>
-        <b>OPS-OES TESTS:</b><br/>
-        <p>Chiksan / Flow line, Oil / Water / Air /Gas Tank, Pressure Relief Valve, Riser Spool, X-mas tree, BOP, Blind Flange, Pressurized flow lines, Kill/Choke Manifolds, Well Control Equipment, etc.</p><br/>
-        <b>ADDITIONAL SERVICES:</b><br/>
-        <ul>
-        <li>Seal / O-ring replacement</li>
-        <li>Re-dressing</li>
-        <li>Iron repair & maintenance</li>
-        <li>Tagging with permanent identification band</li>
-        <li>Cleaning & painting</li>
-        <li>Borescope Inspection</li>
-        </ul><br/>
-        </div>,
+            <p>
+                Every ENASCO inspection base is equipped with a hydro test bay. Test bays in each location are designed for safe and efficient testing. Hydro testing at remote locations can be serviced readily with our mobile hydro testing containers, built to the highest standard steel/wood walls for optimum safe operations. The p-test lines are fed through the wall to the test area with the operator working safely at the built-in operator safe cabin. The test unit is equipped with lifting hoist, barriers, warning devices, and SSHE signs. Tests are performed by experienced technicians and crew, equipped with all of the required training/certification for the profession. The test equipment such as pumps, gauges & chart recorders are all of international brands, duly calibrated and certified. Hydro tests are performed in accordance with ASME standards, ENASCO Hydro testing IOP, manufacturers, or client specifications. As a safety aspect, ENASCO recommends that applicable NDT be performed prior to hydro testing on any pressurized equipment.
+            </p>
+            <br />
+            <h2 className=' font-bold'>TESTS:</h2>
+            <br />
+            <p>
+                Chiksan / Flow line, Oil / Water / Air /Gas Tank, Pressure Relief Valve, Riser Spool, X-mas tree, BOP, Blind Flange, Pressurized flow lines, Kill/Choke Manifolds, Well Control Equipment, etc.
+            </p>
+            <br />
+            <h2 className=' font-bold'>ADDITIONAL SERVICES:</h2>
+            <br />
+            <ul className='grid gap-4 list-disc list-inside'>
+                <li>Seal / O-ring replacement</li>
+                <li>Re-dressing</li>
+                <li>Iron repair & maintenance</li>
+                <li>Tagging with permanent identification band</li>
+                <li>Cleaning & painting</li>
+                <li>Borescope Inspection</li>
+            </ul><br/><br/>
+        </div>
+
+
+        ,
 
         <div>
         <p><b>Inspects:</b></p><br/>
@@ -422,6 +442,7 @@ export const services = [
             
                 ENASCO Drone Line Transfer is a patented drone technology for future use in its tug operations.
             <br/><br/>
+        
         </>
       ),
       subcontents: [
@@ -442,10 +463,21 @@ export const services = [
         </div>,
 
         <div>
-        <p>OPS-OES conducts inspections on various components, including Rig Structure, handling tools, lifting/hoisting equipment and accessories, BOP, pressure lines, travelling block, links, skids, swivels, containers, pumps, and other rig accessories.</p><br/>
-        <p>The Scope of Services includes inspections in accordance with related API specifications, API RP8B Category I to V. This involves the disassembly and replacement of defective components, cleaning and re-greasing movable parts, repainting, minor repairs, and more.</p><br/>
-        <p>OPS employs a Tagging System designed in compliance with API RP8B recommendations. According to these recommendations, the inspection frequency applies to equipment in use during a specified period. Equipment that successfully passes an API RP 8B inspection is tagged. When the due date for the next inspection arrives, equipment with intact seals indicates that it has not been in service during the specified period. In such cases, the results of the last inspection are considered valid, and the equipment does not have to undergo re-inspection.</p><br/><br/>
-        </div>,
+        <h2 className=' font-bold'>ENSACO INSPECTS:</h2><br/>
+        <p>
+        Rig Structure, handling tools, lifting/hoisting equipment and accessories, BOP, pressure lines, travelling block, links, skids, swivels, containers, pumps, and other rig accessories.
+        </p><br/>
+        <h2 className=' font-bold'>SCOPE OF SERVICES:</h2><br/>
+        <p>
+        Inspection in accordance related API specifications, API RP8B Category I to V, Disassembly Replacement of defective components, Cleaning & re-greasing movable parts, Repainting, Mino repair, etc.
+        </p><br/>
+        <h2 className=' font-bold'>ENASCO TAGGING SYSTEM:</h2><br/>
+        <p>
+        This tagging system was developed in compliance with API RP8B recommendation which states that “inspection frequency applies to the equipment in use during the specified period”. Equipment that has passed an API RP 8B inspection will be tagged and in time for the due date of next inspection, equipment found to have intact seals indicates that the equipment has not been put in service during the specified period and therefore the result of the last inspection will be considered valid and the equipment don’t have to be re-inspected.
+        </p><br/><br/>
+
+        </div>
+        ,
 
         <div>
         <h2><b>LIFTING EQUIPMENT INSPECTION AND TESTING</b></h2>
@@ -497,7 +529,7 @@ export const services = [
             
                 Our services not only benefit companies that own or operate tugs but also shipping companies, port authorities, marine contractors, terminal operators, insurance companies, and engineering agencies.
             <br/><br/>
-            <h2><b>RAISING STANDARDS THROUGH SHARED AWARENESS</b></h2>
+            <h2><b>RAISING STANDARDS THROUGH SHARED AWARENESS</b></h2><br/>
             
                 We believe that improved safety, efficiency, and profitability are achieved when everybody properly understands the big picture.
             <br/><br/>
@@ -507,12 +539,13 @@ export const services = [
             
                 Whether we are helping to optimize port infrastructure, increasing Tug Masters’ skill levels, or enabling masters of other vessel types to cooperate better with tugs, our all-round vision means everybody performs better.
             <br/><br/>
+        
         </>
       ),
       subcontents: [
         <div>
             <h2><b>IADC</b></h2><br/>
-            <ul>
+            <ul className=' list-disc list-inside'>
                 <li>IADC Well CAP - Workover & Completion Coiled Tubing Wireline Snubbing</li>
                 <li>IADC DIT - Stuck Pipe Prevention</li>
                 <li>IADC HSE Rig Pass-Land & Offshore</li>
@@ -521,7 +554,7 @@ export const services = [
             </ul><br/>
             
             <h2><b>IBOEHS</b></h2><br/>
-            <ul>
+            <ul className=' list-disc list-inside'>
                 <li>RSP- Registered Safety Professional</li>
                 <li>RSM-Registered Safety Manager</li>
                 <li>RSO-Registered Safety Officer</li>
@@ -530,21 +563,35 @@ export const services = [
             </ul><br/>
             
             <h2><b>IMIST</b></h2><br/>
-            <ul>
+            <ul className=' list-disc list-inside'>
                 <li>IMIST</li>
             </ul><br/>
             
             <h2><b>IOSH</b></h2><br/>
-            <ul>
+            <ul className=' list-disc list-inside'>
                 <li>Working Safely</li>
                 <li>Managing Safely</li>
             </ul><br/>
             
             <h2><b>HSE (Health, Safety, and Environment):</b></h2><br/>
+            <ul className=' list-disc list-inside text-left grid gap-1'>
+            <li>H2S and SCBA.</li>
+            <li>Fire Fighting.</li>
+            <li>Confined Space Entry and Rescue.</li>
+            <li>NASP 10-hour Course for General Industry NASP 30-hour Course for General Industry NASP 10-hour Course for Construction NASP 30-hour Course for Construction</li>
+            <li>Occupational Safety and Health Basic Diploma Occupational Safety and Health Advanced Diploma Occupational Safety and Health Supervisor Diploma</li>
+            <li>Egress/Fire Safety Protection</li>
+            <li>Electrical Safety Ergonomics</li>
+            <li>Hazard Communication (GHS) Hazardous Materials HAZWOPER Awareness Lockout Tagout</li>
+            <li>Machine Guarding</li>
+            <li>PPE Personal Protective Equipment (PPE) H2S Hydrogen sulfide</li>
+            <li>BBS Behavior-based safety (Changing Safety Behavior)</li>
+            <li>Hazard Identification and Risk Assessment Manual Handling</li>
+            </ul><br/>
 
             <p><b>Quality, HSE and Environment MS Training Courses:</b></p><br/>
 
-            <ul>
+            <ul className=' list-disc list-inside'>
             <li>API Q1 9TH Edition Awareness</li>
             <li>API Q2 1ST Edition Awareness</li>
             <li>ISO 9001 Foundation and Internal Auditor Training course</li>

@@ -29,6 +29,7 @@ function Banner() {
     }
 
   return (
+    <>
     <div className='bg-[#e3e3e3] -mt-20 overflow-hidden ' id='banner'>
       <div
           className="bg-cover bg-center h-screen "
@@ -38,6 +39,9 @@ function Banner() {
           }}
       >
       </div>
+
+    </div>
+
     <WrapperCard className='relative'>
         <div
         
@@ -50,7 +54,7 @@ function Banner() {
             animate = 'visible'
             transition = {{ duration: 0.5, delay: 0.25 }}
 
-            className='absolute lg:bottom-[5rem] bottom-0'>
+            className='absolute lg:bottom-[5rem] bottom-[1rem]'>
             <div className='flex flex-col justify-between lg:flex-row py-4 w-full'>
                 <p className='lg:basis-[700px] uppercase font-extrabold text-3xl md:text-[2rem] lg:text-5xl 2xl:text-6xl text-white'>Connect your business world.</p>   
                 <Link to='/enasco_v1/contact' onClick={ () => { window.scrollTo({ top: 0, behavior: 'smooth' }); }} className=' justify-center mt-2 lg:basis-[230px] cursor-pointer  bg-[#e3e3e3] lg:text-left lg:text-[#2d3540] hover:bg-[#ff6c40] w-full hover:text-white uppercase text-lg p-2 lg:p-4 self-end font-extrabold lg:bg-[#e3e3e3] ml-2 flex items-center'>
@@ -107,7 +111,7 @@ function Banner() {
                 
        
     </WrapperCard>
-    <div className='faqs py-3 lg:hidden bg-[#ff6c40]'>    
+    <div className='faqs py-3 z-50 lg:hidden bg-[#ff6c40] '>    
     {services.map((item, i) => (
         <div className='faq pl-2' key={item.id}>
             <button className={`collapsible hover:underline ${collapsed === i ? "faqactive" : ""}`} onClick={() => toggle(i)}>{item.question}</button>
@@ -121,8 +125,7 @@ function Banner() {
         </div>
     ))}
     </div>
-
-    </div>
+    </>
   )
 }
 

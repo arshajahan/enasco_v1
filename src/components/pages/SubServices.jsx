@@ -43,8 +43,12 @@ function SubServices() {
             <br/><br/>
             <div>
                 {x !== 9 && services[xx].content}
+                {x !== 9 && services[xx].subcontents.map((sc, key) => (
+                    <div key={key}>
+                      {sc}
+                    </div>
+                ))}
                 {x === 9 && services[xx].subcontents[subid]} 
-                
             </div>
         </div>
 
