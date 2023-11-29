@@ -48,7 +48,11 @@ function InDetail() {
                 </div>
             </div>
             <div className=' mt-20 grid sm:flex lg:grid gap-3 text-white md:font-bold w-fit'>
-                <Link to='/enasco_v1/sustainability' className='p-3 self-center navlink w-fit bg-[#ff6c40]'>
+                <Link
+                    to='/enasco_v1/sustainability' 
+                    className='p-3 self-center navlink w-fit bg-[#ff6c40]'
+                    onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' })} }
+                >
                     SUSTAINABILITY
                 </Link>
                 <Link to='/enasco_v1/about' className='p-3 self-center navlink w-fit bg-[#2d3540] '>VALUES</Link>

@@ -32,23 +32,23 @@ function Navbar() {
 
   return (
     <div className={`sticky top-0 z-50 bg-white shadow-lg overflow-x-clip`}>
-      <div className={`transition-transform transform duration-500 ${isExpertiseClicked ? 'translate-y-0' : 'translate-y-full'} absolute top-20 h-screen w-full bg-[#ff6c40]`}>
+      <div className={`transition-transform transform duration-500 ${isExpertiseClicked ? 'translate-y-0' : 'translate-y-full'} absolute top-20 h-screen w-full bg-gray-700`}>
         <WrapperCard className='relative h-screen text-white bg-[#ff6c40]'>
           <div className='flex gap-0'>
             <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-white right-12 top-24'>X</span>
-            <div className='bg-[#ff6c40] py-32 lg:basis-1/3 z-30 grid items-center '>
+            <div className='bg-gray-700 py-32 lg:basis-1/3 z-30 grid items-center '>
               <span className='pl-6 mb-6'>LEARN MORE ABOUT</span>
               {services.map((service, key) => (
                 <div
                   key={key}
                   onClick={() => setSelectedQuestion(key)}
-                  className={` ${selectedQuestion === key ? ' bg-gray-700 text-white ' : 'cursor-pointer'} flex uppercase font-extrabold h-auto   bg-[#ff6c40] py-3`}>
+                  className={` ${selectedQuestion === key ? ' bg-orange-500 text-white ' : 'cursor-pointer'} flex uppercase font-extrabold h-auto   bg-gray-700 py-3`}>
                   <span className='md:text-base lg:text-[1.3rem] md:basis-52 lg:basis-56 pl-6 '>{service.question} <span className=' '>&#129170;</span></span>
                 </div>
               ))}
             </div>
 
-            <div className={`${selectedQuestion !== null ? 'lg:basis-1/2' : ''} z-10  flex-shrink h-screen md:grid items-center text-2xl bg-gray-700 text-white`}>
+            <div className={`${selectedQuestion !== null ? 'lg:basis-1/3' : ''} opacity-90 z-10  flex-shrink h-screen md:grid items-center text-2xl bg-gray-700 text-white`}>
               {selectedQuestion !== null && (
                 <div className='w-full'>
                   <ul className='grid gap-6 '>
