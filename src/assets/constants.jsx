@@ -1,7 +1,7 @@
 import indt from './images/ndt.jpg'
 import wct from './images/wct.jpg'
 import training from './images/training.jpg'
-import n3 from './images/marine.jpg'
+import n3 from './images/marine.png'
 import n1 from '../assets/images/news1.jpg'
 import n2 from '../assets/images/new2.jpeg'
 

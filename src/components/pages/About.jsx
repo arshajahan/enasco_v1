@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import WrapperCard from '../UI/WrapperCard'
-import directors from '../../assets/images/directors.jpg'
+import directors from '../../assets/images/directors.png'
 import boat from '../../assets/images/about.jpg'
 import { Link } from 'react-router-dom'
 
