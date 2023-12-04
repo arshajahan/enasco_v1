@@ -9,6 +9,27 @@ function Banner() {
 
     const [hoveredQuestion, setHoveredQuestion] = useState(null);
 
+    const isElementInViewport = (el) => {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    };
+  
+    useEffect(() => {
+      const answersDiv = document.getElementById(`answers`);
+      if (answersDiv) {
+        // Check if answers div is in viewport
+        if (!isElementInViewport(answersDiv)) {
+          // Scroll to answers div if it's not in viewport
+          answersDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    }, [hoveredQuestion]);
+
     useEffect(() => {
         // Scroll to the section based on the hash
         const hash = window.location.hash;
@@ -86,7 +107,9 @@ function Banner() {
           </Link>
 
           {hoveredQuestion === key && (
+
             <motion.div
+              id='answers'
               className='absolute text-sm w-full bg-white lg:flex px-5 h-auto text-[#2d3540]'
               variants={{
                 hidden: { opacity: 0, y: 10 },

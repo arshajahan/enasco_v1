@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import WrapperCard from '../UI/WrapperCard'
-import directors from '../../assets/images/directors.png'
-import boat from '../../assets/images/about.jpg'
+import directors from '../../assets/images/directors.webp'
+import boat from '../../assets/images/about.webp'
 import { Link } from 'react-router-dom'
 
 function About() {

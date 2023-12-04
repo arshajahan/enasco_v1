@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import logo from './../assets/images/logo.png';
 import WrapperCard from './UI/WrapperCard';
 import { services } from '../assets/constants';
-import bannerImage from '../assets/images/boat.jpg'
 
 function Navbar() {
   const [isExpertiseClicked, setExpertiseClicked] = useState(false);
