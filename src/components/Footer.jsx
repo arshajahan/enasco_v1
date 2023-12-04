@@ -72,10 +72,10 @@ function Footer() {
                       <br/>
                       <br/><hr/><br/>
                       <h3>Visitor Address:</h3>
-                      <p className=' mt-3 '>  
-                        21st Floor, Al Jon Tower<br/>
-                        Fahad Al Salem Street, Block # 12<br/>
-                        Qibla, Kuwait City<br/>
+                      <p className=' mt-4 '>  
+                        Block 7, Street 400,<br/>
+                        East Al-Ahmadi - 64018, Ahmadi,<br/>
+                        Kuwait<br/>
                       </p>
                       <br/>
                       <div className=' w-fit flex gap-4'>

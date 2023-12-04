@@ -15,9 +15,9 @@ function Contact() {
             <div className='mt-10 '>
                 <h1 className='text-gray-700 text-4xl md:text-5xl font-extrabold'>CONTACT</h1>
                 <p className=' mt-8 '>  
-                21st Floor, Al Jon Tower<br/>
-                Fahad Al Salem Street, Block # 12<br/>
-                Qibla, Kuwait City<br/>
+                Block 7, Street 400,<br/>
+                East Al-Ahmadi - 64018, Ahmadi,<br/>
+                Kuwait<br/>
                 </p>
                 <p className='' ><br/>
                 Tel: +965 224 51 615<br/>
