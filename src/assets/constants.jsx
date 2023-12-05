@@ -120,7 +120,7 @@ export const services = [
      
         </div>,
         <div id='jetty-terminal' className='pt-16 md:pt-20'><h2><b><strong>Practical Support</strong></b></h2><br/>
-        With over five decades of operational experience in some of the world's most remote and challenging locations, we possess the expertise to adeptly manage marine operations. Equipped with both skilled personnel and ample resources, we are proficient in the safe operation and control of onshore and offshore terminal facilities. As a service, we aim to extend the advantage of our experience to our clients.<br/><br/>
+        With over 15 years of operational experience in Kuwait, we possess the expertise to adeptly manage marine operations. Equipped with both skilled personnel and ample resources, we are proficient in the safe operation and control of onshore and offshore terminal facilities. As a service, we aim to extend the advantage of our experience to our clients.<br/><br/>
         When the need arises, we offer hands-on assistance for remote (sub) contr\acted operations, ensuring seamless execution and heightened cost efficiency. ENASCO provides a competent team to operate and manage diverse marine terminal facilities. Acting on behalf of our clients, we can undertake a range of terminal management activities, including shore facility management, warehouse and jetty supervision, materials control, supervision, and scheduling of third-party contracted vessels, as well as export tanker berthing and loading scheduling.<br/><br/>
         Entrusting us with their business, our clients demonstrate confidence in ENASCO's integrity and expertise, allowing us to autonomously run operations. Terminal management, for us, goes beyond being just another assignment; it serves as a token of appreciation and a testament to a robust partnership.
      
@@ -319,24 +319,24 @@ export const services = [
       subcontents: [
         <div className='pt-16 md:pt-20' id='welding'>
         <p>Our team of highly skilled designers, welders, inspectors, and painters specializes in fabricating a comprehensive range of equipment, including cargo carrying units (CCUs), tool racks, and tanks.</p><br/>
-        <p>The ENASCO team prioritizes quality in construction: all structural members are crafted from hot-rolled steel, joints are continuously welded, and lifting point pad eyes are precisely engineered to match the specifications of the employed shackles. Each CCU is meticulously designed and fabricated in compliance with British standards, with all welding undergoing a 100% Magnetic Particle Inspection (MPI) process. This inspection is conducted on all lifting points both before and after proof load testing.</p><br/>
-        <p>Upon completion, CCUs can be painted according to the client's specifications and are delivered marked with the correct Safe Working Load (SWL). Additionally, each CCU is accompanied by a comprehensive documentation package, including material details, non-destructive testing (NDT) results, welding certificates, and load test certificates.</p><br/>
+        <p>The ENASCO team prioritizes quality in construction: all structural members are crafted from hot-rolled steel, joints are continuously welded, and lifting point pad eyes are precisely engineered to match the specifications of the employed shackles. Each welded equipment is meticulously designed and fabricated in compliance with British standards, with all welding undergoing a 100% Magnetic Particle Inspection (MPI) process. This inspection is conducted on all lifting points both before and after proof load testing.</p><br/>
+        <p>Upon completion, welded equipments can be painted according to the client's specifications and are delivered marked with the correct Safe Working Load (SWL). Additionally, each welded equipment is accompanied by a comprehensive documentation package, including material details, non-destructive testing (NDT) results, welding certificates, and load test certificates.</p><br/>
         </div>,
 
         <div className='pt-16 md:pt-20' id='wellcontrol'>
         <p><b>Oilfield Pressure Control Services</b></p><br/>
         <p>ENASCO provides equipment, instruments, and facilities conforming to international standards for conducting pressure control operations in alignment with API procedures. Specialist welding, heat treatment, and full stress relieving are applied alongside machining processes when necessary. The Pressure Control Facility offers a range of services including:</p><br/>
-        <ul className=' list-disc list-inside text-left'>
-        <li>Repair and maintenance of Pressure Control Equipment</li>
-        <li>Comprehensive overhaul, including machining, welding, post-weld heat treatment (PWHT), and pressure testing</li>
-        <li>Servicing of Production Well Head and X-Mass Tree components</li>
-        <li>Repair and recertification of Blowout Preventers</li>
-        <li>Hydrostatic testing capabilities up to 30,000 PSI</li>
-        <li>Possession of a Certified API 6A License</li>
-        <li>Manufacture and refurbishment of Wellhead/choke components</li>
-        <li>Weld overlays, inlays, and hard facing services</li>
-        <li>ENASCO holds qualifications in Kuwait, having been recognized by HYDRIL-USA as their official Authorized Repair Facility.</li>
-        </ul><br/>
+        <ul className='list-disc list-inside text-left' style={{ paddingLeft: '1.5rem' }}>
+          <li style={{ textIndent: '-1.5rem' }}>Repair and maintenance of Pressure Control Equipment.</li>
+          <li style={{ textIndent: '-1.5rem' }}>Comprehensive overhaul, including machining, welding, post-weld heat treatment (PWHT), and pressure testing.</li>
+          <li style={{ textIndent: '-1.5rem' }}>Servicing of well control equipment.</li>
+          <li style={{ textIndent: '-1.5rem' }}>Repair and recertification of Blowout Preventers.</li>
+          <li style={{ textIndent: '-1.5rem' }}>Hydrostatic testing capabilities up to 15,000 PSI.</li>
+          <li style={{ textIndent: '-1.5rem' }}>Possession of a Certified API 6A License.</li>
+          <li style={{ textIndent: '-1.5rem' }}>Refurbishment of Wellhead/choke components.</li>
+          <li style={{ textIndent: '-1.5rem' }}>Weld overlays, inlays, and hard facing services.</li>
+      </ul>
+<br/>
         </div>,
 
         <div className='pt-16 md:pt-20' id='downhole'>
@@ -345,7 +345,7 @@ export const services = [
         <li>Reamers and stabilizers in a wide range of sizes, in chromium molybdenum solid alloy steel, to the requirements of AISI 4145H modified</li>
         <li>Double action drilling jars from the world’s leading suppliers, with full maintenance, overhaul and testing support</li>
         <li>Shock tools both standard and non-standard, from top suppliers, suitable for the most testing tasks and environments</li>
-        <li>Fishing tools a comprehensive range of top-quality standard tools, and the ability to manufacture one-off tools for unusual and difficult conditions</li>
+        <li>Fishing tools a comprehensive range of top-quality standard tools.</li>
         </ul>
 
         </div>
@@ -397,7 +397,7 @@ export const services = [
       path:'inspection',
       answer: [
         "OCTG / Tubular Inspection",
-        "Non Distractive Test",
+        "Non-Destructive Testing",
         "Rig Equipment Inspection",
         "Lifting and Drop Survey",
         "Calibration Service"
@@ -410,7 +410,7 @@ export const services = [
                 <br/><br/>
                 <ul className='grid gap-1 list-disc list-inside'>
                   <li><a href="#octg">OCTG / Tubular Inspection</a></li>
-                  <li><a href="#ndt">Non Distractive Test</a></li>
+                  <li><a href="#ndt">Non-Destructive Testing</a></li>
                   <li><a href="#rei">Rig Equipment Inspection</a></li>
                   <li><a href="#lds">Lifting and Drop Survey</a></li>
                   <li><a href="#cs">Calibration Service</a></li>
@@ -429,11 +429,19 @@ export const services = [
             <br/><p>The range of services encompasses, but is not restricted to: Visual Thread Inspection, Visual Body Inspection, Full-Length Drift Test, UT Wall Thickness Test, Optional Full-Length EMI 1, Hydrostatic Testing, and Storage and Management.</p><br/>
             <b>Maintenance work is performed in accordance with API standards or client specifications, including the selection of the coating product to be applied.</b><br/>
             <br/><p>The services provided cover, but are not limited to: Cleaning and re-doping connections, Full-Length Internal/External Cleaning and Coating, Re-stenciling pipe specifications, Re-painting coupling and pipe color code identification, as well as Storage and Management.</p>
+            <br/>
+            <ul className='list-disc list-inside text-left'>
+              <li>Drill pipe inspection according to DS-1 inspection.</li>
+              <li>Casing/Tubing inspection.</li>
+              <li>BHA components according to DS-1.</li>
+              <li>Various subs inspection.</li>
+            </ul>
+            <br/>
         </div>,
 
         <div className='pt-16 md:pt-20' id='ndt'>
-        <p>OPS NDT extends its comprehensive Non-Destructive Testing (NDT) services to cover a broad spectrum of locations, including both onshore and offshore environments. Our NDT inspectors are distinguished by their high level of expertise, holding certifications at Level II and III. These professionals undergo rigorous training, equipping them with the skills necessary for their roles. Importantly, our inspectors are readily available for short-notice assignments, whether they be onshore or offshore.</p><br/>
-        <p>At OPS NDT, we prioritize the adherence to specific procedures and the highest standards of Safety, Security, Health, and Environment (SSHE). This commitment ensures that all inspections and tests conducted by our skilled professionals meet stringent criteria for safety and environmental responsibility. Clients can have confidence in the reliability and proficiency of OPS NDT services, whether in onshore or offshore settings, with the assurance that inspections and tests are carried out to the highest industry standards.</p>
+        <p>ENASCO NDT extends its comprehensive Non-Destructive Testing (NDT) services to cover a broad spectrum of locations, including both onshore and offshore environments. Our NDT inspectors are distinguished by their high level of expertise, holding certifications at Level II and III. These professionals undergo rigorous training, equipping them with the skills necessary for their roles. Importantly, our inspectors are readily available for short-notice assignments, whether they be onshore or offshore.</p><br/>
+        <p>At ENASCO NDT, we prioritize the adherence to specific procedures and the highest standards of Safety, Security, Health, and Environment (SSHE). This commitment ensures that all inspections and tests conducted by our skilled professionals meet stringent criteria for safety and environmental responsibility. Clients can have confidence in the reliability and proficiency of ENASCO NDT services, whether in onshore or offshore settings, with the assurance that inspections and tests are carried out to the highest industry standards.</p>
         </div>,
 
         <div className='pt-16 md:pt-20' id='rei'>
@@ -572,15 +580,6 @@ export const services = [
             <li>Soil Quality Monitoring</li>
             </ul><br/>
 
-            <h2><b>Soil Remediation / Oil Spill:</b></h2><br/>
-            <ul className=' list-disc list-inside'>
-            <li>Oil Sludge and Contaminated Soil Treatment</li>
-            <li>Oil Spill Plan</li>
-            <li>Oil Spill Recovery</li>
-            <li>Ecological Rehabilitation of Environment</li>
-            <li>Waste Characterization & Waste Management</li>
-            </ul><br/>
-
             <h2><b>Waste Management:</b></h2><br/>
             <ul className=' list-disc list-inside'>
             <li>Development of waste management plan</li>
@@ -594,7 +593,6 @@ export const services = [
             <ul className=' list-disc list-inside'>
             <li>ISO 9001 Certification – Quality Certified</li>
             <li>ISO 14001 Certification – Environmentally Certified</li>
-            <li>OHSAS 18001 Certification – Safety Certified</li>
             <li>ISO 22000 Certification – Food Safety Certified</li>
             <li>HACCP Certification – HACCP Certified</li>
             <li>ISO 27001 Certification – Information Security Certified</li>

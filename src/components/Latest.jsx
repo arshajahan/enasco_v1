@@ -42,7 +42,7 @@ function Latest() {
                                 key={index}
                                 className='flex flex-col basis-full md:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex-grow bg-white'
                             >
-                                <div className='h-48'>
+                                <div className='h-48 bg-[#e3e3e3]'>
                                 <img src={item.image} className=' h-48 w-full' alt={`News ${index}`} />
                                 </div>
                                 <div className='flex flex-col justify-between p-6 gap-16 h-full '>
