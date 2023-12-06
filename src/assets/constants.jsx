@@ -98,7 +98,7 @@ export const services = [
         <>
         Marine Services of the ENASCO include:
         <br/><br/>
-        <ul className='grid gap-1 list-disc list-inside'>
+        <ul className='grid gap-1 custom-list'>
           <li><a href="#vessel-handling">Vessel Handling</a></li>
           <li><a href="#pilotage-mooring">Pilotage & Mooring</a></li>
           <li><a href="#jetty-terminal">Jetty & Terminal Management</a></li>
@@ -133,17 +133,18 @@ export const services = [
         ENASCO offers a comprehensive solution by providing both the system and skilled specialists to operate it as an integrated service for our clients. Alternatively, we can integrate with pre-installed, client-owned vessel traffic systems for seamless port management.<br/><br/>
         Our tug schedulers are highly trained specialists   equipped with extensive local port knowledge and a profound understanding of shipping operations. Each has successfully completed a 6–8-week theoretical course on vessel traffic management complexities and tug scheduling, complemented by hands-on training.<br/><br/>
         One notable example of our vessel management expertise is evident in the ports of Gladstone and Brisbane, where we oversee the SLTA scheduling department. With a dedicated team working 24/7 in two 12-hour shifts, we monitor and control all marine traffic in and around the port from our Tug Management Control Centre. Using shore-based systems, we:<br/><br/>
-        <ul className=' grid gap-1 list-disc list-inside'>
-        <li>Maintain communication with tugs maneuvering ships through the port</li>
-        <li>Sustain 24/7 VHF radio contact</li>
-        <li>Manage a 24/7 crewed emergency standby tug for three LNG plants</li>
-        <li>Preserve the integrity of shipping schedules</li>
-        <li>Strategically plan tug movements</li>
-        <li>Utilize an effective tug scheduling tool tailored to local conditions</li>
-        <li>Ensure compliance with relevant statutory requirements (Marine Radio)</li>
-        <li>Enhance navigational safety through information exchange with tug crews</li>
-        <li>Maximize customer satisfaction with the provided services</li>
-        </ul><br/>
+        <ul className='grid gap-1 custom-list' >
+          <li>Maintain communication with tugs maneuvering ships through the port</li>
+          <li>Sustain 24/7 VHF radio contact</li>
+          <li>Manage a 24/7 crewed emergency standby tug for three LNG plants</li>
+          <li>Preserve the integrity of shipping schedules</li>
+          <li>Strategically plan tug movements</li>
+          <li>Utilize an effective tug scheduling tool tailored to local conditions</li>
+          <li>Ensure compliance with relevant statutory requirements (Marine Radio)</li>
+          <li>Enhance navigational safety through information exchange with tug crews</li>
+          <li>Maximize customer satisfaction with the provided services</li>
+        </ul>
+        <br/>
         In terms of communication tools, our scheduling department employs various channels such as VHF, mobile phones/SMS, internal domestic radio, email (including non-scheduling purposes), AIS, and privately developed scheduling tools to liaise with individual tugs, provide information, issue weather and safety warnings, and detail the position of other vessels.<br/><br/>
         <br/>
         </div>,
@@ -165,7 +166,7 @@ export const services = [
         <div>
           Subsea Services of the ENASCO include:
           <br/><br/>
-          <ul className='grid gap-1 list-disc list-inside'>
+          <ul className='grid gap-1 custom-list'>
             <li><a href="#spm">SPM Operations and Maintenance</a></li>
             <li><a href="#asset">Asset Integrity Management</a></li>
             <li><a href="#pollution">Pollution control</a></li>
@@ -182,7 +183,7 @@ export const services = [
             <p>ENASCO's MIRMO Service Program stands as the exclusive answer for ensuring the complete integrity, reliability, and availability of an offshore buoy terminal for our clients.</p>
             <br/>
             <h2><b>Our SPM O&M Services</b></h2><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
                 <li><a href="#operations">Operations & Maintenance (O&M)</a></li>
                 <li><a href="#single-point">Single Point Mooring Services</a></li>
                 <li><a href="#hose-inventory">Hose Inventory Management</a></li>
@@ -208,7 +209,7 @@ export const services = [
 
             <h2 id="hose-changeout" className='pt-16 md:pt-20'><b>Hose Changeout</b></h2><br/>
             <p>Hose replacement is necessary in accordance with OCIMF guidelines and also when hoses are damaged, outdated, or subjected to extreme events. This service encompasses:</p><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
                 <li>Installation</li>
                 <li>Disassembly or assembly of hose strings</li>
                 <li>Flushing</li>
@@ -221,7 +222,7 @@ export const services = [
             <h2 id="emergency-pipeline" className='pt-16 md:pt-20'><b>Emergency Pipeline Repair Services</b></h2><br/>
             <p>We specialize in delivering emergency response services for the repair of pipelines within the expansive intertidal zone, where traditional open-water and land-based emergency response machinery may struggle to reach or operate effectively. Our primary aim is to reduce the environmental impact and production losses resulting from unforeseen events related to pipeline integrity failures or accidental damages. This is achieved through the use of appropriate machinery and established repair techniques to identify, isolate, contain, expose, repair/replace, restore, and rehabilitate the affected site.</p>
             <p>Our ERS services are organized into the following key categories:</p><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
                 <li>Intertidal Zone</li>
                 <li>Deep Water</li>
                 <li>Oil Spill Response (OSR)</li>
@@ -233,7 +234,7 @@ export const services = [
             <p>Our core focus lies in offering a range of pipeline services, including cleaning, dewatering, de-oiling, flushing, and fluid separation, with a particular emphasis on undiggable pipelines and those with sensitive linings. We achieve this using elastic products that are not only environmentally friendly but also easily degradable, breaking down into non-harmful components.</p>
             <p>We are dedicated to ensuring the correct filling of pipelines with preservation fluid and maintaining regular monitoring to safeguard the pipeline during the preservation period. The utilization of elastic pipeline products facilitates the proper filling of the pipeline with initial oil, minimizing the mixing of preservation fluid and initial oil. Additionally, it effectively cleans the pipeline before its first use.</p>
             <p>Our comprehensive pipeline solution services encompass the following key components:</p><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
                 <li>PLEM Integrity Management</li>
                 <li>Pipeline Preservation & First Oil</li>
                 <li>Cathodic Protection</li>
@@ -254,7 +255,7 @@ export const services = [
         <div id='asset' className='pt-16 md:pt-20'>
         <h1><b>Asset Integrity Management (AIM)</b></h1><br/>
         Our Asset Integrity Management services:<br/><br/>
-        <ul className=' list-disc list-inside'>
+        <ul className=' custom-list'>
         <li>(Hose) Integrity Management </li>
         <li>Data Acquisition </li>
         <li>Mooring integrity & hose analysis</li>
@@ -304,7 +305,7 @@ export const services = [
              <div>
                 Workshop Facility of ENASCO include:
                 <br/><br/>
-                <ul className='grid gap-1 list-disc list-inside'>
+                <ul className='grid gap-1 custom-list'>
                   <li><a href="#welding">Welding and Fabrication</a></li>
                   <li><a href="#wellcontrol">Well Control Testing</a></li>
                   <li><a href="#downhole">Down Hole Tools Services</a></li>
@@ -326,15 +327,15 @@ export const services = [
         <div className='pt-16 md:pt-20' id='wellcontrol'>
         <p><b>Oilfield Pressure Control Services</b></p><br/>
         <p>ENASCO provides equipment, instruments, and facilities conforming to international standards for conducting pressure control operations in alignment with API procedures. Specialist welding, heat treatment, and full stress relieving are applied alongside machining processes when necessary. The Pressure Control Facility offers a range of services including:</p><br/>
-        <ul className='list-disc list-inside text-left' style={{ paddingLeft: '1.5rem' }}>
-          <li style={{ textIndent: '-1.5rem' }}>Repair and maintenance of Pressure Control Equipment.</li>
-          <li style={{ textIndent: '-1.5rem' }}>Comprehensive overhaul, including machining, welding, post-weld heat treatment (PWHT), and pressure testing.</li>
-          <li style={{ textIndent: '-1.5rem' }}>Servicing of well control equipment.</li>
-          <li style={{ textIndent: '-1.5rem' }}>Repair and recertification of Blowout Preventers.</li>
-          <li style={{ textIndent: '-1.5rem' }}>Hydrostatic testing capabilities up to 15,000 PSI.</li>
-          <li style={{ textIndent: '-1.5rem' }}>Possession of a Certified API 6A License.</li>
-          <li style={{ textIndent: '-1.5rem' }}>Refurbishment of Wellhead/choke components.</li>
-          <li style={{ textIndent: '-1.5rem' }}>Weld overlays, inlays, and hard facing services.</li>
+        <ul className='custom-list' >
+          <li>Repair and maintenance of Pressure Control Equipment.</li>
+          <li>Comprehensive overhaul, including machining, welding, post-weld heat treatment (PWHT), and pressure testing.</li>
+          <li>Servicing of well control equipment.</li>
+          <li>Repair and recertification of Blowout Preventers.</li>
+          <li>Hydrostatic testing capabilities up to 15,000 PSI.</li>
+          <li>Possession of a Certified API 6A License.</li>
+          <li>Refurbishment of Wellhead/choke components.</li>
+          <li>Weld overlays, inlays, and hard facing services.</li>
       </ul>
 <br/>
         </div>,
@@ -365,7 +366,7 @@ export const services = [
             <br />
             <h2 className=' font-bold'>ADDITIONAL SERVICES:</h2>
             <br />
-            <ul className='grid gap-4 list-disc list-inside'>
+            <ul className='grid gap-4 custom-list'>
                 <li>Seal / O-ring replacement</li>
                 <li>Re-dressing</li>
                 <li>Iron repair & maintenance</li>
@@ -408,7 +409,7 @@ export const services = [
             <div>
                 Inspection & NDT of ENASCO include:
                 <br/><br/>
-                <ul className='grid gap-1 list-disc list-inside'>
+                <ul className='grid gap-1 custom-list'>
                   <li><a href="#octg">OCTG / Tubular Inspection</a></li>
                   <li><a href="#ndt">Non-Destructive Testing</a></li>
                   <li><a href="#rei">Rig Equipment Inspection</a></li>
@@ -430,7 +431,7 @@ export const services = [
             <b>Maintenance work is performed in accordance with API standards or client specifications, including the selection of the coating product to be applied.</b><br/>
             <br/><p>The services provided cover, but are not limited to: Cleaning and re-doping connections, Full-Length Internal/External Cleaning and Coating, Re-stenciling pipe specifications, Re-painting coupling and pipe color code identification, as well as Storage and Management.</p>
             <br/>
-            <ul className='list-disc list-inside text-left'>
+            <ul className='custom-list'>
               <li>Drill pipe inspection according to DS-1 inspection.</li>
               <li>Casing/Tubing inspection.</li>
               <li>BHA components according to DS-1.</li>
@@ -464,12 +465,13 @@ export const services = [
         <div className='pt-16 md:pt-20' id='lds'>
         <h2><b>LIFTING EQUIPMENT INSPECTION AND TESTING</b></h2><br/>
         <p>Our surveys offer a precise register and database reporting system that comprehensively covers all onboard hoisting and lifting equipment, ranging from shackles and slings to lifeboats and offshore cranes.</p><br/>
-        <ul className=' list-disc list-inside text-left grid gap-2'>
+        <ul className='custom-list text-left grid gap-2' >
           <li>All inspections adhere strictly to manufacturers' guidelines and relevant API, BS, Euro norms, in conjunction with LOLER SI 2307/1998.</li>
           <li>CD-ROMS are supplied, featuring a complete database containing identification numbers, descriptions, safe working loads, test certificate numbers, and details of previous inspections.</li>
           <li>Surveys are typically consolidated with those for hoisting and lifting equipment, ensuring comprehensive inspection coverage of all such equipment.</li>
           <li>Internet-based reporting provides clients with convenient and full access to the status of all equipment.</li>
         </ul>
+
         <br/>
         <h2><b>DROPS SERVICES INSPECTION</b></h2><br/>
         <p>Dropped objects considerations are fundamental to every aspect of our supply chain, encompassing design, construction, delivery, and installation.</p>
@@ -478,11 +480,12 @@ export const services = [
 
         <div className='pt-16 md:pt-20' id='cs'>
         <p>Our team possesses extensive expertise in calibrating weight indicators and various types of pressure gauges. We employ approved methods to ensure calibration aligns with industry standards, including:</p><br/>
-        <ul className=' list-disc list-inside text-left'>
-        <li>DKD R-6-1, ASME B40, ASME B40.1, and ASME B40.7 for gauges</li>
-        <li>ISO 4126-1/2004, Safety valves Part 1 – General Requirements, ISO 14313:2007, and API Recommended Practice 576 Second Edition for safety valves</li>
-        <li>Standard API Specification 6A, Eighteenth Edition, May 2002, ISO 10423:2003 for manifolds</li>
-        </ul><br/>
+        <ul className='custom-list' >
+          <li>DKD R-6-1, ASME B40, ASME B40.1, and ASME B40.7 for gauges</li>
+          <li>ISO 4126-1/2004, Safety valves Part 1 – General Requirements, ISO 14313:2007, and API Recommended Practice 576 Second Edition for safety valves</li>
+          <li>Standard API Specification 6A, Eighteenth Edition, May 2002, ISO 10423:2003 for manifolds</li>
+        </ul>
+        <br/>
         </div>
             
       ]
@@ -510,7 +513,7 @@ export const services = [
       subcontents: [
         <div>
             <h2><b>IADC</b></h2><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
                 <li>IADC Well CAP - Workover & Completion Coiled Tubing Wireline Snubbing</li>
                 <li>IADC DIT - Stuck Pipe Prevention</li>
                 <li>IADC HSE Rig Pass-Land & Offshore</li>
@@ -519,7 +522,7 @@ export const services = [
             </ul><br/>
             
             <h2><b>IBOEHS</b></h2><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
                 <li>RSP- Registered Safety Professional</li>
                 <li>RSM-Registered Safety Manager</li>
                 <li>RSO-Registered Safety Officer</li>
@@ -528,18 +531,18 @@ export const services = [
             </ul><br/>
             
             <h2><b>IMIST</b></h2><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
                 <li>IMIST</li>
             </ul><br/>
             
             <h2><b>IOSH</b></h2><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
                 <li>Working Safely</li>
                 <li>Managing Safely</li>
             </ul><br/>
             
             <h2><b>HSE (Health, Safety, and Environment):</b></h2><br/>
-            <ul className=' list-disc list-inside text-left grid gap-1'>
+            <ul className=' custom-list text-left grid gap-1'>
             <li>H2S and SCBA.</li>
             <li>Fire Fighting.</li>
             <li>Confined Space Entry and Rescue.</li>
@@ -556,7 +559,7 @@ export const services = [
 
             <p><b>Quality, HSE and Environment MS Training Courses:</b></p><br/>
 
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
             <li>API Q1 9TH Edition Awareness</li>
             <li>API Q2 1ST Edition Awareness</li>
             <li>ISO 9001 Foundation and Internal Auditor Training course</li>
@@ -569,7 +572,7 @@ export const services = [
 
         <div>
             <h2><b>Environmental Monitoring & Testing:</b></h2><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
             <li>Indoor Air Quality</li>
             <li>Ambient Air Quality</li>
             <li>Dust Monitoring</li>
@@ -581,7 +584,7 @@ export const services = [
             </ul><br/>
 
             <h2><b>Waste Management:</b></h2><br/>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
             <li>Development of waste management plan</li>
             <li>Conduct waste management survey</li>
             <li>Implement waste management system</li>
@@ -590,7 +593,7 @@ export const services = [
 
             <h2 className=' text-xl'><b>ISO & Audit Certification:</b></h2><br/>
             <b>Accredited Programs:</b>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
             <li>ISO 9001 Certification – Quality Certified</li>
             <li>ISO 14001 Certification – Environmentally Certified</li>
             <li>ISO 22000 Certification – Food Safety Certified</li>
@@ -600,7 +603,7 @@ export const services = [
             <li>ISO 50001 Certification – Energy Certified</li>
             </ul><br/>
             <b>International Certification Body:</b>
-            <ul className=' list-disc list-inside'>
+            <ul className=' custom-list'>
             <li>Bureau Veritas (BV) - France</li>
             <li>TQCS International (TQCSI) – Australia</li>
             <li>TUV Rheinland (TUV) – Germany</li>

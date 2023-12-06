@@ -82,7 +82,7 @@ function Footer() {
                         <a href='https://www.linkedin.com/company/enasco/'><BsLinkedin size={20} /></a>
                         <a href='https://en-gb.facebook.com/enascowll'><BsFacebook size={20} /></a>
                         <a href='https://twitter.com/ENASCO_WLL'><BsTwitter size={20} /></a>
-                        <a href='https://api.whatsapp.com/send?phone=+96522451615&text=Hello%20Enasco'><BsWhatsapp size={20} /></a>
+                        {/* <a href='https://api.whatsapp.com/send?phone=+96522451615&text=Hello%20Enasco'><BsWhatsapp size={20} /></a> */}
                       </div>
                   </div>
 
@@ -97,7 +97,7 @@ function Footer() {
                     <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
                     <div className='mt-3 grid w-fit gap-3'>
                         {service.answer.map((answer, index) => (
-                            <Link to={`/enasco_v1/service/${service.path+':'+index}`} key={index}>{answer}</Link>
+                            <Link to={`/enasco_v1/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
                         ))}
                     </div>
                     <br />
@@ -111,7 +111,7 @@ function Footer() {
                     <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
                     <div className='mt-3 grid w-fit gap-3'>
                         {service.answer.map((answer, index) => (
-                            <Link to={`/enasco_v1/service/${service.path+':'+index}`} key={index}>{answer}</Link>
+                            <Link to={`/enasco_v1/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
                         ))}
                     </div>
                     <br />
@@ -124,7 +124,7 @@ function Footer() {
                     <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
                     <div className='mt-3 grid w-fit gap-3'>
                         {service.answer.map((answer, index) => (
-                            <Link to={`/enasco_v1/service/${service.path+':'+index}`} key={index}>{answer}</Link>
+                            <Link to={`/enasco_v1/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
                         ))}
                     </div>
                     <br />

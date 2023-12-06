@@ -53,7 +53,7 @@ function Navbar() {
                   <ul className='grid gap-6 '>
                     {services[selectedQuestion].answer.map((answer, index) => (
                       <Link
-                        to={`/enasco_v1/service/${services[selectedQuestion].path+':'+index}`}
+                        to={`/enasco_v1/service/${services[selectedQuestion].path+':'+answer.split(" ")[0]}`}
                         onClick={() => menuClicked()}
                         className={`${isExpertiseClicked ? 'px-12' : ''} lg:hover:text-[#ff6c40]`} key={index}>
                         {answer}
@@ -134,7 +134,7 @@ function Navbar() {
                     <ul className=' grid gap-4 py-4 text-lg text-[#2d3540]'>
                       {item.answer.map((answer, j) => (
                         <Link
-                          to={`/enasco_v1/service/${item.path+':'+j}`} 
+                          to={`/enasco_v1/service/${item.path+':'+answer.split(" ")[0]}`} 
                           key={j}
                           onClick={ () => menuClicked()}
                         >

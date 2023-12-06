@@ -71,3 +71,11 @@ ul a:hover{
   }
 }
 
+.custom-list {
+  list-style-type: disc; /* or any other desired list style */
+  list-style-position: inside;
+  text-indent: -1.5rem;
+  padding-left: 1.5rem;
+  gap: 1rem; /* Adjust the gap between list items */
+  text-align: left;
+}

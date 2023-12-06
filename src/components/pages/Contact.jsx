@@ -68,7 +68,7 @@ function Contact() {
                             <a href='https://www.linkedin.com/company/enasco/'><BsLinkedin size={28} /></a>
                             <a href='https://en-gb.facebook.com/enascowll'><BsFacebook size={28} /></a>
                             <a href='https://twitter.com/ENASCO_WLL'><BsTwitter size={28} /></a>
-                            <a href='https://api.whatsapp.com/send?phone=+96522451615&text=Hello%20Enasco'><BsWhatsapp size={28} /></a>
+                            {/* <a href='https://api.whatsapp.com/send?phone=+96522451615&text=Hello%20Enasco'><BsWhatsapp size={28} /></a> */}
                         </div>
                     </div>
             </div>

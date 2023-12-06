@@ -9,7 +9,7 @@ function SubServices() {
 
     const { id } = useParams();
     // const location = useLocation();
-    let x, xx, subid;
+    let x, xx, subid = 0, subservice;
 
     function getIdByPath(pathValue) {
       const foundObject = services.find(obj => obj.path === pathValue);
@@ -20,7 +20,9 @@ function SubServices() {
       const splitIds = id.split(':');
       x = 9;
       xx = getIdByPath(splitIds[0]);
-      subid = splitIds[1];
+      subservice = splitIds[1];
+      subid = services[xx].answer.findIndex(ans => ans.split(' ')[0] === subservice);
+
     } else {
       xx = getIdByPath(id);
       // If it's not in the "x-y" format, subid might be undefined or null depending on your logic.
@@ -39,8 +41,7 @@ function SubServices() {
             <h1 className='text-gray-700 text-left text-2xl md:text-3xl xl:text-4xl font-extrabold'>
               {x !== 9 && services[xx].question}
               {x === 9 && services[xx].answer[subid]} 
-            </h1>
-            <br/><br/>
+            </h1><br/>
             <div>
                 {x !== 9 && services[xx].content}
                 {x !== 9 && services[xx].subcontents.map((sc, key) => (
@@ -71,7 +72,7 @@ function SubServices() {
                 <a href='https://www.linkedin.com/company/enasco/'><BsLinkedin size={28} /></a>
                 <a href='https://en-gb.facebook.com/enascowll'><BsFacebook size={28} /></a>
                 <a href='https://twitter.com/ENASCO_WLL'><BsTwitter size={28} /></a>
-                <a href='https://api.whatsapp.com/send?phone=+96522451615&text=Hello%20Enasco'><BsWhatsapp size={28} /></a>
+                {/* <a href='https://api.whatsapp.com/send?phone=+96522451615&text=Hello%20Enasco'><BsWhatsapp size={28} /></a> */}
               </div>
             </div>
             <img src={services[xx].image} className='lg:h-full w-full object-cover' />
