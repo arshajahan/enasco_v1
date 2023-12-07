@@ -1,10 +1,35 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import contact from '../../assets/images/contact.webp'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import WrapperCard from '../UI/WrapperCard'
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter, BsWhatsapp, BsYoutube } from 'react-icons/bs'
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_gpn8986', 'template_nlxa8cp', form.current, 'iwKFdzCR0MIg42jD_')
+          .then(
+            (result) => {
+            //   console.log(result.text);
+              toast.success('Email sent successfully!');
+              e.target.reset();
+            },
+            (error) => {
+            //   console.log(error.text);
+              toast.error('Please submit again.');
+            }
+          );
+      };
+    
+
   return (
     <div className=' pt-8 bg-gray-200'>
     <WrapperCard className=' justify-between grid gap-8 lg:gap-56 lg:flex  '>
@@ -31,20 +56,23 @@ function Contact() {
                 </p>
                 <br/>
             </div>
-            <div className="w-full">
+            <form 
+                ref={form}
+                onSubmit={sendEmail}
+                className="w-full">
                 <div className="mb-4">
-                    <input type="text" placeholder="Your name" className="w-full border rounded py-2 px-3" />
+                    <input type="text" required placeholder="Your name" name='user_name' className="w-full border rounded py-2 px-3" />
                 </div>
                 <div className="mb-4">
-                    <input type="text" placeholder="Your email" className="w-full border rounded py-2 px-3" />
+                    <input type="text" required placeholder="Your email" name='user_email' className="w-full border rounded py-2 px-3" />
                 </div>
                 <div className="mb-4">
-                    <textarea placeholder="Your message" className="w-full border rounded py-2 px-3" rows="5" />
+                    <textarea placeholder="Your message" required name='message' className="w-full border rounded py-2 px-3" rows="5" />
                 </div>
                 <div>
-                    <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                    <button type='submit' className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Submit</button>
                 </div>
-            </div>
+            </form>
             <br/>
            
         </div>

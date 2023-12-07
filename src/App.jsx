@@ -12,6 +12,8 @@ import News from './components/pages/News'
 import Contact from './components/pages/Contact'
 import Sustainability from './components/pages/Sustainability'
 import SubServices from './components/pages/SubServices'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -46,6 +48,7 @@ function App() {
           </Routes>
           <Footer/>
       </Router>
+      <ToastContainer position={toast.POSITION.BOTTOM_LEFT} />
     </>
   )
 }
