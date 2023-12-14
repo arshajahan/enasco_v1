@@ -2,8 +2,9 @@ import indt from './images/ndt.webp'
 import wct from './images/wct.webp'
 import training from './images/training.webp'
 import n3 from './images/marineww.webp'
-import n1 from '../assets/images/news1.jpg'
 import n2 from '../assets/images/new2.webp'
+import n4 from '../assets/images/knpc.jpg'
+import n1 from '../assets/images/cosl.png'
 
 
 
@@ -13,6 +14,7 @@ export const news = [
     image: n2,
     path: 'news1',
     title: 'Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour',
+    date: 'NOVEMBER 14, 2023',
     content: 
                 <>
                     Kuwait Integrated Petroleum Industries Company (KIPIC), a subsidiary under the umbrella of Kuwait Petroleum Corporation (KPC), has recently awarded ENASCO General Trading WLL an extensive contract for marine service maintenance. The contractual commitment spans an impressive 4-year period, signifying a robust and long-term partnership between KIPIC and ENASCO. The formal signing of the contract occurred at the KIPIC office located in Al Zour Refinery on the 19th of May in the year 2022.
@@ -32,51 +34,82 @@ export const news = [
     id: 1,
     image: n3,
     path: 'news2',
+    date: 'NOVEMBER 20, 2023',
     title: "ENASCO General Trading and Company's Milestone: 1 Million Safe Hours Celebrated with Commitment to Zero Injuries",
     content: <>
-              ENASCO General Trading and Company recently marked a significant achievement by celebrating 1 million safety hours without any incidents. The Chief Operating Officer, Mr. Mubarak Al Hajiri, extended his heartfelt congratulations to the entire team for reaching this remarkable milestone. <br/><br/> 
+              The achievement of 1 million safety hours without incidents is indeed a significant milestone for ENASCO General Trading and Company. This accomplishment demonstrates the company's unwavering commitment to the safety and well-being of its workforce. Let's elaborate on some key points:<br/><br/>
 
-              He emphasized the importance of promoting a safe working environment and reiterated the company's commitment to achieving zero injuries and minimizing safety losses. This accomplishment reflects ENASCO’s dedication to prioritizing the well-being of its employees and fostering a culture of safety within the organization. 
-            <br/>
+              <ul className='grid gap-5 custom-list'>
+                <li>
+                  <b>Safety Culture:</b> The celebration underscores the existence of a strong safety culture within ENASCO. A safety culture is not just about following rules and procedures but creating an environment where safety is a core value and is integrated into every aspect of the organization. This achievement indicates that safety is a top priority at ENASCO, and employees at all levels actively contribute to maintaining a safe workplace.
+                </li>
+                <li>
+                  <b>Leadership Recognition:</b> The fact that the Chief Operating Officer, <b>Mr. Mubarak Al Hajiri</b>, personally extended his heartfelt congratulations is noteworthy. Leadership recognition is crucial in reinforcing the importance of safety. It shows that the company's top management is actively involved and appreciates the efforts of its employees in maintaining a safe work environment.
+                </li>
+                <li>
+                  <b>Employee Involvement:</b> Achieving 1 million safety hours without incidents is a collective effort, and it highlights the engagement and responsibility of every employee. This accomplishment is a testament to the vigilance and dedication of the entire team, from frontline workers to management, in adhering to safety protocols and promoting a secure workplace.
+                </li>
+                <li>
+                  <b>Continuous Improvement:</b> The commitment to achieving zero injuries and minimizing safety losses reflects a culture of continuous improvement. ENASCO recognizes that safety is an ongoing process that requires regular evaluation and enhancement of safety measures. This mindset positions the company well to sustain its achievements and continually strive for even higher safety standards.
+                </li>
+                <li>
+                  <b>Positive Impact on Reputation:</b> A strong safety record positively impacts the reputation of ENASCO. Clients and partners are likely to view the company as a reliable and responsible business that places a high value on the welfare of its employees. This can lead to increased trust and credibility within the industry.
+                </li>
+                <li>
+                  <b>Motivation for Future Goals:</b> Celebrating this milestone provides motivation for setting and achieving future safety goals. It establishes a precedent for excellence in safety performance and encourages the company to aim for even higher milestones in the future. This positive momentum can have cascading effects on various aspects of the organization.
+                </li>
+              </ul>
+              <br/>
+
+              In conclusion, ENASCO General Trading and Company's achievement of 1 million safety hours without incidents is a commendable accomplishment that reflects a strong commitment to safety, employee well-being, and continuous improvement. This milestone not only celebrates past success but also serves as a foundation for future endeavors in maintaining a safe and secure workplace.
+
             </>
   },
   {
     id: 2,
-    image: n1,
+    image: n4,
     path: 'news3',
-    title: 'Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour',
+    date: 'DECEMBER 10, 2023',
+    title: 'ENASCO Secures 5-Year Technical Support Contract with KNPC for MAB & MAA Refineries',
     content: 
-                <>
-                    Kuwait Integrated Petroleum Industries Company (KIPIC), a subsidiary under the umbrella of Kuwait Petroleum Corporation (KPC), has recently awarded ENASCO General Trading WLL an extensive contract for marine service maintenance. The contractual commitment spans an impressive 4-year period, signifying a robust and long-term partnership between KIPIC and ENASCO. The formal signing of the contract occurred at the KIPIC office located in Al Zour Refinery on the 19th of May in the year 2022.
-                    <br/><br/>
-                    The scope of this significant agreement is vast, encompassing a comprehensive array of marine services. The designated areas for maintenance cover critical and strategic locations, including the LNGI Terminal, LNGI Port, Sea Island, Sulphur Pier, Small Boat Harbor, Marine Terminal, and the Al Zour Refinery. This diverse scope of work underscores the essential role that ENASCO will play in maintaining and ensuring the efficient operation of these marine facilities over the contractual period.
-                    <br/><br/>
-                    The agreement was solidified through the signatures of key representatives from both entities. Mr. Ghanim Abdulla Salman Al-Ghanim, serving as the Team Leader LNGI Operational Tech Support for KIPIC, and Mr. Mubarak Fahad Al Hajiri, the representative from ENASCO, formally endorsed the contract, symbolizing the commitment of both organizations to the successful execution of the marine service maintenance project.
-                    <br/><br/>
-                    Parallel to the commissioning of the Al Zour Refinery, a crucial liaison meeting was convened. The primary objective of this meeting was to facilitate in-depth discussions on the intricacies of the work mechanism and to outline a comprehensive work plan. This meticulous planning process aimed to establish a clear understanding of the roles and responsibilities of each party involved in the project. Additionally, it allowed for the alignment of strategies to ensure that the maintenance services provided by ENASCO seamlessly integrate with the operational requirements of the Al Zour Refinery and the associated marine facilities.
-                    <br/><br/>
-                    By holding this liaison meeting in conjunction with the refinery's commissioning, KIPIC and ENASCO demonstrated their commitment to a collaborative and synergistic approach. This strategic coordination is vital for the seamless integration of maintenance services into the operational framework of the Al Zour Refinery, ensuring optimal performance and longevity of the marine infrastructure over the contracted 4-year period.
-                <br/>
-                </>
+            <>
+            In a significant move toward bolstering operational excellence and efficiency, Kuwait National Petroleum Company (KNPC) has awarded a pivotal technical support contract to ENASCO. The contract, inked in September 2021, spans a substantial five-year period, marking a strategic partnership aimed at enhancing the capabilities of the MAB and MAA refineries.<br/><br/>
+            This collaboration signifies a commitment to harnessing top-tier technical expertise to streamline and optimize refinery operations. ENASCO, renowned for its proficiency in providing specialized technical support services, emerges as a pivotal ally in KNPC's pursuit of sustained excellence within the oil and gas industry. <br/><br/>
+            <b>The Scope:</b><br/><br/>
+            The scope of this monumental contract revolves around the provision of comprehensive technical support services to KNPC's MAB and MAA refineries. ENASCO’s role encompasses a wide array of critical functions, including but not limited to:<br/><br/>
+            <b>Process Optimization:</b> Implementing cutting-edge methodologies to maximize efficiency in refining processes, thereby enhancing output and minimizing operational bottlenecks.<br/><br/>
+            <b>Troubleshooting and Maintenance:</b> Offering swift and precise solutions to technical issues, ensuring seamless refinery operations round the clock..<br/><br/>
+            <b>Safety and Compliance:</b> Upholding the highest standards of safety protocols and regulatory compliance to ensure a secure working environment within the refineries..<br/><br/>
+            <b>Training and Knowledge Transfer:</b> Facilitating training programs and knowledge transfer initiatives to empower KNPC's workforce with advanced skills and insights..<br/><br/>
+            <b>The Significance:</b>.<br/><br/>
+            This collaborative endeavor between KNPC and ENASCO holds immense significance within the realm of petroleum refining. The MAB and MAA refineries are vital components of Kuwait's oil infrastructure, contributing significantly to the nation's economy. By engaging ENASCO’s specialized expertise, KNPC aims to fortify its position as a leader in the global oil and gas market.<br/><br/>
+            Moreover, the extended duration of the contract underscores a commitment to fostering a long-term partnership focused on continual improvement and innovation. This partnership aligns with Kuwait's vision for sustainable growth and development within the energy sector..<br/><br/>
+            </>
             
   },
   {
     id: 3,
-    image: n2,
+    image: n1,
     path: 'news4',
-    title: 'Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour',
+    date: 'DECEMBER 14, 2023',
+    title: 'ENASCO Secures Comprehensive Offshore Drilling Support Contract in Kuwait with COSL',
     content: 
                 <>
-                    Kuwait Integrated Petroleum Industries Company (KIPIC), a subsidiary under the umbrella of Kuwait Petroleum Corporation (KPC), has recently awarded ENASCO General Trading WLL an extensive contract for marine service maintenance. The contractual commitment spans an impressive 4-year period, signifying a robust and long-term partnership between KIPIC and ENASCO. The formal signing of the contract occurred at the KIPIC office located in Al Zour Refinery on the 19th of May in the year 2022.
-                    <br/><br/>
-                    The scope of this significant agreement is vast, encompassing a comprehensive array of marine services. The designated areas for maintenance cover critical and strategic locations, including the LNGI Terminal, LNGI Port, Sea Island, Sulphur Pier, Small Boat Harbor, Marine Terminal, and the Al Zour Refinery. This diverse scope of work underscores the essential role that ENASCO will play in maintaining and ensuring the efficient operation of these marine facilities over the contractual period.
-                    <br/><br/>
-                    The agreement was solidified through the signatures of key representatives from both entities. Mr. Ghanim Abdulla Salman Al-Ghanim, serving as the Team Leader LNGI Operational Tech Support for KIPIC, and Mr. Mubarak Fahad Al Hajiri, the representative from ENASCO, formally endorsed the contract, symbolizing the commitment of both organizations to the successful execution of the marine service maintenance project.
-                    <br/><br/>
-                    Parallel to the commissioning of the Al Zour Refinery, a crucial liaison meeting was convened. The primary objective of this meeting was to facilitate in-depth discussions on the intricacies of the work mechanism and to outline a comprehensive work plan. This meticulous planning process aimed to establish a clear understanding of the roles and responsibilities of each party involved in the project. Additionally, it allowed for the alignment of strategies to ensure that the maintenance services provided by ENASCO seamlessly integrate with the operational requirements of the Al Zour Refinery and the associated marine facilities.
-                    <br/><br/>
-                    By holding this liaison meeting in conjunction with the refinery's commissioning, KIPIC and ENASCO demonstrated their commitment to a collaborative and synergistic approach. This strategic coordination is vital for the seamless integration of maintenance services into the operational framework of the Al Zour Refinery, ensuring optimal performance and longevity of the marine infrastructure over the contracted 4-year period.
-                <br/>
+                    
+                In a landmark achievement within the offshore drilling industry, ENASCO, a distinguished leader in technical support services, has sealed a pivotal contract with China Oilfield Services Limited (COSL). The agreement, executed in November 2020, delineates the provision of Integrated Offshore Drilling Services (IODS) for six high-pressure high-temperature (HPHT) exploration wells across two jack-up rigs in Kuwait's offshore fields.<br/><br/>
+                This collaboration marks a significant milestone in Kuwait's oil and gas sector, with ENASCO poised to deliver an extensive range of support services critical to COSL's operations in the region.<br/><br/>
+                <b>The Comprehensive Scope:</b><br/><br/>
+                ENASCO’s role in this groundbreaking contract extends beyond core drilling services to encompass a holistic range of essential functions, including:<br/><br/>
+                <b>Specialized Crew Deployment:</b> ENASCO will supply a comprehensive crew adept in wireline and perforating, well testing, coring, cementing, coiled tubing, and other pivotal services vital for successful drilling operations.<br/><br/>
+                <b>Logistical Support:</b> The contract integrates the provision of comprehensive offshore logistical services essential for ensuring seamless and efficient operations on the jack-up rigs.<br/><br/>
+                <b>Rig Training Programs:</b> As an integral part of the contract, ENASCO will conduct specialized rig training programs aimed at enhancing the skill sets and safety awareness of the rig crews. These programs will focus on advanced drilling techniques, safety protocols, and operational best practices, elevating the expertise and preparedness of the personnel involved in COSL's operations.<br/><br/>
+                <b>The Significance:</b><br/><br/>
+                This collaboration not only underscores ENASCO’s technical prowess within the offshore drilling domain but also signifies Kuwait's dedication to leveraging cutting-edge technologies and expertise for optimal exploration and production outcomes. The association between COSL, Halliburton, and Kuwait Oil Company (KOC) further validates the industry's recognition of ENASCO’s capabilities in delivering top-tier support services.<br/><br/>
+                <b>The Envisioned Future:</b><br/><br/>
+                With an initial contract term of two years and the potential for a two-year extension, this partnership heralds a sustained and fruitful collaboration. The anticipated outcomes encompass elevated operational efficiency, optimized drilling processes, heightened safety standards, and a fortified foundation for successful HPHT exploration within Kuwait's offshore fields.<br/><br/>
+                As ENASCO prepares to deploy its expertise and resources, the industry eagerly anticipates significant advancements in drilling technologies, operational safety, and overall project performance, bolstered by the comprehensive rig training programs.<br/><br/>
+                In Conclusion, the collaboration between ENASCO and COSL for Integrated Offshore Drilling Services in Kuwait marks a harmonious amalgamation of expertise and operational excellence. This partnership not only bolsters Kuwait's position in the global oil market but also heralds an era of innovation and efficiency in offshore exploration and production, underpinned by comprehensive support services and rigorous rig training programs.<br/><br/>
+
                 </>
             
   },
