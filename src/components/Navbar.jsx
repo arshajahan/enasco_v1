@@ -34,7 +34,7 @@ function Navbar() {
       <div className={`transition-transform transform duration-500 ${isExpertiseClicked ? 'translate-y-0' : 'translate-y-full'} absolute top-20 h-screen w-full bg-gray-700`}>
         <WrapperCard className='relative h-screen text-white bg-[#ff6c40]'>
           <div className='flex gap-0'>
-            <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-white right-12 top-24'>X</span>
+            <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-red-600 right-12 top-24'>X</span>
             <div className='bg-gray-700 py-32 lg:basis-1/3 z-30 grid items-center '>
               <span className='pl-6 mb-6'>LEARN MORE ABOUT</span>
               {services.map((service, key) => (
@@ -42,7 +42,7 @@ function Navbar() {
                   key={key}
                   onClick={() => setSelectedQuestion(key)}
                   className={` ${selectedQuestion === key ? ' bg-orange-500 text-white ' : 'cursor-pointer'} flex uppercase font-extrabold h-auto   bg-gray-700 py-3`}>
-                  <span className='md:text-base lg:text-[1.3rem] md:basis-52 lg:basis-56 pl-6 '>{service.question} <span className=' '>&#129170;</span></span>
+                  <span className='md:text-base lg:text-[1.3rem] md:basis-52 lg:basis-56 pl-4 '>{service.question} <span className=' '>&#129170;</span></span>
                 </div>
               ))}
             </div>
