@@ -4,7 +4,7 @@ import training from './images/training.webp'
 import n3 from './images/marineww.webp'
 import n2 from '../assets/images/new2.webp'
 import n4 from '../assets/images/knpc.jpg'
-import n1 from '../assets/images/cosl.png'
+import n1 from '../assets/images/drilling.jpeg'
 
 
 

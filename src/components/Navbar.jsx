@@ -47,7 +47,7 @@ function Navbar() {
               ))}
             </div>
 
-            <div className={`${selectedQuestion !== null ? 'lg:basis-1/3' : ''} opacity-90 z-10  flex-shrink h-screen md:grid items-center text-2xl bg-gray-700 text-white`}>
+            <div className={`${selectedQuestion !== null ? 'lg:basis-1/3' : ''} opacity-90 z-10  flex-shrink h-screen md:grid items-center text-xl 2xl:text-2xl bg-gray-700 text-white`}>
               {selectedQuestion !== null && (
                 <div className='w-full'>
                   <ul className='grid gap-6 '>
@@ -67,7 +67,7 @@ function Navbar() {
               )}
             </div>
             {selectedQuestion !== null &&
-            <div className=' absolute -right-[20rem]  bottom-0 h-full'>
+            <div className=' absolute -right-[17rem] bg-[#ff6c40]  bottom-0 h-full'>
                 <img className='h-full ' src={services[selectedQuestion].image} alt="Banner" />
             </div>
             }
