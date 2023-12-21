@@ -36,7 +36,7 @@ function SubServices() {
     <WrapperCard className=' justify-between grid gap-8 lg:gap-28 xl:gap-56 lg:flex  '>
         
         <div className='lg:basis-2/4 mx-auto lg:mx-0 text-slate-600 '>
-            <Link to='/enasco_v1'>Home<span> &#8594;</span></Link>
+            <Link to='/'>Home<span> &#8594;</span></Link>
             <br/><br/>
             <h1 className='text-gray-700 text-left text-2xl md:text-3xl xl:text-4xl font-extrabold'>
               {x !== 9 && services[xx].question}

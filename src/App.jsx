@@ -22,7 +22,7 @@ function App() {
       <Router>
         <Navbar/>
           <Routes>
-            <Route exact path='/enasco_v1/' 
+            <Route exact path='//' 
               element={
                 <>
                   <Banner/>
@@ -38,13 +38,13 @@ function App() {
                   <InDetail/>
                 </>
             } />
-            <Route exact path='enasco_v1/about' element={<About/>} />
-            <Route exact path='enasco_v1/sustainability' element={<Sustainability/>} />
-            <Route exact path='enasco_v1/news/:id' element={<News/>} />
-            <Route exact path='enasco_v1/contact' element={<Contact/>} />
-            <Route exact path='enasco_v1/service/:id' element={<SubServices/>} />
+            <Route exact path='/about' element={<About/>} />
+            <Route exact path='/sustainability' element={<Sustainability/>} />
+            <Route exact path='/news/:id' element={<News/>} />
+            <Route exact path='/contact' element={<Contact/>} />
+            <Route exact path='/service/:id' element={<SubServices/>} />
 
-            <Route path='enasco_v1/*' element={<Navigate to='/enasco_v1/' />} />
+     
           </Routes>
           <Footer/>
       </Router>

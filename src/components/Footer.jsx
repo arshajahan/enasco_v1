@@ -94,10 +94,10 @@ function Footer() {
         <div>
             {services.slice(0, 2).map((service, key) => (
                 <div key={key}>
-                    <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
+                    <Link to={`/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
                     <div className='mt-3 grid w-fit gap-3'>
                         {service.answer.map((answer, index) => (
-                            <Link to={`/enasco_v1/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
+                            <Link to={`/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
                         ))}
                     </div>
                     <br />
@@ -108,10 +108,10 @@ function Footer() {
         <div>
             {services.slice(2, 3).map((service, key) => (
                 <div key={key}>
-                    <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
+                    <Link to={`/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
                     <div className='mt-3 grid w-fit gap-3'>
                         {service.answer.map((answer, index) => (
-                            <Link to={`/enasco_v1/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
+                            <Link to={`/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
                         ))}
                     </div>
                     <br />
@@ -121,10 +121,10 @@ function Footer() {
         <div>
             {services.slice(3, 5).map((service, key) => (
                 <div key={key}>
-                    <Link to={`/enasco_v1/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
+                    <Link to={`/service/${service.path}`} className='uppercase text-[#ff6c40] font-bold'>{service.question}</Link>
                     <div className='mt-3 grid w-fit gap-3'>
                         {service.answer.map((answer, index) => (
-                            <Link to={`/enasco_v1/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
+                            <Link to={`/service/${service.path+':'+answer.split(" ")[0]}`} key={index}>{answer}</Link>
                         ))}
                     </div>
                     <br />
@@ -138,7 +138,7 @@ function Footer() {
               </div>
               <br/>
               <hr/><br/>
-              <span className=''>Copyright © 2023 Enas.co Pvt. Ltd. All rights reserved.</span>
+              <span className=''>Copyright © 2023. All rights reserved to Enasco.</span>
              <br/><br/>
           </WrapperCard>
           </motion.div> 

@@ -53,7 +53,7 @@ function Latest() {
                                         behavior: 'smooth',
                                     });
                                     }}
-                                    to={`/enasco_v1/news/${item.path}`}
+                                    to={`/news/${item.path}`}
                                     state={(({ content, ...rest }) => rest)(item)}
                                     className='navlink text-xl font-bold'
                                 >

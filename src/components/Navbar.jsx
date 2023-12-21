@@ -53,14 +53,14 @@ function Navbar() {
                   <ul className='grid gap-6 '>
                     {services[selectedQuestion].answer.map((answer, index) => (
                       <Link
-                        to={`/enasco_v1/service/${services[selectedQuestion].path+':'+answer.split(" ")[0]}`}
+                        to={`/service/${services[selectedQuestion].path+':'+answer.split(" ")[0]}`}
                         onClick={() => menuClicked()}
                         className={`${isExpertiseClicked ? 'px-12' : ''} lg:hover:text-[#ff6c40]`} key={index}>
                         {answer}
                       </Link>
                     ))}
                   <hr/>
-                  <Link to={`/enasco_v1/service/${services[selectedQuestion].path}`} onClick={() => closeExpertise ()} className=' text-left text-sm ml-14'>About {services[selectedQuestion].question}</Link>
+                  <Link to={`/service/${services[selectedQuestion].path}`} onClick={() => closeExpertise ()} className=' text-left text-sm ml-14'>About {services[selectedQuestion].question}</Link>
                   </ul>
                  
                 </div>
@@ -78,11 +78,11 @@ function Navbar() {
       <WrapperCard className='h-fit text-[#ff6c40]'>
         <div className='flex justify-between gap-10 h-12 md:h-20'>
           <div className='relative flex gap-4 lg:basis-1/3'>
-            <Link className='self-center z-10' to='/enasco_v1/'>
+            <Link className='self-center z-10' to='/'>
               <img src={logo} className='navlink w-28 lg:w-40' alt="Enasco" onClick={() => menuClicked()} />
             </Link>
             <ul className='gap-4 h-full mx-auto font-extrabold hidden lg:flex'>
-              <HashLink to='enasco_v1/#latest' onClick={() => menuClicked()} className='h-full navlink flex items-center'>News</HashLink>
+              <HashLink to='/#latest' onClick={() => menuClicked()} className='h-full navlink flex items-center'>News</HashLink>
               <li
                 className={`h-full ${isExpertiseClicked ? 'px-2 bg-[#ff6c40] text-white' : ''} navlink flex items-center`}
                 onClick={() => closeExpertise()}>
@@ -93,11 +93,11 @@ function Navbar() {
 
           <div className='text-[#2d3540] basis-1/3 my-auto'>
             <ul className='items-center justify-evenly hidden lg:flex'>
-              <Link to='/enasco_v1/about' className='navlink hover:text-[#ff6c40]' onClick={() => menuClicked()}>About Us</Link>
-              <Link to='/enasco_v1/sustainability' className='hover:text-[#ff6c40] navlink' onClick={() => menuClicked()}>
+              <Link to='/about' className='navlink hover:text-[#ff6c40]' onClick={() => menuClicked()}>About Us</Link>
+              <Link to='/sustainability' className='hover:text-[#ff6c40] navlink' onClick={() => menuClicked()}>
                 Sustainability
               </Link>
-              <Link to='/enasco_v1/contact' onClick={() => menuClicked()} className='navlink hover:text-[#ff6c40]'>
+              <Link to='/contact' onClick={() => menuClicked()} className='navlink hover:text-[#ff6c40]'>
                 Contact
               </Link>
               <a href='#footer' className='hover:text-[#ff6c40] navlink'>
@@ -134,7 +134,7 @@ function Navbar() {
                     <ul className=' grid gap-4 py-4 text-lg text-[#2d3540]'>
                       {item.answer.map((answer, j) => (
                         <Link
-                          to={`/enasco_v1/service/${item.path+':'+answer.split(" ")[0]}`} 
+                          to={`/service/${item.path+':'+answer.split(" ")[0]}`} 
                           key={j}
                           onClick={ () => menuClicked()}
                         >
@@ -146,16 +146,16 @@ function Navbar() {
                 </div>
               ))}
               <ul className=' pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase navlink text-[#2d3540] lg:hidden'>
-                <HashLink  to='/enasco_v1/#footer' onClick={() => menuClicked()} className='navlink'>
+                <HashLink  to='/#footer' onClick={() => menuClicked()} className='navlink'>
                   Search
                 </HashLink>
-                <Link  to='/enasco_v1/about' onClick={() => menuClicked()} className='navlink'>
+                <Link  to='/about' onClick={() => menuClicked()} className='navlink'>
                   About Us
                 </Link>
-                <Link  to='/enasco_v1/sustainability' className='navlink' onClick={() => menuClicked()}>
+                <Link  to='/sustainability' className='navlink' onClick={() => menuClicked()}>
                   Sustainability
                 </Link>
-                <Link  to='/enasco_v1/contact' onClick={() => menuClicked()} className='navlink'>
+                <Link  to='/contact' onClick={() => menuClicked()} className='navlink'>
                   Contact
                 </Link>
               </ul>

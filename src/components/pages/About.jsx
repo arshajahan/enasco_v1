@@ -16,7 +16,7 @@ function About() {
         <WrapperCard className=' justify-between grid gap-8 lg:flex  '>
             
             <div className='lg:basis-2/4 mx-auto lg:mx-0 text-slate-600'>
-                <Link to='/enasco_v1'>Home<span> &#8594;</span></Link>
+                <Link to='/'>Home<span> &#8594;</span></Link>
 
                 <div className='mt-10'>
                     <h1 className='text-gray-700 text-4xl md:text-5xl font-extrabold'>ABOUT US</h1>
@@ -69,13 +69,13 @@ function About() {
                     <h2 className='text-gray-700 text-xl md:text-2xl font-extrabold mb-4'>Our Board</h2>
                     <img src={directors}  className=''/>
                     <div className='mt-3'>
-                        <span className=' font-extrabold'>CEO - Muhammad F. Al Hajri</span>
-                        <p className=' text-justify mt-2'>ENASCO's dynamic CEO, a Civil Engineering graduate from The University of Salford, UK, and a former standout at Kuwait Oil Company, has shaped the company into a powerhouse since taking the helm. With a focus on Petroleum, Energy, Management, and Engineering, this business luminary has led ENASCO to prominence in Manpower, Oil/Gas Services, and ICT.</p>
+                        <span className=' font-extrabold'>CEO: Muhammad Fahad Al-Hajri (right)</span>
+                        <p className=' text-justify mt-2'>ENASCO's dynamic CEO, Muhammad Fahad Al-Hajri, a Civil Engineering graduate from The University of Salford, UK, and a former standout at Kuwait Oil Company, has steered the company to prominence. Rooted in family values, dedicated to quality, and driven by excellence, Fahad has propelled ENASCO to surpass expectations, ensuring ongoing expansion and unprecedented growth.</p>
                     </div>
                     <br/>
                     <div className='mt-3'>
-                        <span className=' font-semibold'></span>
-                        <p className=' text-justify mt-1'>A born leader, deeply rooted in family values and dedicated to quality, this CEO has been the driving force behind ENASCO's remarkable ascent. Under their stewardship, the company has not only met but surpassed expectations, emerging as a standout in the region. With an unwavering commitment to excellence, coupled with ambitious visions and unmatched leadership, ENASCO's trajectory under this CEO foretells ongoing expansion and growth to unprecedented heights.</p>
+                        <span className=' font-extrabold'>Deputy Chief Executive Officer (DCEO): Mubarak Fahad Al-Hajiri</span>
+                        <p className=' text-justify mt-2'>Mubarak Fahad Al-Hajiri, armed with a distinguished Bachelor's degree in Mechanical Engineering from the esteemed Manchester University in the UK, showcases an unparalleled acumen in orchestrating and finalizing deals. His adeptness in the realm of business development, coupled with a wealth of international exposure, has been instrumental in propelling ENASCO to new heights. Currently donning the prestigious mantle of Deputy Chief Executive Officer (DCEO), Mr. Al Hajiri continues to weave a narrative of success and growth for the organization.</p>
                     </div>
                 </div>
 

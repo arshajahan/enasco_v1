@@ -35,7 +35,7 @@ function Contact() {
     <WrapperCard className=' justify-between grid gap-8 lg:gap-56 lg:flex  '>
         
         <div className='lg:basis-2/4 mx-auto lg:mx-0 text-slate-600 '>
-            <Link to='/enasco_v1'>Home<span> &#8594;</span></Link>
+            <Link to='/'>Home<span> &#8594;</span></Link>
 
             <div className='mt-10 '>
                 <h1 className='text-gray-700 text-4xl md:text-5xl font-extrabold'>CONTACT</h1>

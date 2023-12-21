@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import bannerImage from '../assets/images/banner2.png'
+import bannerImage from '../assets/images/banner.webp'
 import WrapperCard from './UI/WrapperCard'
 import { services } from '../assets/constants'
 import { FiPlay } from 'react-icons/fi'
@@ -78,9 +78,9 @@ function Banner() {
             className='absolute lg:bottom-[5rem] bottom-[1rem]'>
             <div className='flex flex-col justify-between lg:flex-row py-4 w-full'>
                 <p className='lg:basis-[700px] uppercase font-extrabold text-3xl md:text-[2rem] lg:text-5xl 2xl:text-6xl text-white'>Connect your business world.</p>   
-                <Link to='/enasco_v1/contact' onClick={ () => { window.scrollTo({ top: 0, behavior: 'smooth' }); }} className=' justify-center mt-2 lg:basis-[230px] cursor-pointer  bg-[#e3e3e3] lg:text-left lg:text-[#2d3540] hover:bg-[#ff6c40] w-full hover:text-white uppercase text-lg p-2 lg:p-4 self-end font-extrabold lg:bg-[#e3e3e3] ml-2 flex items-center'>
+                <Link to='/contact' onClick={ () => { window.scrollTo({ top: 0, behavior: 'smooth' }); }} className=' justify-center mt-2 lg:basis-[230px] cursor-pointer  bg-[#e3e3e3] lg:text-left lg:text-[#2d3540] hover:bg-[#ff6c40] w-full hover:text-white uppercase text-lg p-2 lg:p-4 self-end font-extrabold lg:bg-[#e3e3e3] ml-2 flex items-center'>
                     <FiPlay className=' lg:self-start text-3xl inline' /> {/* FiPlay icon */}
-                    <span to='/enasco_v1/contact'  className='ml-2'>Connect with Enasco</span>
+                    <span to='/contact'  className='ml-2'>Connect with Enasco</span>
                 </Link>
             </div>
         </div>
@@ -99,7 +99,7 @@ function Banner() {
           onMouseEnter={() => setHoveredQuestion(key)}
           onMouseLeave={() => setHoveredQuestion(null)}
         >
-          <Link to={`/enasco_v1/service/${service.path}`}  className='bannerLink px-10 flex capitalize text-white font-extrabold h-20 -mt-20 xl:text-lg bg-[#ff6c40] py-3'
+          <Link to={`/service/${service.path}`}  className='bannerLink px-10 flex capitalize text-white font-extrabold h-20 -mt-20 xl:text-lg bg-[#ff6c40] py-3'
           style={{
             backgroundColor: hoveredQuestion === key ? '#2d3540' : '#ff6c40'
           }}>
@@ -122,7 +122,7 @@ function Banner() {
             >
               <ul className='grid gap-4 py-4 '>
                 {service.answer.map((answer, index) => (
-                  <Link to={`/enasco_v1/service/${service.path+':'+answer.split(" ")[0]}`} className='lg:hover:text-[#ff6c40]' key={index}>{answer}</Link>
+                  <Link to={`/service/${service.path+':'+answer.split(" ")[0]}`} className='lg:hover:text-[#ff6c40]' key={index}>{answer}</Link>
                 ))}
               </ul>
             </motion.div>
@@ -141,7 +141,7 @@ function Banner() {
             <div className={` -ml-2 lg:-ml-0 content ${collapsed === i ? "show_content" : "hide_content"}`}>
                 <ul className=' grid gap-4 py-4 text-lg text-[#2d3540]'>
                     {item.answer.map((sub, j) => (
-                        <Link to={`/enasco_v1/service/${item.path+':'+sub.split(" ")[0]}`} key={j}>{sub}</Link>
+                        <Link to={`/service/${item.path+':'+sub.split(" ")[0]}`} key={j}>{sub}</Link>
                     ))}
                 </ul>
             </div>
