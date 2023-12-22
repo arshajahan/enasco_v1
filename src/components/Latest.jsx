@@ -54,7 +54,6 @@ function Latest() {
                                     });
                                     }}
                                     to={`/${item.path}`}
-                                    state={(({ content, ...rest }) => rest)(item)}
                                     className='navlink text-xl font-bold'
                                 >
                                     {item.title}

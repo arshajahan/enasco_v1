@@ -12,7 +12,7 @@ export const news = [
   {
     id: 0,
     image: n2,
-    path: 'news1',
+    path: 'KIPIC',
     title: 'Enasco awarded 4-Years Contract from KIPIC for Marine Services in Al Zour',
     date: 'NOVEMBER 14, 2023',
     content: 
@@ -33,7 +33,7 @@ export const news = [
   {
     id: 1,
     image: n3,
-    path: 'news2',
+    path: 'Milestone',
     date: 'NOVEMBER 20, 2023',
     title: "ENASCO General Trading and Company's Milestone: 1 Million Safe Hours Celebrated with Commitment to Zero Injuries",
     content: <>
@@ -68,7 +68,7 @@ export const news = [
   {
     id: 2,
     image: n4,
-    path: 'news3',
+    path: 'KNPC',
     date: 'DECEMBER 10, 2023',
     title: 'ENASCO Secures 5-Year Technical Support Contract with KNPC for MAB & MAA Refineries',
     content: 
@@ -90,7 +90,7 @@ export const news = [
   {
     id: 3,
     image: n1,
-    path: 'news4',
+    path: 'COSL',
     date: 'DECEMBER 14, 2023',
     title: 'ENASCO Secures Comprehensive Offshore Drilling Support Contract in Kuwait with COSL',
     content: 
