@@ -8,10 +8,10 @@ function News() {
 
 const location = useLocation();
 const passedData = location.state;
-const image = passedData.image;
 const title = passedData.title;
 const id = passedData.id;
 const date = passedData.date;
+const image = news[id].image;
 
   return (
    <div className='bg-[#e3e3e3] lg:mx-36'>
