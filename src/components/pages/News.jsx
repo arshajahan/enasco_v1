@@ -8,7 +8,10 @@ function News() {
 
 const location = useLocation();
 const passedData = location.state;
-
+const image = passedData.image;
+const title = passedData.title;
+const id = passedData.id;
+const date = passedData.date;
 
   return (
    <div className='bg-[#e3e3e3] lg:mx-36'>
@@ -16,15 +19,15 @@ const passedData = location.state;
         <Link to='/' className='navlink'>Home<span> &#8594;</span></Link>
         <div className='relative mt-12 bg-[#e3e3e3] mx-auto '>
             <Link to='/' className='navlink py-2 px-4 text-white font-bold bg-[#2d3540] absolute left-0 top-0'>Back</Link>
-            <img src={passedData.image} className=' w-full h-full '/>
+            <img src={image} className=' w-full h-full '/>
         </div>
         <div className=' bg-white text-[#2d3540]  p-6 md:p-12 grid gap-6'>
             <h2 className=' text-xl md:text-3xl font-bold'>
-                {passedData.title}
+                {title}
             </h2>
-            <span className=' font-semibold italic'>{passedData.date}</span>
+            <span className=' font-semibold italic'>{date}</span>
             <p className='text-justify'>
-                {news[passedData.id].content}
+                {news[id].content}
             </p>
 
         </div>
