@@ -53,7 +53,7 @@ function Latest() {
                                         behavior: 'smooth',
                                     });
                                     }}
-                                    to={`/news/${item.path}`}
+                                    to={`/${item.path}`}
                                     state={(({ content, ...rest }) => rest)(item)}
                                     className='navlink text-xl font-bold'
                                 >

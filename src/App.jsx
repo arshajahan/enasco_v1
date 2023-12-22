@@ -40,7 +40,7 @@ function App() {
             } />
             <Route exact path='/about' element={<About/>} />
             <Route exact path='/sustainability' element={<Sustainability/>} />
-            <Route exact path='/news/:id' element={<News/>} />
+            <Route exact path='/:id' element={<News/>} />
             <Route exact path='/contact' element={<Contact/>} />
             <Route exact path='/service/:id' element={<SubServices/>} />
 
