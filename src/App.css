@@ -11,22 +11,21 @@
 ul a:hover{
   text-decoration: underline;
 }
-
-.faqs{
+.faqs {
   margin-bottom: auto;
   display: grid;
 }
 
 .collapsible {
-  color: rgb(55 65 81);
+  color: #374151;
   font-weight: 600;
   cursor: pointer;
-  padding: 1rem 1rem;
+  padding: 1rem;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,31 +33,33 @@ ul a:hover{
   text-transform: uppercase;
 }
 
-.collapsible:after {
+.collapsible::after {
   content: "\02C5";
-  color: rgb(55 65 81);
+  color: #374151;
   float: right;
 }
 
-.faqactive:after {
+.faqactive::after {
   content: "\2212";
 }
 
-.content{
-  background-color: #ffff;
+.content {
+  background-color: #ffffff;
   overflow: hidden;
   padding: 0 1.5rem;
+  transition: max-height 0.9s ease-out;
+  max-height: 0;
 }
 
 .show_content {
   max-height: 100rem; /* Set it to a large value to allow for content expansion */
-  transition: max-height .9s ease-in; /* Adjust the duration to your preference */
+  transition: max-height 0.9s ease-in;
 }
 
 .hide_content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height .9s ease-out; /* Adjust the duration to your preference */
+  transition: max-height 0.9s ease-out; /* Adjust the duration to your preference */
 }
 
 /* Your CSS file or style block */

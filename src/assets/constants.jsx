@@ -2,6 +2,8 @@ import indt from './images/ndt.webp'
 import wct from './images/wct.webp'
 import training from './images/training.webp'
 import n3 from './images/marineww.webp'
+import ms from './images/ms.jpg'
+import ss from './images/ss.webp'
 import n2 from '../assets/images/new2.webp'
 import n4 from '../assets/images/knpc.jpg'
 import n1 from '../assets/images/drilling.jpeg'
@@ -126,7 +128,7 @@ export const services = [
         "Vessel Traffic Management"
       ],
       path:'marine',
-      image: n3,
+      image: ms,
       content: (
         <>
         Marine Services of the ENASCO include:
@@ -194,7 +196,7 @@ export const services = [
         "Asset Integrity Management",
         "Pollution control"        
       ],
-      image: n3,
+      image: ss,
       content: (
         <div>
           Subsea Services of the ENASCO include:
