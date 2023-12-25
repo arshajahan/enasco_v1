@@ -126,63 +126,75 @@ function Navbar() {
         </div>
       </WrapperCard>
 
-     <div
+      <div
         ref={navRef}
-        className='overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white transition-height duration-300'
-        style={{ height: '0', width: '100%' }}
+        className="overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white transition-height duration-300"
+        style={{ height: isNavClicked ? '100vh' : '0', width: '100%' }}
       >
         {isNavClicked && (
           <>
-            <div className='mx-4 flex justify-between mt-4'>
+            {/* Mobile close button */}
+            <div className="mx-4 flex justify-between items-center mt-4">
               <div>
-                <img src={logo} onClick={() => navToggle()} className='navlink w-28' alt="Logo" />
+                <img src={logo} onClick={navToggle} className="w-28" alt="Logo" />
               </div>
-              <span className='navlink text-[#2d3540]' onClick={() => navToggle()}>
-                <AiOutlineClose size={26} color='#ff6c40' />
-              </span>
+              <AiOutlineClose size={26} color="#ff6c40" onClick={navToggle} />
             </div>
 
-            <div className='mt-7 faqs lg:hidden z-40'>
+            {/* Mobile navigation links */}
+            <div className="mt-7">
               {services.map((item, i) => (
-                <div className='faq' key={item.id}>
-                  <button className={`hover:bg-[#ff6c40] text-[#2d3540] collapsible ${collapsed === i ? 'faqactive' : ''}`} onClick={() => toggle(i)}>
+                <div className="mt-4" key={item.id}>
+                  <button className="relative w-full py-2 px-4 text-left text-lg font-semibold hover:bg-[#ff6c40] text-[#2d3540]" onClick={() => toggle(i)}>
+                    <span className="absolute inset-y-0 right-4 flex items-center">{collapsed === i ? '-' : '+'}</span>
                     {item.question}
                   </button>
-                  <hr />
-                  <div className={`content ${collapsed === i ? 'show_content' : 'hide_content'} shadow-md`}>
-                    <ul className='grid gap-4 py-4 text-lg text-[#2d3540]'>
-                      {item.answer.map((answer, j) => (
-                        <Link
-                          to={`/service/${item.path+':'+answer.split(" ")[0]}`} 
-                          key={j}
-                          onClick={() => menuClicked()}
-                        >
-                          {answer}
-                        </Link>
-                      ))}
-                    </ul>
+
+                  <div
+                    className="overflow-hidden transition-all duration-700 ease-in-out"
+                    style={{ maxHeight: collapsed === i ? '100vh' : '0', opacity: collapsed === i ? 1 : 0 }}
+                  >
+                    {collapsed === i && (
+                      <div>
+                        {item.answer.map((answer, j) => (
+                          <Link
+                            to={`/service/${item.path+':'+answer.split(" ")[0]}`}
+                            key={j}
+                            className="block py-2 px-4 text-[#2d3540] hover:text-[#ff6c40]"
+                            onClick={navToggle}
+                          >
+                            {answer}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
-              <ul className='pl-2 ml-2 absolute bottom-0 mb-[4.5rem] grid gap-4 uppercase navlink text-[#2d3540] lg:hidden'>
-                <HashLink to='/#footer' onClick={() => menuClicked()} className='navlink'>
-                  Search
-                </HashLink>
-                <Link to='/about' onClick={() => menuClicked()} className='navlink'>
-                  About Us
-                </Link>
-                <Link to='/sustainability' onClick={() => menuClicked()} className='navlink'>
-                  Sustainability
-                </Link>
-                <Link to='/contact' onClick={() => menuClicked()} className='navlink'>
-                  Contact
-                </Link>
-                {/* Add other navigation links as needed */}
+            </div>
+
+            {/* Additional mobile links */}
+            <div className="absolute bottom-0 left-0 w-full">
+              <ul className="pl-4 mt-4 mb-8 text-[#2d3540]">
+                <li className="mb-2">
+                  <HashLink to="/#footer" onClick={navToggle}>Search</HashLink>
+                </li>
+                <li className="mb-2">
+                  <Link to="/about" onClick={navToggle}>About Us</Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/sustainability" onClick={navToggle}>Sustainability</Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/contact" onClick={navToggle}>Contact</Link>
+                </li>
+                {/* Add other mobile navigation links */}
               </ul>
             </div>
           </>
         )}
       </div>
+
 
     </div>
   );
