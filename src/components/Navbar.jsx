@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -16,8 +16,24 @@ function Navbar() {
 
   const navToggle = () => {
     setNavClicked(!isNavClicked);
-    document.body.style.overflow = isNavClicked ? 'auto' : 'hidden'; // Toggle scrolling
+    document.body.style.overflow = isNavClicked ? 'auto' : 'hidden'; 
   };
+
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleNavAnimation = () => {
+      if (isNavClicked) {
+        navRef.current.style.height = '100vh';
+        document.body.style.overflow = 'hidden';
+      } else {
+        navRef.current.style.height = '0';
+        document.body.style.overflow = 'auto';
+      }
+    };
+
+    handleNavAnimation();
+  }, [isNavClicked]);
 
   const toggle = (i) => setCollapsed((prev) => (prev === i ? null : i));
 
@@ -111,7 +127,11 @@ function Navbar() {
         </div>
       </WrapperCard>
 
-      <div className={`z-30 lg:hidden absolute top-0 right-0 bg-white ${isNavClicked ? 'h-screen w-full' : 'h-0 w-0'} transition-all duration-300 overflow-hidden`}>
+     <div
+        ref={navRef}
+        className='overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white transition-height duration-300'
+        style={{ height: '0', width: '100%', overflow: 'hidden' }}
+      >
         {isNavClicked && (
           <>
             <div className='mx-4 flex justify-between mt-4'>
