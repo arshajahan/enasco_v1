@@ -129,7 +129,7 @@ function Navbar() {
      <div
         ref={navRef}
         className='overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white transition-height duration-300'
-        style={{ height: '0', width: '100%', overflow: 'hidden' }}
+        style={{ height: '0', width: '100%' }}
       >
         {isNavClicked && (
           <>
