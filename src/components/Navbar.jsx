@@ -46,7 +46,7 @@ function Navbar() {
 
   return (
     <div className={`sticky top-0 z-50 bg-white shadow-lg overflow-x-clip`}>
-      <div className={`transition-transform transform duration-500 ${isExpertiseClicked ? 'translate-y-0' : 'translate-y-full'} absolute top-20 h-screen w-full bg-gray-700`}>
+      <div className={` transition-transform transform duration-500 ${isExpertiseClicked ? 'translate-y-0' : 'translate-y-full'} absolute top-20 h-screen w-full bg-gray-700`}>
         <WrapperCard className='relative h-screen text-white bg-[#ff6c40]'>
           <div className='flex gap-0'>
             <span onClick={() => closeExpertise()} className='z-10 cursor-pointer text-2xl font-bold absolute text-red-600 right-12 top-24'>X</span>
@@ -89,7 +89,8 @@ function Navbar() {
           </div>
         </WrapperCard>
       </div>
-
+      
+      {!isNavClicked && (
       <WrapperCard className='h-fit text-[#ff6c40]'>
         <div className='flex justify-between gap-10 h-12 md:h-20'>
           <div className='relative flex gap-4 lg:basis-1/3'>
@@ -125,16 +126,17 @@ function Navbar() {
           </div>
         </div>
       </WrapperCard>
+      )}
 
       <div
         ref={navRef}
-        className="overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white transition-height duration-300"
+        className=" z-10 lg:hidden bg-white transition-height duration-300"
         style={{ height: isNavClicked ? '100vh' : '0', width: '100%' }}
       >
         {isNavClicked && (
           <>
             {/* Mobile close button */}
-            <div className="mx-4 flex justify-between items-center mt-4">
+            <div className="mx-4 flex justify-between items-center cursor-pointer pt-4">
               <div>
                 <img src={logo} onClick={navToggle} className="w-28" alt="Logo" />
               </div>
