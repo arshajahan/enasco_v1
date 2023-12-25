@@ -112,10 +112,10 @@ function Navbar() {
       </WrapperCard>
 
       <div className='overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white' style={{ 
-          height: isNavClicked ? '100%' : '0', 
+          height: isNavClicked ? 'h-screen' : '0', // Using Tailwind CSS utility class
           transition: 'height 0.3s ease-in-out', 
           overflow: 'hidden',
-          width: '90%', // Adjust the width as per your requirement
+          width: '100%', // Adjust the width as per your requirement
       }}>
         {isNavClicked && (
           <>
