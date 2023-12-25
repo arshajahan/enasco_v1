@@ -178,7 +178,7 @@ function Navbar() {
             </div>
 
             {/* Additional mobile links */}
-            <div className="absolute bottom-12 left-0 w-full">
+            <div className="absolute bottom-20 left-0 w-full">
               <ul className="pl-4 mt-4 mb-8 text-[#2d3540]">
                 <li className="mb-2">
                   <HashLink to="/#footer" onClick={navToggle}>Search</HashLink>
