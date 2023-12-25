@@ -111,7 +111,12 @@ function Navbar() {
         </div>
       </WrapperCard>
 
-      <div className='overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
+      <div className='overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white' style={{ 
+          height: isNavClicked ? '100%' : '0', 
+          transition: 'height 0.3s ease-in-out', 
+          overflow: 'hidden',
+          width: '90%', // Adjust the width as per your requirement
+      }}>
         {isNavClicked && (
           <>
             <div className='mx-4 flex justify-between mt-4'>
