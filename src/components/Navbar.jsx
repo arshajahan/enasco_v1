@@ -178,18 +178,18 @@ function Navbar() {
             </div>
 
             {/* Additional mobile links */}
-            <div className="absolute bottom-20 left-0 w-full">
+            <div className="absolute bottom-16 left-0 w-full">
               <ul className="pl-4 mt-4 mb-8 text-[#2d3540]">
-                <li className="mb-2">
+                <li className="mb-4">
                   <HashLink to="/#footer" onClick={navToggle}>Search</HashLink>
                 </li>
-                <li className="mb-2">
+                <li className="mb-4">
                   <Link to="/about" onClick={navToggle}>About Us</Link>
                 </li>
-                <li className="mb-2">
+                <li className="mb-4">
                   <Link to="/sustainability" onClick={navToggle}>Sustainability</Link>
                 </li>
-                <li className="mb-2">
+                <li className="mb-4">
                   <Link to="/contact" onClick={navToggle}>Contact</Link>
                 </li>
                 {/* Add other mobile navigation links */}
