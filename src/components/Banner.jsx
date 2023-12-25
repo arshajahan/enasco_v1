@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import bannerImage from '../assets/images/banner.webp'
+import mobileImage from '../assets/images/mobileimage.jpg'
 import WrapperCard from './UI/WrapperCard'
 import { services } from '../assets/constants'
 import { FiPlay } from 'react-icons/fi'
@@ -52,16 +53,23 @@ function Banner() {
   return (
     <>
     <div className='bg-[#e3e3e3] -mt-20 overflow-hidden ' id='banner'>
-      <div
-          className="bg-cover bg-center h-screen "
+      <div className={`hidden md:block`}>
+        <div
+          className={`bg-cover bg-center h-screen`}
           style={{
-              backgroundImage: `url(${bannerImage})`, // Set the background image
-              animation: 'zoom 10s infinite alternate', // Apply the zoom animation
+            backgroundImage: `url(${bannerImage})`, // Replace with the URL of the banner image
+            animation: 'zoom 10s infinite alternate',
           }}
-      >
+        ></div>
       </div>
 
-    </div>
+      <div className={`block md:hidden`}>
+        <div
+          className={`bg-cover bg-center h-screen`}
+          style={{
+            backgroundImage: `url(${mobileImage})`, 
+        ></div>
+      </div>
 
     <WrapperCard className='relative'>
         <div
