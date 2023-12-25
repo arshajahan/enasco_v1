@@ -25,7 +25,6 @@ function Navbar() {
     const handleNavAnimation = () => {
       if (isNavClicked) {
         navRef.current.style.height = '100vh';
-        document.body.style.overflow = 'hidden';
       } else {
         navRef.current.style.height = '0';
         document.body.style.overflow = 'auto';
