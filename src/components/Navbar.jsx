@@ -166,7 +166,7 @@ function Navbar() {
                           <Link
                             to={`/service/${item.path+':'+answer.split(" ")[0]}`}
                             key={j}
-                            className="block py-2 px-4 text-[#2d3540] hover:text-[#ff6c40]"
+                            className="block py-2 px-8 text-[#2d3540] hover:text-[#ff6c40]"
                             onClick={navToggle}
                           >
                             {answer}
