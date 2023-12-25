@@ -145,10 +145,14 @@ function Navbar() {
             <div className="mt-7">
               {services.map((item, i) => (
                 <div className="mt-4" key={item.id}>
-                  <button className="relative w-full py-2 px-4 text-left text-lg font-semibold hover:bg-[#ff6c40] text-[#2d3540]" onClick={() => toggle(i)}>
+                  <button
+                    className={`relative w-full py-2 px-4 text-left text-lg font-semibold hover:bg-[#ff6c40] text-[#2d3540] ${collapsed === i ? 'bg-[#ff6c40] text-white' : ''}`}
+                    onClick={() => toggle(i)}
+                  >
                     <span className="absolute inset-y-0 right-4 flex items-center">{collapsed === i ? '-' : '+'}</span>
                     {item.question}
                   </button>
+
 
                   <div
                     className="overflow-hidden transition-all duration-700 ease-in-out"
@@ -174,7 +178,7 @@ function Navbar() {
             </div>
 
             {/* Additional mobile links */}
-            <div className="absolute bottom-0 left-0 w-full">
+            <div className="absolute bottom-12 left-0 w-full">
               <ul className="pl-4 mt-4 mb-8 text-[#2d3540]">
                 <li className="mb-2">
                   <HashLink to="/#footer" onClick={navToggle}>Search</HashLink>
