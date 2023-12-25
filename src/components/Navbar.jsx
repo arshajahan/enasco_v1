@@ -136,7 +136,7 @@ function Navbar() {
         {isNavClicked && (
           <>
             {/* Mobile close button */}
-            <div className="mx-4 flex justify-between items-center cursor-pointer pt-4">
+            <div className="mx-6 flex justify-between items-center cursor-pointer pt-4">
               <div>
                 <img src={logo} onClick={navToggle} className="w-28" alt="Logo" />
               </div>
@@ -148,10 +148,10 @@ function Navbar() {
               {services.map((item, i) => (
                 <div className="mt-4" key={item.id}>
                   <button
-                    className={`relative w-full py-2 px-4 text-left text-lg font-semibold hover:bg-[#ff6c40] text-[#2d3540] ${collapsed === i ? 'bg-[#ff6c40] text-white' : ''}`}
+                    className={`relative w-full py-2 px-6 text-left text-lg font-semibold hover:bg-[#ff6c40] text-[#2d3540] ${collapsed === i ? 'bg-[#ff6c40] text-white' : ''}`}
                     onClick={() => toggle(i)}
                   >
-                    <span className="absolute inset-y-0 right-4 flex items-center">{collapsed === i ? '-' : '+'}</span>
+                    <span className="absolute inset-y-0 right-8 flex items-center">{collapsed === i ? '-' : '+'}</span>
                     {item.question}
                   </button>
 
@@ -181,7 +181,7 @@ function Navbar() {
 
             {/* Additional mobile links */}
             <div className="absolute bottom-16 left-0 w-full">
-              <ul className="pl-4 mt-4 mb-8 text-[#2d3540]">
+              <ul className="pl-6 mt-4 mb-8 text-[#2d3540]">
                 <li className="mb-4">
                   <HashLink to="/#footer" onClick={navToggle}>Search</HashLink>
                 </li>
