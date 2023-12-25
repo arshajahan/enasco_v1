@@ -53,7 +53,7 @@ function SubServices() {
             </div>
         </div>
 
-        <div section='rightside' className='mb-4 lg:mb-0 w-full lg:mx-0 mx-auto md:-mt-10 lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full 2xl:h-full'>
+        <div section='rightside' className='mb-4 lg:mb-0 w-full lg:mx-0 mx-auto lg:-mt-10 lg:sticky top-0 lg:w-[25rem] xl:w-[30rem] lg:h-full 2xl:h-full'>
           <div className='relative'>
             
             <div className='bg-red-700 text-white p-8 xl:p-14 text-left relative z-10'>
