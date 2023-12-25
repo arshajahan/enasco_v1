@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import bannerImage from '../assets/images/banner.webp'
-import mobileImage from '../assets/images/mobileimage.jpg'
+import mobileImage from '../assets/images/mobileimage.webp'
 import WrapperCard from './UI/WrapperCard'
 import { services } from '../assets/constants'
 import { FiPlay } from 'react-icons/fi'
