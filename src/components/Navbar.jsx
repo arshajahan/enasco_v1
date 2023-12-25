@@ -111,7 +111,7 @@ function Navbar() {
         </div>
       </WrapperCard>
 
-      <div className='overflow-scroll z-10 lg:hidden absolute top-0 right-0 bg-white h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
+      <div className='overflow-scroll z-30 lg:hidden absolute top-0 right-0 bg-white h-screen' style={{ width: isNavClicked ? '100%' : '0', transition: 'width 0.3s' }}>
         {isNavClicked && (
           <>
             <div className='mx-4 flex justify-between mt-4'>
@@ -123,7 +123,7 @@ function Navbar() {
               </span>
             </div>
 
-            <div className='mt-7 faqs lg:hidden z-10'>
+            <div className='mt-7 faqs lg:hidden z-40'>
               {services.map((item, i) => (
                 <div className='faq' key={item.id}>
                   <button className={`hover:bg-[#ff6c40] text-[#2d3540] collapsible ${collapsed === i ? 'faqactive' : ''}`} onClick={() => toggle(i)}>
