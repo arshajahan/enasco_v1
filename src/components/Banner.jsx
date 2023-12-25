@@ -53,24 +53,21 @@ function Banner() {
   return (
     <>
     <div className='bg-[#e3e3e3] -mt-20 overflow-hidden ' id='banner'>
-      <div className={`hidden md:block`}>
-          <div
-            className={`bg-cover bg-center h-screen`}
-            style={{
-              backgroundImage: `url(${bannerImage})`, // Replace with the URL of the banner image
-              animation: 'zoom 10s infinite alternate',
-            }}
-          ></div>
-        </div>
-        
-        <div className={`block md:hidden`}>
-          <div
-            className={`bg-cover bg-center h-screen`}
-            style={{
-              backgroundImage: `url(${mobileImage})`, // Replace with the URL of the mobile image
-            }}
-          ></div>
-        </div>
+     
+      <div className="hidden md:block bg-cover bg-center h-screen"
+           style={{
+             backgroundImage: `url(${bannerImage})`, // Set the background image
+             animation: 'zoom 10s infinite alternate', // Apply the zoom animation
+           }}
+      ></div>
+    
+    
+      <div className="block md:hidden bg-cover bg-center h-screen"
+           style={{
+             backgroundImage: `url(${mobileImage})`, // Set the mobile background image
+           }}
+      ></div>
+    </div>
 
     <WrapperCard className='relative'>
         <div
