@@ -37,9 +37,9 @@ export const news = [
     image: n3,
     path: 'Milestone',
     date: 'NOVEMBER 20, 2023',
-    title: "ENASCO General Trading and Company's Milestone: 1 Million Safe Hours Celebrated with Commitment to Zero Injuries",
+    title: "ENASCO General Trading and Contracting Company's Milestone: 1 Million Safe Man Hours Celebrated with Commitment to Zero Injuries",
     content: <>
-              The achievement of 1 million safety hours without incidents is indeed a significant milestone for ENASCO General Trading and Company. This accomplishment demonstrates the company's unwavering commitment to the safety and well-being of its workforce. Let's elaborate on some key points:<br/><br/>
+              The achievement of 1 million safe Man Hours without incidents is indeed a significant milestone for ENASCO General Trading and Company. This accomplishment demonstrates the company's unwavering commitment to the safety and well-being of its workforce. Let's elaborate on some key points:<br/><br/>
 
               <ul className='grid gap-5 custom-list'>
                 <li>
@@ -49,7 +49,7 @@ export const news = [
                   <b>Leadership Recognition:</b> The fact that the Chief Operating Officer, <b>Mr. Mubarak Al Hajiri</b>, personally extended his heartfelt congratulations is noteworthy. Leadership recognition is crucial in reinforcing the importance of safety. It shows that the company's top management is actively involved and appreciates the efforts of its employees in maintaining a safe work environment.
                 </li>
                 <li>
-                  <b>Employee Involvement:</b> Achieving 1 million safety hours without incidents is a collective effort, and it highlights the engagement and responsibility of every employee. This accomplishment is a testament to the vigilance and dedication of the entire team, from frontline workers to management, in adhering to safety protocols and promoting a secure workplace.
+                  <b>Employee Involvement:</b> Achieving 1 million safe Man Hours without incidents is a collective effort, and it highlights the engagement and responsibility of every employee. This accomplishment is a testament to the vigilance and dedication of the entire team, from frontline workers to management, in adhering to safety protocols and promoting a secure workplace.
                 </li>
                 <li>
                   <b>Continuous Improvement:</b> The commitment to achieving zero injuries and minimizing safety losses reflects a culture of continuous improvement. ENASCO recognizes that safety is an ongoing process that requires regular evaluation and enhancement of safety measures. This mindset positions the company well to sustain its achievements and continually strive for even higher safety standards.
@@ -63,7 +63,7 @@ export const news = [
               </ul>
               <br/>
 
-              In conclusion, ENASCO General Trading and Company's achievement of 1 million safety hours without incidents is a commendable accomplishment that reflects a strong commitment to safety, employee well-being, and continuous improvement. This milestone not only celebrates past success but also serves as a foundation for future endeavors in maintaining a safe and secure workplace.
+              In conclusion, ENASCO General Trading and Contracting Company's achievement of 1 million safe Man Hours without incidents is a commendable accomplishment that reflects a strong commitment to safety, employee well-being, and continuous improvement. This milestone not only celebrates past success but also serves as a foundation for future endeavors in maintaining a safe and secure workplace.
 
             </>
   },
