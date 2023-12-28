@@ -356,7 +356,7 @@ export const services = [
         <div className='pt-16 md:pt-20' id='welding'>
         <p>Our team of highly skilled designers, welders, inspectors, and painters specializes in fabricating a comprehensive range of equipment, including cargo carrying units (CCUs), tool racks, and tanks.</p><br/>
         <p>The ENASCO team prioritizes quality in construction: all structural members are crafted from hot-rolled steel, joints are continuously welded, and lifting point pad eyes are precisely engineered to match the specifications of the employed shackles. Each welded equipment is meticulously designed and fabricated in compliance with British standards, with all welding undergoing a 100% Magnetic Particle Inspection (MPI) process. This inspection is conducted on all lifting points both before and after proof load testing.</p><br/>
-        <p>Upon completion, welded equipments can be painted according to the client's specifications and are delivered marked with the correct Safe Working Load (SWL). Additionally, each welded equipment is accompanied by a comprehensive documentation package, including material details, non-destructive testing (NDT) results, welding certificates, and load test certificates.</p><br/>
+        <p>Upon completion, welded equipments can be painted according to the client's specifications and are delivered marked with the correct Safe Working Load (SWL). Additionally, each welded equipment is accompanied by a comprehensive documentation package, including material details, welding certificates, and load test certificates.</p><br/>
         </div>,
 
         <div className='pt-16 md:pt-20' id='wellcontrol'>
@@ -429,7 +429,7 @@ export const services = [
 
     {
       id: 3,
-      question: "Inspection & NDT",
+      question: "Marine & Inspection Services",
       path:'inspection',
       answer: [
         "OCTG / Tubular Inspection",
@@ -442,7 +442,7 @@ export const services = [
       content: (
         <>
             <div>
-                Inspection & NDT of ENASCO include:
+                Marine & Inspection Services of ENASCO include:
                 <br/><br/>
                 <ul className='grid gap-1 custom-list'>
                   <li><a href="#octg">OCTG / Tubular Inspection</a></li>
@@ -476,8 +476,8 @@ export const services = [
         </div>,
 
         <div className='pt-16 md:pt-20' id='ndt'>
-        <p>ENASCO NDT extends its comprehensive Non-Destructive Testing (NDT) services to cover a broad spectrum of locations, including both onshore and offshore environments. Our NDT inspectors are distinguished by their high level of expertise, holding certifications at Level II and III. These professionals undergo rigorous training, equipping them with the skills necessary for their roles. Importantly, our inspectors are readily available for short-notice assignments, whether they be onshore or offshore.</p><br/>
-        <p>At ENASCO NDT, we prioritize the adherence to specific procedures and the highest standards of Safety, Security, Health, and Environment (SSHE). This commitment ensures that all inspections and tests conducted by our skilled professionals meet stringent criteria for safety and environmental responsibility. Clients can have confidence in the reliability and proficiency of ENASCO NDT services, whether in onshore or offshore settings, with the assurance that inspections and tests are carried out to the highest industry standards.</p>
+        <p>Marine & Inspection Services extends its comprehensive services to cover a broad spectrum of locations, including both onshore and offshore environments. Our NDT inspectors are distinguished by their high level of expertise, holding certifications at Level II and III. These professionals undergo rigorous training, equipping them with the skills necessary for their roles. Importantly, our inspectors are readily available for short-notice assignments, whether they be onshore or offshore.</p><br/>
+        <p>At Marine & Inspection Services, we prioritize the adherence to specific procedures and the highest standards of Safety, Security, Health, and Environment (SSHE). This commitment ensures that all inspections and tests conducted by our skilled professionals meet stringent criteria for safety and environmental responsibility. Clients can have confidence in the reliability and proficiency of ENASCO Marine & Inspection Services, whether in onshore or offshore settings, with the assurance that inspections and tests are carried out to the highest industry standards.</p>
         </div>,
 
         <div className='pt-16 md:pt-20' id='rei'>
