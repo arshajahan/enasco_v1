@@ -65,6 +65,7 @@ function Banner() {
       <div className="block md:hidden bg-cover bg-center h-screen"
            style={{
              backgroundImage: `url(${mobileImage})`, // Set the mobile background image
+            animation: 'zoom 10s infinite alternate',
            }}
       ></div>
     </div>
