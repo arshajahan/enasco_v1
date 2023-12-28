@@ -73,6 +73,7 @@ function Footer() {
                       <br/><hr/><br/>
                       <h3>Visitor Address:</h3>
                       <p className=' mt-4 '>  
+                        Enasco Building, #174,<br/>
                         Block 7, Street 400,<br/>
                         East Al-Ahmadi - 64018, Ahmadi,<br/>
                         Kuwait<br/>
