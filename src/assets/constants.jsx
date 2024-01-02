@@ -429,7 +429,7 @@ export const services = [
 
     {
       id: 3,
-      question: "Marine & Inspection Services",
+      question: "Inspection Services",
       path:'inspection',
       answer: [
         "OCTG / Tubular Inspection",
@@ -442,7 +442,7 @@ export const services = [
       content: (
         <>
             <div>
-                Marine & Inspection Services of ENASCO include:
+                Inspection Services of ENASCO include:
                 <br/><br/>
                 <ul className='grid gap-1 custom-list'>
                   <li><a href="#octg">OCTG / Tubular Inspection</a></li>
@@ -476,8 +476,8 @@ export const services = [
         </div>,
 
         <div className='pt-16 md:pt-20' id='ndt'>
-        <p>Marine & Inspection Services extends its comprehensive services to cover a broad spectrum of locations, including both onshore and offshore environments. Our NDT inspectors are distinguished by their high level of expertise, holding certifications at Level II and III. These professionals undergo rigorous training, equipping them with the skills necessary for their roles. Importantly, our inspectors are readily available for short-notice assignments, whether they be onshore or offshore.</p><br/>
-        <p>At Marine & Inspection Services, we prioritize the adherence to specific procedures and the highest standards of Safety, Security, Health, and Environment (SSHE). This commitment ensures that all inspections and tests conducted by our skilled professionals meet stringent criteria for safety and environmental responsibility. Clients can have confidence in the reliability and proficiency of ENASCO Marine & Inspection Services, whether in onshore or offshore settings, with the assurance that inspections and tests are carried out to the highest industry standards.</p>
+        <p>Inspection Services extends its comprehensive services to cover a broad spectrum of locations, including both onshore and offshore environments. Our NDT inspectors are distinguished by their high level of expertise, holding certifications at Level II and III. These professionals undergo rigorous training, equipping them with the skills necessary for their roles. Importantly, our inspectors are readily available for short-notice assignments, whether they be onshore or offshore.</p><br/>
+        <p>At Inspection Services, we prioritize the adherence to specific procedures and the highest standards of Safety, Security, Health, and Environment (SSHE). This commitment ensures that all inspections and tests conducted by our skilled professionals meet stringent criteria for safety and environmental responsibility. Clients can have confidence in the reliability and proficiency of ENASCO Inspection Services, whether in onshore or offshore settings, with the assurance that inspections and tests are carried out to the highest industry standards.</p>
         </div>,
 
         <div className='pt-16 md:pt-20' id='rei'>

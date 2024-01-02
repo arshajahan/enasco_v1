@@ -39,7 +39,7 @@ function InDetail() {
                 <div className=' basis-2/6 '>
                     <div className=' '>
                     <h1 className=' text-[#2d3540] text-3xl lg:text-5xl font-extrabold mb-8 lg:w-32'>CONNECT YOUR BUSINESS WORLD.</h1>
-                    Welcome to Enasco, your trusted partner in Non-Destructive Testing (NDT) and Marine Services. We are a pioneering force in the industry, committed to excellence, safety, and environmental responsibility. Our unwavering dedication to quality and innovation sets us apart as a reliable choice for your NDT and marine service needs.
+                    Welcome to Enasco, your trusted partner in Marine and Inspection Services. We are a pioneering force in the industry, committed to excellence, safety, and environmental responsibility. Our unwavering dedication to quality and innovation sets us apart as a reliable choice for your NDT and marine service needs.
                         <br/><br/><br/>At Enasco, our mission is to provide cutting-edge NDT solutions and comprehensive marine services to ensure the safety, reliability, and efficiency of our clients' assets. We are driven by a passion for safeguarding the environment and enabling sustainable, long-term success for businesses in the marine sector.
                     </div>
                 </div>

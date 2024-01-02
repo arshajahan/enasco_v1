@@ -26,19 +26,19 @@ function About() {
                 <div className=''>
                     <h2 className='text-gray-700 text-xl md:text-2xl font-extrabold mb-4'>Our Mission</h2>
                     {/* <p className=' text-justify text-black font-semibold text-sm'>Providing sustainable towage and related services to the maritime industry, exceeding clients’ expectations.</p> */}
-                    <p className='mt-4 text-justify text-base'>At Enasco, our mission is to provide cutting-edge NDT solutions and comprehensive marine services to ensure the safety, reliability, and efficiency of our clients' assets. We are driven by a passion for safeguarding the environment and enabling sustainable, long-term success for businesses in the marine sector.</p>
+                    <p className='mt-4 text-justify text-base'>At Enasco, our mission is to provide cutting-edge Marine and Inspection services to ensure the safety, reliability, and efficiency of our clients' assets. We are driven by a passion for safeguarding the environment and enabling sustainable, long-term success for businesses in the marine sector.</p>
                 </div>
 
                 <div className='mt-4'>
                 <h2 className='text-gray-700 text-xl md:text-2xl font-extrabold mb-4 '>Our Expertise</h2>
                     {/* <p className=' text-justify text-black font-semibold text-sm'>To be the leading towage and maritime service provider of the world.</p> */}
-                    <p className='mt-4 text-justify text-base'>Our highly skilled team of NDT specialists, marine engineers, and technical experts brings a wealth of experience to every project. We have a proven track record of delivering precise, cost-effective, and timely services, with an unwavering commitment to the highest industry standards.</p>
+                    <p className='mt-4 text-justify text-base'>Our highly skilled team of specialists, marine engineers, and technical experts brings a wealth of experience to every project. We have a proven track record of delivering precise, cost-effective, and timely services, with an unwavering commitment to the highest industry standards.</p>
                 </div>
 
                 <div className='mt-4'>
-                <h2 className='text-gray-700 text-xl md:text-2xl font-extrabold mb-4 '>NDT Services</h2>
+                <h2 className='text-gray-700 text-xl md:text-2xl font-extrabold mb-4 '>Marine and Inspection Services</h2>
                     {/* <p className=' text-justify text-black font-semibold text-sm'>To be the leading towage and maritime service provider of the world.</p> */}
-                    <p className='mt-4 text-justify text-base'>We offer a wide range of NDT services, including ultrasonic testing, radiographic inspection, magnetic particle testing, liquid penetrant testing, and more. Our cutting-edge equipment and advanced methodologies enable us to detect flaws and irregularities in materials and structures, ensuring the integrity and safety of your assets.</p>
+                    <p className='mt-4 text-justify text-base'>We offer a wide range of Marine and Inspection services, including ultrasonic testing, radiographic inspection, magnetic particle testing, liquid penetrant testing, and more. Our cutting-edge equipment and advanced methodologies enable us to detect flaws and irregularities in materials and structures, ensuring the integrity and safety of your assets.</p>
                 </div>
 
                 <div className='mt-4'>
@@ -61,8 +61,8 @@ function About() {
 
                 <div className='mt-4'>
                     <h2 className='text-gray-700 text-xl md:text-2xl font-extrabold mb-4'>Our Vision</h2>
-                    <p className=' text-justify mt-8 text-base'>We envision a world where NDT and marine services are synonymous with trust, reliability, and sustainability. Our aim is to set new industry benchmarks and consistently exceed the expectations of our clients. <br/><br/>
-                        Thank you for considering Enasco for your NDT and marine service needs. We look forward to the opportunity to work with you and provide the expertise, innovation, and excellence that will contribute to your success. Contact us today to discuss how we can help safeguard your assets and ensure their longevity in a rapidly changing world.</p>
+                    <p className=' text-justify mt-8 text-base'>We envision a world where Marine and Inspection services are synonymous with trust, reliability, and sustainability. Our aim is to set new industry benchmarks and consistently exceed the expectations of our clients. <br/><br/>
+                        Thank you for considering Enasco for your Marine and Inspection service needs. We look forward to the opportunity to work with you and provide the expertise, innovation, and excellence that will contribute to your success. Contact us today to discuss how we can help safeguard your assets and ensure their longevity in a rapidly changing world.</p>
                 </div>
                 <br/>
                 <div className='mt-4 mb-16 lg:mb-12'>
