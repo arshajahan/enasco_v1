@@ -37,7 +37,7 @@ export const news = [
     image: n3,
     path: 'Milestone',
     date: 'NOVEMBER 20, 2023',
-    title: "ENASCO General Trading and Contracting Company's Milestone: 1 Million Safe Man Hours Celebrated with Commitment to Zero Injuries",
+    title: "ENASCO's Milestone: 1 Million Safe Man Hours Celebrated with Commitment to Zero Injuries",
     content: <>
               The achievement of 1 million safe Man Hours without incidents is indeed a significant milestone for ENASCO General Trading and Company. This accomplishment demonstrates the company's unwavering commitment to the safety and well-being of its workforce. Let's elaborate on some key points:<br/><br/>
 
