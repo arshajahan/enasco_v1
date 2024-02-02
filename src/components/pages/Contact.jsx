@@ -13,9 +13,9 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-        const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-        const EMAILJS_ID = import.meta.env.VITE_EMAILJS_USER_ID;
+        const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+        const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+        const EMAILJS_ID = import.meta.env.VITE_EMAILJS_ID;
     
         emailjs
           .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, EMAILJS_ID)
