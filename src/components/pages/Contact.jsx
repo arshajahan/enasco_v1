@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import contact from '../../assets/images/contact.webp'
 import { toast } from 'react-toastify';
@@ -11,26 +11,32 @@ function Contact() {
 
     const form = useRef();
 
+    useEffect(() => {
+        // Initialize EmailJS with the public key
+        const EMAILJS_ID = import.meta.env.VITE_EMAILJS_ID;
+        emailjs.init(EMAILJS_ID);
+    }, []); // The empty dependency array ensures that this effect runs only once during component mount
+
     const sendEmail = (e) => {
         e.preventDefault();
         const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
         const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
-        const EMAILJS_ID = import.meta.env.VITE_EMAILJS_ID;
-    
+
         emailjs
-          .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, EMAILJS_ID)
-          .then(
-            (result) => {
-            //   console.log(result.text);
-              toast.success('Email sent successfully!');
-              e.target.reset();
-            },
-            (error) => {
-            //   console.log(error.text);
-              toast.error('Please submit again.');
-            }
-          );
-      };
+            .sendForm(SERVICE_ID, TEMPLATE_ID, form.current)
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    toast.success('Email sent successfully!');
+                    e.target.reset();
+                },
+                (error) => {
+                    console.error(error.text);
+                    toast.error('Failed to send email. Please try again.');
+                }
+            );
+    };
+
     
 
   return (
