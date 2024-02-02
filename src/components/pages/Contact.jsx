@@ -13,14 +13,14 @@ function Contact() {
 
     useEffect(() => {
         // Initialize EmailJS with the public key
-        const EMAILJS_ID = 'iwKFdzCR0MIg42jD_';
+        const EMAILJS_ID = import.meta.env.VITE_EMAILJS_ID;
         emailjs.init(EMAILJS_ID);
     }, []); // The empty dependency array ensures that this effect runs only once during component mount
 
     const sendEmail = (e) => {
         e.preventDefault();
-        const SERVICE_ID = 'service_qm3k0uw';
-        const TEMPLATE_ID = 'template_nlxa8cp';
+        const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+        const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
 
         emailjs
             .sendForm(SERVICE_ID, TEMPLATE_ID, form.current)
