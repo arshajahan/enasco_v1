@@ -12,19 +12,19 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
 
       - name: Install dependencies
-        run: npm install
+        uses: bahmutov/npm-install@v1
 
       - name: Build project
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: production-files
           path: ./dist
@@ -37,16 +37,16 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: production-files
           path: ./dist
 
       - name: Set up environment variables
         run: |
-          echo "VITE_EMAILJS_USER_ID=${{ secrets.EMAILJS_ID }}" >> .env
-          echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.SERVICE_ID }}" >> .env
-          echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.TEMPLATE_ID }}" >> .env
+          echo "VITE_EMAILJS_USER_ID=${{ secrets.EMAILJS_ID }}" >> ./dist/.env
+          echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.SERVICE_ID }}" >> ./dist/.env
+          echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.TEMPLATE_ID }}" >> ./dist/.env
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
