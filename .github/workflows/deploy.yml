@@ -22,6 +22,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Set up environment variables
+        run: |
+          echo "VITE_EMAILJS_ID=${{ secrets.EMAILJS_ID }}" >> $GITHUB_ENV
+          echo "VITE_SERVICE_ID=${{ secrets.SERVICE_ID }}" >> $GITHUB_ENV
+          echo "VITE_TEMPLATE_ID=${{ secrets.TEMPLATE_ID }}" >> $GITHUB_ENV
+      
+
       - name: Build project
         run: npm run build
 
@@ -43,14 +50,6 @@ jobs:
         with:
           name: production-files
           path: ./dist
-
-      - name: Set up environment variables
-        run: |
-          touch .env
-          echo VITE_EMAILJS_ID=${{ secrets.EMAILJS_ID }} >> .env
-          echo VITE_SERVICE_ID=${{ secrets.SERVICE_ID }} >> .env
-          echo VITE_TEMPLATE_ID=${{ secrets.TEMPLATE_ID }} >> .env
-          cat .env
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
