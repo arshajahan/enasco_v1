@@ -12,13 +12,15 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: npm install
 
       - name: Build project
         run: npm run build
@@ -44,9 +46,9 @@ jobs:
 
       - name: Set up environment variables
         run: |
-          echo "VITE_EMAILJS_USER_ID=${{ secrets.EMAILJS_ID }}" >> ./dist/.env
-          echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.SERVICE_ID }}" >> ./dist/.env
-          echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.TEMPLATE_ID }}" >> ./dist/.env
+          echo "VITE_EMAILJS_USER_ID=${{ secrets.EMAILJS_ID }}" >> .env
+          echo "VITE_EMAILJS_SERVICE_ID=${{ secrets.SERVICE_ID }}" >> .env
+          echo "VITE_EMAILJS_TEMPLATE_ID=${{ secrets.TEMPLATE_ID }}" >> .env
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
