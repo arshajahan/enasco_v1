@@ -4,7 +4,7 @@ import contact from '../../assets/images/contact.webp'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import WrapperCard from '../UI/WrapperCard'
-import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter, BsWhatsapp, BsYoutube } from 'react-icons/bs'
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs'
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -13,9 +13,12 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const EMAILJS_ID = import.meta.env.VITE_EMAILJS_USER_ID;
     
         emailjs
-          .sendForm('service_qm3k0uw', 'template_nlxa8cp', form.current, 'iwKFdzCR0MIg42jD_')
+          .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, EMAILJS_ID)
           .then(
             (result) => {
             //   console.log(result.text);
