@@ -49,7 +49,7 @@ function Contact() {
             <div className='mt-10 '>
                 <h1 className='text-gray-700 text-4xl md:text-5xl font-extrabold'>CONTACT</h1>
                 <p className=' mt-8 '>  
-                Enasco Building, #174,<br/>
+                Enasco Building, #147,<br/>
                 Block 7, Street 400,<br/>
                 East Al-Ahmadi - 64018, Ahmadi,<br/>
                 Kuwait<br/>
