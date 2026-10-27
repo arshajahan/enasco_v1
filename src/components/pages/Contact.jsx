@@ -56,6 +56,7 @@ function Contact() {
                 </p>
                 <p className='' ><br/>
                 Tel: +965 224 51 615<br/>
+                Mob: +965 515 68 466<br/>
                 Fax: +965 224 51 614<br/>
                 Email: info@enas.co<br/>
                 </p><br/><br/>
