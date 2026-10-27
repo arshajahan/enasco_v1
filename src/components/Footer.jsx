@@ -140,7 +140,7 @@ function Footer() {
               </div>
               <br/>
               <hr/><br/>
-              <span className=''>Copyright © 2023. All rights reserved to Enasco.</span>
+              <span className=''>Copyright © 2026. All rights reserved to Enasco.</span>
              <br/><br/>
           </WrapperCard>
           </motion.div> 
